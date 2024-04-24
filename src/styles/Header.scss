@@ -5,12 +5,15 @@
   border-bottom: 1px solid white;
   width: 100vw;
   padding-left: 20vw;
+  padding-right: 5vw;
   .HeaderLogo {
     @apply flex items-center;
+    gap: 5px;
     .HeaderTitle {
       font-size: 54px;
       font-weight: 600;
       text-transform: uppercase;
+      margin-top: 10px;
     }
   }
   .HeaderRoutes {
@@ -20,5 +23,8 @@
     gap: 25px;
   }
   .HeaderLanguage {
+    @apply flex justify-between items-center gap-2;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 32px;
   }
 }

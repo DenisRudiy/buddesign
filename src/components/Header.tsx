@@ -1,5 +1,6 @@
 import { Link } from "react-router-dom";
 import "../styles/Header.scss";
+import Globe from "../icons/GlobeIcon";
 
 const Header = () => {
   return (
@@ -17,8 +18,11 @@ const Header = () => {
         <Link to="/recyclables">Вторсировина</Link>
         <Link to="/about">Про нас</Link>
         <Link to="/contacts">Контакты</Link>
+        <button className="HeaderLanguage">
+          <Globe></Globe>
+          <span>UA</span>
+        </button>
       </div>
-      <div className="HeaderLanguage"></div>
     </div>
   );
 };

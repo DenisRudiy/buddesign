@@ -1,3 +1,24 @@
 .App {
   display: flex;
 }
+
+.Phone {
+  position: absolute;
+  bottom: 200px;
+  right: 100px;
+  .PhoneButton {
+    @apply flex justify-center items-center;
+    border-radius: 50%;
+    border: 3px solid white;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s all;
+
+    &:hover {
+      scale: 1.05;
+    }
+    &:active {
+      transform: translateY(10px);
+    }
+  }
+}

@@ -1,9 +1,11 @@
-import MainHome from "./MainHome/MainHome";
+import MainAbout from "./Home/HomeAbout/HomeAbout";
+import MainHome from "./Home/MainHome/MainHome";
 
 const Main = () => {
   return (
-    <div>
+    <div className="Main">
       <MainHome></MainHome>
+      <MainAbout></MainAbout>
     </div>
   );
 };

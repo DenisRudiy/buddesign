@@ -8,6 +8,16 @@ body {
   margin: 0;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
-  font-family: "Open Sans", sans-serif;
   font-family: "Alumni Sans", sans-serif;
+  font-family: "Open Sans", sans-serif;
+  overflow-x: hidden;
+}
+
+*::-webkit-scrollbar {
+  width: 0.45rem;
+  background-color: #7b7b7b;
+}
+*::-webkit-scrollbar-thumb {
+  border-radius: 5px;
+  background-color: #d8d8d8;
 }

@@ -1,0 +1,25 @@
+.Reasons {
+  @apply flex justify-center items-center flex-col;
+  min-height: 700px;
+  .ReasonsTitle {
+    @apply uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-bottom: 150px;
+  }
+  .ReasonsCards {
+    @apply flex justify-center items-center;
+    .ReasonsCard {
+      @apply flex justify-center items-center flex-col;
+      text-align: center;
+      .ReasonsCardTitle {
+        font-family: "Alumni Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        width: 350px;
+      }
+    }
+  }
+}

@@ -2,7 +2,7 @@ import "./HomeGallery.scss";
 
 const HomeGallery = () => {
   return (
-    <div className="HomeGallery" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
+    <div className="HomeGallery">
       <h1 className="HomeGalleryTitle">Галерея</h1>
       <div className="Gallery">
         <img src={process.env.PUBLIC_URL + "/gal1.jpg"} alt="" />

@@ -1,0 +1,34 @@
+.HomeGallery {
+  @apply flex justify-center items-center flex-col;
+  width: 100vw;
+  .HomeGalleryTitle {
+    @apply uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 80px;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding: 10px 0px;
+  }
+  .Gallery {
+    @apply flex;
+    img {
+      width: 25%;
+    }
+  }
+  .HomeGalleryButton {
+    @apply flex justify-center items-center;
+    height: 60px;
+    width: 240px;
+    font-size: 18px;
+    border: 1px solid black;
+    transition: 0.3s all;
+    margin: 80px 0px;
+
+    &:hover {
+      scale: 1.05;
+    }
+    &:active {
+      transform: translateY(5px);
+    }
+  }
+}

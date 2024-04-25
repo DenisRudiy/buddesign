@@ -20,7 +20,7 @@ const Phone = () => {
         phoneBtn.style.borderColor = "white";
       }
     }
-    if (scrollHeight >= 160 && scrollHeight < 2270) {
+    if ((scrollHeight >= 160 && scrollHeight < 2270) || scrollHeight >= 4350) {
       const phone = document.querySelector(".PhoneColor") as HTMLElement;
       const phoneBtn = document.querySelector(".PhoneButton") as HTMLElement;
       if (phone) {

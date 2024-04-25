@@ -1,3 +1,4 @@
+import Footer from "./Footer/Footer";
 import HomeAbout from "./Home/HomeAbout/HomeAbout";
 import HomeGallery from "./Home/HomeGallery/HomeGallery";
 import HomeMain from "./Home/HomeMain/HomeMain";
@@ -14,6 +15,7 @@ const Main = () => {
       <HomeProjects></HomeProjects>
       <HomeGallery></HomeGallery>
       <Reasons></Reasons>
+      <Footer></Footer>
     </div>
   );
 };

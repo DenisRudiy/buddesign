@@ -1,0 +1,72 @@
+.Footer {
+  @apply flex justify-center;
+  gap: 20vw;
+  min-height: 530px;
+  background-color: #18191d;
+  color: white;
+  padding-top: 100px;
+  .FooterLeftSection {
+    .FooterLeftSectionTitle {
+      font-family: "Alumni Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .FooterLeftSectionData {
+      @apply flex items-center gap-2;
+      margin-left: 10px;
+      padding: 10px 0px;
+      .FooterLeftSectionText {
+        .FooterLeftSectionTextTitle {
+          font-family: "Alumni Sans", sans-serif;
+          font-size: 24px;
+        }
+        .FooterLeftSectionTextDescription {
+          font-size: 16px;
+          color: #999999;
+        }
+      }
+    }
+    .FooterCopyrighting {
+      margin-left: 10px;
+      font-family: "Alumni Sans", sans-serif;
+      font-size: 24px;
+    }
+  }
+  .FooterRightSection {
+    @apply flex flex-col;
+    gap: 10px;
+    .FooterRightSectionTitle {
+      font-family: "Alumni Sans", sans-serif;
+      font-size: 30px;
+      font-weight: 500;
+    }
+    .FooterRightSectionInput {
+      margin-left: 10px;
+      outline: none;
+      width: 300px;
+      height: 80px;
+      background-color: transparent;
+      border-bottom: 1px solid white;
+    }
+    .FooterRightSectionButton {
+      margin-left: 10px;
+      @apply uppercase;
+      font-family: "Alumni Sans", sans-serif;
+      font-size: 20px;
+      letter-spacing: 6px;
+      width: 200px;
+      height: 60px;
+      border: 2px solid white;
+      margin-top: 30px;
+      transition: 0.3s all;
+      border-radius: 2px;
+
+      &:hover {
+        scale: 1.05;
+      }
+      &:active {
+        transform: translateY(10px);
+      }
+    }
+  }
+}

@@ -20,7 +20,7 @@ const Phone = () => {
         phoneBtn.style.borderColor = "white";
       }
     }
-    if ((scrollHeight >= 160 && scrollHeight < 2270) || scrollHeight >= 4350) {
+    if ((scrollHeight >= 160 && scrollHeight < 2270) || (scrollHeight >= 4350 && scrollHeight < 5270)) {
       const phone = document.querySelector(".PhoneColor") as HTMLElement;
       const phoneBtn = document.querySelector(".PhoneButton") as HTMLElement;
       if (phone) {
@@ -35,7 +35,7 @@ const Phone = () => {
   return (
     <div className="Phone">
       <button className="PhoneButton">
-        <PhoneIcon></PhoneIcon>
+        <PhoneIcon size={35}></PhoneIcon>
       </button>
     </div>
   );

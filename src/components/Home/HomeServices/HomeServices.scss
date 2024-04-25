@@ -1,0 +1,84 @@
+.HomeServices {
+  @apply flex flex-col;
+  gap: 50px;
+  background-size: cover;
+  width: 100vw;
+  min-height: 1050px;
+  padding-top: 100px;
+  .AboutTechnique,
+  .AboutWork {
+    @apply flex justify-center items-center;
+    gap: 100px;
+    .AboutTechniqueImg,
+    .AboutWorkImg {
+      @apply flex justify-start items-end;
+      width: 650px;
+      height: 400px;
+      background-size: cover;
+      .AboutTechniqueImgText {
+        width: 250px;
+        height: 90px;
+        background-color: white;
+        font-family: "Alumni Sans", sans-serif;
+        .AboutTechniqueImgTitle {
+          text-transform: uppercase;
+          font-size: 32px;
+        }
+        .AboutTechniqueImgDescription {
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #c5a47e;
+        }
+      }
+    }
+    .AboutTechniqueText {
+      @apply flex flex-col;
+      gap: 10px;
+      .AboutTechniqueTextTitle {
+        @apply uppercase;
+        font-family: "Alumni Sans", sans-serif;
+        font-size: 80px;
+        font-weight: 500;
+        letter-spacing: 4px;
+      }
+      .AboutTechniqueTextDescription {
+        color: #999999;
+        width: 25vw;
+      }
+      .AboutTechniqueButtons {
+        @apply flex;
+        gap: 15px;
+        .AboutTechniqueButtonOne {
+          width: 150px;
+          height: 50px;
+          border: 1px solid black;
+          transition: 0.3s all;
+          border-radius: 2px;
+
+          &:hover {
+            scale: 1.05;
+          }
+          &:active {
+            transform: translateY(10px);
+          }
+        }
+      }
+      .AboutTechniqueButtonMore {
+        width: 250px;
+        height: 70px;
+        font-size: 20px;
+        border: 1px solid black;
+        margin-top: 20px;
+        transition: 0.3s all;
+        border-radius: 2px;
+
+        &:hover {
+          scale: 1.05;
+        }
+        &:active {
+          transform: translateY(10px);
+        }
+      }
+    }
+  }
+}

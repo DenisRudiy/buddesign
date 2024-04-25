@@ -1,7 +1,7 @@
-.MainHome {
+.HomeMain {
   width: 100vw;
   height: calc(100vh - 90px);
-  .MainHomeBackground {
+  .HomeMainBackground {
     @apply flex justify-start items-end;
     position: absolute;
     top: 0;
@@ -25,21 +25,21 @@
       z-index: 1;
     }
   }
-  .MainHomeData {
+  .HomeMainData {
     @apply flex flex-col justify-end;
     position: relative;
     z-index: 100;
     color: white;
     padding-left: 20vw;
     padding-bottom: 200px;
-    z-index: 1500;
+    // z-index: 1500;
     height: calc(100vh - 90px);
-    .MainHomeTitle {
+    .HomeMainTitle {
       font-size: 75px;
       font-weight: 600;
       padding: 0;
     }
-    .MainHomeButton {
+    .HomeMainButton {
       font-family: "Open Sans", sans-serif;
       width: 200px;
       height: 60px;

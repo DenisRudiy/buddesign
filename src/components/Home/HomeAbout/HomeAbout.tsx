@@ -1,6 +1,6 @@
 import "./HomeAbout.scss";
 
-const MainAbout = () => {
+const HomeAbout = () => {
   return (
     <div className="MainAbout">
       <div className="MainAboutContainer">
@@ -28,4 +28,4 @@ const MainAbout = () => {
   );
 };
 
-export default MainAbout;
+export default HomeAbout;

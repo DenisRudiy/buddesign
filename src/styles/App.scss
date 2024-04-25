@@ -1,7 +1,8 @@
 .Phone {
-  position: absolute;
+  position: fixed;
   bottom: 200px;
-  right: 100px;
+  right: 200px;
+  z-index: 2000;
   .PhoneButton {
     @apply flex justify-center items-center;
     border-radius: 50%;
@@ -9,6 +10,8 @@
     width: 60px;
     height: 60px;
     transition: 0.3s all;
+    position: fixed;
+    z-index: 2999;
 
     &:hover {
       scale: 1.05;

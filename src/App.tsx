@@ -1,6 +1,6 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header";
-import Main from "./components/Main";
+import Main from "./components/Home";
 import Technique from "./components/Technic";
 import "./styles/App.scss";
 import Phone from "./components/Phone";

@@ -11,7 +11,8 @@ const Phone = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    if (scrollHeight < 160) {
+    // console.log(scrollHeight);
+    if (scrollHeight < 160 || scrollHeight >= 2270) {
       const phone = document.querySelector(".PhoneColor") as HTMLElement;
       const phoneBtn = document.querySelector(".PhoneButton") as HTMLElement;
       if (phone) {
@@ -19,7 +20,7 @@ const Phone = () => {
         phoneBtn.style.borderColor = "white";
       }
     }
-    if (scrollHeight >= 160) {
+    if (scrollHeight >= 160 && scrollHeight < 2270) {
       const phone = document.querySelector(".PhoneColor") as HTMLElement;
       const phoneBtn = document.querySelector(".PhoneButton") as HTMLElement;
       if (phone) {

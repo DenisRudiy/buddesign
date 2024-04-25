@@ -1,6 +1,6 @@
 import { Link } from "react-router-dom";
-import "../styles/Header.scss";
-import Globe from "../icons/GlobeIcon";
+import "./Header.scss";
+import Globe from "../../icons/GlobeIcon";
 
 const Header = () => {
   return (

@@ -1,0 +1,73 @@
+
+.advantages__title {
+    margin-top: 5rem;
+    text-align: center;
+    line-height: 1.1;
+    font-weight: 500;
+    font-family: Alumni Sans;
+    font-size: 80px;
+    letter-spacing: 6%;
+    color: #000000;
+    margin-bottom: 1.25rem;
+  }
+  
+  .advantages__subtitle {
+    text-align: center;
+  }
+  
+  .advantages_items {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 80px;
+    flex-wrap: wrap;
+  }
+  
+  @media (max-width: 62.5rem) {
+    .advantages_items {
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+    .advantages-item {
+      flex: 1 1 100%;
+    }
+  }
+  .advantages-item:not(:last-child) {
+    margin-right: 40px;
+  }
+  
+  .advantages-item {
+    padding-left: 20px;
+    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
+    margin-top: 2.5rem;
+    flex: 0 1 33.3333%;
+    padding-bottom: 3.75rem;
+  }
+  
+  .advantages-item__title {
+    padding-top: 1.875rem;
+    font-family: "Alumni Sans";
+    font-weight: 500;
+    font-size: 2.25rem;
+    letter-spacing: 6%;
+    color: #000000;
+    margin-bottom: 2.5rem;
+  }
+  
+  .advantages-item__list-li::before {
+    content: "";
+    display: inline-block;
+    height: 10px;
+    width: 10px;
+    margin-right: 10px;
+    border-radius: 50%;
+    background-color: #c5a47e;
+  }
+  
+  .advantages-item__list-li {
+    margin-bottom: 40px;
+  }
+
+  .advantages__item{
+    max-width: 350px;
+  }

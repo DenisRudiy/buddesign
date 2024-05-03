@@ -1,0 +1,81 @@
+.MainAbout {
+    @apply flex justify-center items-center;
+    gap: 50px;
+    min-height: 900px;
+    .MainAboutContainer {
+      max-width: 1200px;
+      .MainImage {
+        @apply flex justify-center items-center;
+        width: 420px;
+        height: 420px;
+        background-size: cover;
+        background-repeat: no-repeat;
+        position: relative;
+        .MainImageBlock {
+          @apply flex justify-center items-center flex-col;
+          width: 360px;
+          height: 360px;
+          background-color: rgba(255, 255, 255, 0.8);
+          position: absolute;
+          display: flex;
+          align-items: center;
+          justify-content: center;
+          z-index: 20;
+  
+          .MainImageNumber {
+            font-family: "Alumni Sans", sans-serif;
+            font-weight: 600;
+            font-size: 180px;
+            height: 230px;
+            color: transparent;
+            background-clip: text;
+            background-size: 420px;
+            background-position: center;
+            -webkit-text-stroke: 2px #c5a47e;
+          }
+          .MainImageText {
+            @apply uppercase;
+            color: #c5a47e;
+            font-weight: 500;
+          }
+        }
+      }
+      .AboutUs {
+        @apply uppercase;
+        color: #c5a47e;
+        font-family: "Alumni Sans", sans-serif;
+        font-weight: 500;
+        letter-spacing: 6px;
+        font-size: 20px;
+        padding-top: 20px;
+      }
+      .AboutCompany {
+        @apply uppercase;
+        font-family: "Alumni Sans", sans-serif;
+        font-size: 80px;
+        font-weight: 500;
+        letter-spacing: 4px;
+      }
+      .AboutCompanyDescription {
+        width: 600px;
+        color: #999999;
+        font-size: 16px;
+      }
+      .MainAboutButton {
+        width: 130px;
+        height: 50px;
+        border: 2px solid black;
+        margin-top: 20px;
+        transition: 0.3s all;
+        border-radius: 2px;
+  
+        &:hover {
+          scale: 1.05;
+        }
+        &:active {
+          transform: translateY(10px);
+        }
+      }
+    }
+  }
+  

@@ -1,0 +1,95 @@
+
+
+.work-gallery__container {
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    -moz-column-gap: 50px;
+         column-gap: 50px;
+    row-gap: 50px;
+  }
+  
+  @media (max-width: 56.25rem) {
+    .work-gallery__container {
+      max-width: 1500px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+      -moz-column-gap: 50px;
+           column-gap: 50px;
+      row-gap: 50px;
+    }
+  }
+  .work-gallery__item_img img {
+    max-width: 100%;
+    -o-object-fit: cover;
+       object-fit: cover;
+  }
+  
+  .work-gallery__item_price {
+    margin-top: 1.25rem;
+    color: #c5a47e;
+    font-family: Alumni Sans;
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 1.8rem;
+  }
+  .work-gallery__item_price span {
+    font-size: 20px;
+    color: #000000;
+    font-weight: 600;
+    font-family: Alumni Sans;
+  }
+  
+  .work-gallery__item_title {
+    margin-top: 10px;
+    font-family: Alumni Sans;
+    font-weight: 400;
+    font-size: 2rem;
+    color: #000000;
+  }
+
+  @media (max-width: 62.5625rem) {
+    .work-gallery__container {
+      max-width: 93.75rem;
+      display: grid;
+      grid-template-columns: repeat(
+        auto-fit,
+        minmax(18.75rem, 18.75rem)
+      ) !important;
+      -moz-column-gap: 3.125rem;
+      column-gap: 3.125rem;
+      row-gap: 3.125rem;
+      justify-content: center !important;
+    }
+    .work-gallery__item {
+      justify-content: center !important;
+    }
+    .page__work-gallery {
+      margin-top: 70px !important;
+    }
+  }
+  
+  @media (max-width: 43.75rem) {
+    .work-gallery__container {
+      -moz-column-gap: 30px !important;
+      column-gap: 30px !important;
+      row-gap: 30px !important;
+      grid-template-columns: repeat(auto-fit, minmax(150px, 300px)) !important;
+    }
+    .work-gallery__item_title {
+      margin-top: 0.625rem;
+      font-size: 28px !important;
+    }
+    .work-gallery__item_price {
+      margin-top: 20px;
+      font-size: 1.5rem;
+      line-height: 10px !important;
+    }
+  }  
+
+  .page__work-gallery {
+    margin-top: 18.5rem;
+    display: flex;
+    justify-content: center;
+    margin-bottom: 12.5rem;
+  }

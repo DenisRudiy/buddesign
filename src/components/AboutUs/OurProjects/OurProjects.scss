@@ -1,0 +1,85 @@
+
+.our-projects {
+    background-color: #2b2b2b;
+  }
+  
+  .our-projects__title {
+    padding-top: 20px;
+    margin-top: 5rem;
+    text-align: center;
+    line-height: 1.1;
+    font-weight: 500;
+    font-family: Alumni Sans;
+    font-size: 80px;
+    letter-spacing: 6%;
+    color: #ffffff;
+    margin-bottom: 40px;
+  }
+  
+  .our-projects__items {
+    display: flex;
+    gap: 100px;
+  }
+  
+  @media (max-width: 62.5rem) {
+    .our-projects__items {
+      flex-wrap: wrap;
+      gap: 100px;
+      justify-content: center;
+    }
+  }
+  .our-projects-item {
+    flex: 0 1 50%;
+  }
+  
+  .our-projects-item__img img {
+    max-width: 100%;
+  }
+  
+  .our-projects-item__subtitle {
+    margin-top: 20px;
+    color: #c5a47e;
+    font-size: 16px;
+    font-family: "Alumni Sans";
+    font-weight: 500;
+    letter-spacing: 5px;
+  }
+  
+  .our-projects-item__subtitle span {
+    color: #999999;
+  }
+  
+  .our-projects-item__title {
+    margin-top: 20px;
+    font-family: "Alumni Sans";
+    font-weight: 500;
+    font-size: 36px;
+    color: #ffffff;
+  }
+  
+  .our-projects__button {
+    margin-top: 40px;
+    display: flex;
+    justify-content: center;
+    line-height: 24px;
+    letter-spacing: 6%;
+    padding-bottom: 40px;
+  }
+  
+  .our-projects__button button {
+    font-family: "Alumni Sans";
+    font-weight: 500;
+    font-size: 1.25rem;
+    color: #c5a47e;
+    background-color: #ffffff;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+
+  .our-projects-item__img{
+    display: flex;
+  justify-content: center;
+  }
+  .our-projects__item{
+    text-align: center;
+  }

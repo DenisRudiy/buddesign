@@ -1,0 +1,94 @@
+.mySwiper{
+ 
+
+}
+.projects-slider__content{
+    display: flex !important;
+    
+    margin-top: 125px;
+
+}
+.swiper-pagination{
+position: absolute !important;
+bottom: 6% !important;
+
+} 
+
+.swiper-wrapper {
+    // position: relative;
+    // width: 600px !important;
+    // height: 679px !important;
+    // z-index: 1;
+    // display: flex;
+    // transition-property: transform;
+    // transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    // box-sizing: content-box;
+  }
+
+
+.swiper-wrapper {
+    // position: relative;
+    // width: 886px !important;
+    // height: 679px !important;
+    // z-index: 1;
+    // display: flex;
+    // transition-property: transform;
+    // transition-timing-function: var(--swiper-wrapper-transition-timing-function, initial);
+    // box-sizing: content-box;
+  }
+  .swiper {
+   /*  margin-left: auto;
+    margin-right: auto;
+    position: relative;
+    overflow: hidden;
+    list-style: none;
+    padding: 0;
+    z-index: 1;
+    display: block;
+    margin-right: 226px; */
+  }
+  .projects-slider__content-main-1{
+    margin-left: 143px;
+    margin-right: 43px;
+  top: 165px;
+  position: relative;
+  }
+  .swiper-pagination-bullet{
+    width: 20px !important;
+    height: 20px !important;
+  }
+  .swiper-pagination-bullet-active{
+    background-color: #000 !important;
+  }
+  .projects-slider__content-title{
+    font-family: Alumni Sans;
+font-size: 60px;
+font-weight: 500;
+line-height: 72px;
+letter-spacing: -0.01em;
+text-align: left;
+width: 600px;
+  }
+  .projects-slider__content-text{
+    max-width: 800px;
+    font-family: Open Sans;
+font-size: 20px;
+font-weight: 400;
+line-height: 27.24px;
+text-align: left;
+
+  }
+
+  .slider-project-slide img{
+    
+}
+.swiper-slide{
+  //  width: 885px !important;
+}
+.slider-project-slide-img{
+    width: 885px !important;
+}
+.slider-project-slide{
+  position: relative !important;
+  left: 33% !important;
+}

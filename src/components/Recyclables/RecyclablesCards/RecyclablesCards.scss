@@ -1,0 +1,62 @@
+.page__products__gallery {
+   
+    max-width: 1500px;
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+    -moz-column-gap: 50px;
+    column-gap: 50px;
+    row-gap: 50px;
+    margin: 0 auto;
+  
+    .products__gallery__container {
+        margin-top: 300px;
+      max-width: 1500px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
+      -moz-column-gap: 50px;
+      column-gap: 50px;
+      row-gap: 50px;
+  
+      @media (max-width: 56.25rem) {
+        max-width: 1500px;
+        display: grid;
+        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
+        -moz-column-gap: 50px;
+        column-gap: 50px;
+        row-gap: 50px;
+      }
+  
+      .products__gallery__item {
+        &_img img {
+          max-width: 100%;
+          -o-object-fit: cover;
+          object-fit: cover;
+        }
+  
+        &_price {
+          margin-top: 1.25rem;
+          color: #c5a47e;
+          font-family: Alumni Sans;
+          font-weight: 700;
+          font-size: 24px;
+          line-height: 1.8rem;
+  
+          span {
+            font-size: 20px;
+            color: #000000;
+            font-weight: 600;
+            font-family: Alumni Sans;
+          }
+        }
+      }
+    }
+  
+    .products__gallery__item_title {
+      margin-top: 10px;
+      font-family: Alumni Sans;
+      font-weight: 400;
+      font-size: 2rem;
+      color: #000000;
+    }
+  }
+  

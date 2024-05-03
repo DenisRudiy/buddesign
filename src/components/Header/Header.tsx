@@ -10,14 +10,14 @@ const Header = () => {
         <h1 className="HeaderTitle">Buddesign</h1>
       </div>
       <div className="HeaderRoutes">
-        <Link to="/technique">Техніка</Link>
-        <Link to="/works">Роботи</Link>
-        <Link to="/products">Товари</Link>
-        <Link to="/outsourcing">Аутсорсинг</Link>
-        <Link to="/houses">Будинки</Link>
-        <Link to="/recyclables">Вторсировина</Link>
-        <Link to="/about">Про нас</Link>
-        <Link to="/contacts">Контакты</Link>
+        <Link to="/buddesign/technique">Техніка</Link>
+        <Link to="/buddesign/works">Роботи</Link>
+        <Link to="/buddesign/products">Товари</Link>
+        <Link to="/buddesign/outsourcing">Аутсорсинг</Link>
+        <Link to="/buddesign/houses">Будинки</Link>
+        <Link to="/buddesign/recyclables">Вторсировина</Link>
+        <Link to="/buddesign/about">Про нас</Link>
+        <Link to="/buddesign/contacts">Контакты</Link>
         <button className="HeaderLanguage">
           <Globe></Globe>
           <span>UA</span>

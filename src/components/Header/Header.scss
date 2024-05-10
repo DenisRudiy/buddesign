@@ -1,11 +1,14 @@
 .Header {
-  @apply flex justify-between items-center;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
   color: white;
-  height: 90px;
-  border-bottom: 1px solid white;
+  height: 143px;
   width: 100vw;
   padding-left: 20vw;
   padding-right: 5vw;
+  position: relative;
+  top: -21px;
   .HeaderLogo {
     @apply flex items-center;
     gap: 5px;
@@ -21,10 +24,342 @@
     font-family: "Open Sans", sans-serif;
     font-weight: 500;
     gap: 25px;
+    font-family: Open Sans;
+font-size: 20px;
+font-weight: 600;
+
+
   }
   .HeaderLanguage {
     @apply flex justify-between items-center gap-2;
     font-family: "Alumni Sans", sans-serif;
     font-size: 32px;
+  }
+  &::after{
+    content: "";
+    position: absolute;
+    width: 100vw;
+    height: 1px;
+    background-color: #D9D9D9;
+    top: 126px;
+    z-index: 444;
+    left: 0;
+  }
+  .dropdown{
+    
+     &-content{
+
+      display: none !important;
+    }
+    &:hover .dropdown-content{
+    
+      display: block !important;
+      
+    }
+    &-content-container{
+      backdrop-filter: blur(8px) !important;
+      height: 89px;
+      position: absolute;
+      display: flex;
+      flex-direction: column;
+      border: 1px solid #ffffff;
+      padding: 5px 20px 5px 20px;
+      z-index: 777;
+    }
+    &-content-container a{
+      padding: 5px;
+     
+    }
+    
+  }
+}
+.hideOption{
+  display: none;
+}
+ .Header__container{
+  display: flex;
+ }
+@media (max-width:2027px) {
+  .Header{
+    padding-left: 12px;
+    padding-right: 12px;
+  }
+}
+ 
+
+
+.burger {
+  display: none;
+  cursor: pointer;
+  position: relative;
+  width: 50px;
+  height: 50px;
+
+}
+
+.burger .bar1, .burger .bar2, .burger .bar3 {
+width: 47px;
+  height: 5px;
+  background-color: #fff;
+  margin: 12px 0;
+  transition: 0.4s;
+}
+
+.burger.active .bar1 {
+  transform: rotate(-44deg) translate(-11px, 6px);
+}
+
+.burger.active .bar2 {opacity: 0;}
+
+.burger.active .bar3 {
+  transform: rotate(45deg) translate(-16px, -12px);
+}
+
+@media (max-width:1522px) {
+  
+  .dropdown-content{
+    display: none;
+  }
+  .hideOption{
+    display: block;
+  }
+  .burger{
+    display: block;
+    margin-top: 2%;
+    margin-right: -13%;
+    padding-right: 20px;
+    position: relative;
+    left: calc(-16% - 1px);
+  }
+  .HeaderRoutes{
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: -100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    height: 85.9vh;
+    top: 310% !important;
+    transition: right 0.5s ease-in-out;
+  }
+  .Header.active{
+    .HeaderRoutes{
+      display: flex !important;
+      flex-direction: column;
+      z-index: 999;
+      position: relative;
+      right: -7%;
+      -webkit-backdrop-filter: blur(8px);
+      backdrop-filter: blur(8px);
+      height: 85.9vh;
+      top: 310% !important;
+      width: 41vw;
+    
+    }
+  }
+  
+}
+
+@media (max-width:626px) {
+  .burger{
+   
+    margin-top: 4%;
+   position: relative;
+   
+  }
+  .Header .HeaderLogo .HeaderTitle {
+    font-size: 31px;
+    font-weight: 600;
+    text-transform: uppercase;
+    margin-top: 10px;
+  }
+}
+@media (max-width:506px) {
+  .Header .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: -100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    top: 310% !important;
+  }
+  .Header.active .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: 54%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+   top: 310% !important;
+  }
+  .HomeMainTitle{
+       
+        font-size: 55px !important;
+        font-weight: 600;
+        padding: 0;
+      
+    }
+  
+}
+@media (max-width:360px) {
+  .Header .HeaderRoutes {
+    
+    right: -100%;
+    height: 92.9vh;
+  }
+  .Header.active .HeaderRoutes {
+    
+    right: 79%;
+  
+  }
+  .Header.active .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: 61%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 92.9vh;
+    bottom: -274%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 104px;
+  }
+
+
+  .Header .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: -100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    top: 295% !important;
+  }
+  .Header.active .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: 54%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    top: 299% !important; 
+  }
+}
+@media (max-width:345px) {
+  .Header .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: -100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    top: 295% !important;
+  }
+  .Header.active .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: 54%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    top: 295% !important; 
+  }
+  .burger .bar1, .burger .bar2, .burger .bar3 {
+    width: 38px;
+    height: 5px;
+    background-color: #fff;
+    margin: 12px 0;
+    transition: 0.4s;
+  }
+  .burger {
+    margin-top: 7%;
+    position: relative;
+  }
+}
+
+@media (max-width:361px) {
+  .Header .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: -100%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    top: 295% !important;
+  }
+  .Header.active .HeaderRoutes {
+    display: flex !important;
+    flex-direction: column;
+    z-index: 999;
+    position: relative;
+    right: 54%;
+    -webkit-backdrop-filter: blur(8px);
+    backdrop-filter: blur(8px);
+    height: 89.9vh;
+    bottom: -221%;
+    width: 656px;
+    padding-right: 463px;
+    padding-left: 114px;
+    max-height: 1313px;
+    top: 295% !important; 
   }
 }

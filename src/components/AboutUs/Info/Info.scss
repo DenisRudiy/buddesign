@@ -79,3 +79,114 @@
     }
   }
   
+
+
+  @media (max-width:441px) {
+    .MainAbout .MainAboutContainer .MainImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 354px;
+      height: 343px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
+      flex-direction: column;
+      width: 290px;
+      height: 283px;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+    }
+    .MainAbout .MainAboutContainer .MainImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 358px;
+      height: 358px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
+      flex-direction: column;
+      width: 296px;
+      height: 308px;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+    }
+    .MainAbout .MainAboutContainer .AboutCompany {
+      text-transform: uppercase;
+      font-family: "Alumni Sans", sans-serif;
+      font-size: 47px !important;
+      font-weight: 500;
+      letter-spacing: -1px !important;
+    }
+    .MainAbout .MainAboutContainer .AboutCompanyDescription {
+      width: 365px !important;
+      color: #999999;
+      font-size: 14px !important;
+    }
+  }
+  @media (max-width:429px) {
+    .MainAbout .MainAboutContainer .MainImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 362px;
+      height: 360px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
+      flex-direction: column;
+      width: 305px;
+      height: 306px;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+    }
+  
+  }
+  @media (max-width:378px) {
+  
+    .MainAbout .MainAboutContainer .MainImage {
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      width: 323px;
+      height: 306px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+    }
+    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
+      flex-direction: column;
+      width: 272px;
+      height: 258px;
+      background-color: rgba(255, 255, 255, 0.8);
+      position: absolute;
+      display: flex;
+      align-items: center;
+      justify-content: center;
+      z-index: 20;
+    }
+    .MainAbout .MainAboutContainer .AboutCompanyDescription {
+      width: 320px !important;
+      color: #999999;
+      font-size: 12px !important;
+    }
+  }

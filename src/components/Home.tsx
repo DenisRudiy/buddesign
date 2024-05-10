@@ -14,8 +14,8 @@ const Main = () => {
       <HomeServices></HomeServices>
       <HomeProjects></HomeProjects>
       <HomeGallery></HomeGallery>
-      <Reasons></Reasons>
-      <Footer></Footer>
+ 
+  
     </div>
   );
 };

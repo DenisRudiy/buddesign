@@ -4,18 +4,16 @@ import '../HousesAbout/HousesAbout.scss'
 const HousesAbout = () =>{
     return(
         <>
-        <h4 className="technics__Toptitle">Наша техніка</h4>
+        <h4 className="technics__toptitle">Будинки</h4>
             <section className="page__technics">
                 <div className="technics__container">
                     <div className="technics__technics">
                         <div className="technics__content">
                             <h4 className="technics__subtitle">INFO</h4>
-                            <h2 className="technics__title">СПЕЦТЕХНІКА</h2>
+                            <h2 className="technics__title">Наші будинки</h2>
                             <p className="technics__text">
-                                При виконанні багатьох робіт виникає необхідність у
-                                використанні спецтехніки. Наш парк має велику кількість
-                                екскаваторів та самоскидів, що дасть вам можливість вибрати
-                                оптимальний варіант для виконання конкретних завдань!
+                            При реалізації різноманітних проектів, наша компанія пропонує широкий спектр будівельних матеріалів відповідної якості та надійності. 
+Ми гарантуємо високу якість наших продуктів та швидку поставку, що робить нас надійним партнером для будь-якого будівельного проекту.
                             </p>
                             <button className="technics__button">Про нас</button>
                         </div>

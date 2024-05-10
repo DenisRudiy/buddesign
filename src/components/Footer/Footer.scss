@@ -70,3 +70,40 @@
     }
   }
 }
+
+
+@media (max-width:859px) {
+  .Footer {
+    display: flex;
+    justify-content: center;
+    gap: 5vw;
+    min-height: 530px;
+    background-color: #18191d;
+    color: white;
+    padding-top: 100px;
+    & .FooterLeftSection .FooterLeftSectionData .FooterLeftSectionText .FooterLeftSectionTextDescription {
+      font-size: 14px;
+      color: #999999;
+      max-width: 195px;
+    }
+  }
+}
+@media (max-width:539px) {
+
+  .Footer {
+    display: flex;
+    justify-content: center;
+    gap: 16vw;
+    min-height: 530px;
+    background-color: #18191d;
+    color: white;
+    padding-top: 100px;
+    justify-content: center;
+    flex-direction: column;
+    align-content: center;
+    align-items: center;
+    text-align: center;
+    padding-bottom: 60px;
+  }
+}
+

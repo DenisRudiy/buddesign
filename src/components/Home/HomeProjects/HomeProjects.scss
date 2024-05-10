@@ -34,7 +34,7 @@
       z-index: 100;
       color: white;
       padding-left: 20vw;
-      padding-bottom: 200px;
+      padding-bottom: 200px !important;
       height: calc(100vh - 90px);
       z-index: 1500;
       .HomeProjectSmallTitle {
@@ -102,4 +102,198 @@
 }
 .ArrowLeft {
   fill: white;
+}
+
+@media (max-width:1309px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    position: relative;
+    color: white;
+    padding-left: 20vw !important;
+    padding-bottom: 200px;
+    height: calc(77vh - 90px) !important;
+    z-index: 1500;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlide {
+    width: 100vw;
+    height: 953px !important;
+    position: absolute;
+    background-size: cover;
+  }
+}
+
+/* @media (max-width:913px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectDescription {
+    width: 408px !important;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    position: relative;
+    color: white;
+    padding-left: 4vw !important;
+    padding-bottom: 372px !important;
+    height: calc(100vh - 90px) !important;
+    z-index: 1500;
+  }
+}
+@media (max-width:633px) {
+  .HomeProjects .HomeProjectsTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 63px !important;
+    font-weight: 500;
+    letter-spacing: 4px !important;
+    margin: 17px !important;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectDescription {
+    width: 408px !important;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    position: relative !important;
+    color: white;
+    padding-left: 4vw !important;
+    padding-bottom: 372px !important;
+    height: calc(75vh - 90px) !important;
+    z-index: 1500;
+  } 
+  .HomeProjects .HomeProjectSlider .HomeProjectSlide {
+    width: 100vw ;
+    height: 841px !important;
+    position: absolute !important;
+    background-size: cover !important;
+  }
+}
+
+@media (max-width:471px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectDescription {
+    width: 317px !important;
+    font-size: 12px !important;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlide {
+    width: 100vw;
+    height: 695px !important;
+    position: absolute;
+    background-size: cover;
+  }
+
+  .HomeProjects .HomeProjectsTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 51px !important;
+    font-weight: 500;
+    letter-spacing: 4px;
+    margin: 17px !important;
+  }
+  .HomeProjects .HomeProjectsNavigation {
+    display: flex;
+    flex-direction: column !important;
+    gap: 0.75rem !important;
+    position: absolute;
+    right: 60px !important;
+    padding-top: 70px !important;
+    z-index: 1500;
+  }
+} */
+
+@media (max-width:741px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectDescription {
+    width: 463px !important;
+    font-size: 13px !important;
+  }
+}
+@media (max-width:633px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData {
+    
+    padding-bottom: 0px !important;
+   
+  }
+}
+
+@media (max-width:575px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectDescription {
+    width: 304px !important;
+    font-size: 10px !important;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 55px !important;
+    font-weight: 400;
+    padding: 0;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectButton {
+    width: 143px !important;
+    height: 47px !important;
+    border: 2px solid white;
+    margin-top: 30px;
+    transition: 0.3s all;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+
+  .HomeProjects .HomeProjectsNavigation .HomeProjectNavButton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: white;
+    height: 45px !important;
+    width: 50px !important;
+    border: 1px solid white;
+    transition: 0.3s all;
+  }
+}
+
+@media (max-width:362px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData {
+    display: flex;
+    flex-direction: column !important;
+    justify-content: flex-end !important;
+    position: relative;
+    color: white;
+    padding-left: 6vw !important;
+    padding-bottom: 200px;
+    
+    height: calc(77vh - 90px) !important;
+    z-index: 1500;
+  }
+}
+@media (max-width:302px) {
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectDescription {
+    width: 272px !important;
+    font-size: 8px !important;
+  }
+  .HomeProjects .HomeProjectSlider .HomeProjectSlideData .HomeProjectTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 42px !important;
+    font-weight: 400;
+    padding: 0;
+  }
+}
+
+@media (max-width:409px) {
+  .HomeProjects .HomeProjectsTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 58px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+}
+
+@media (max-width:303px) {
+  .HomeProjects .HomeProjectsTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 42px !important;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
 }

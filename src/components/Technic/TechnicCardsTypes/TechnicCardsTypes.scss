@@ -1,0 +1,164 @@
+.container_technics {
+  max-width: 1500px;
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
+  -moz-column-gap: 20px;
+  column-gap: 20px;
+  row-gap: 4.125rem;
+  margin: 0 auto;
+  gap: 60px;
+
+  .card_technics {
+    margin-top: -90px;
+    position: relative;
+    cursor: pointer;
+
+    .cover_technics {
+      transition: 0.4s;
+      font-family: 'Alumni Sans';
+      font-weight: 500;
+      font-size: 22px;
+      color: #000000;
+
+      img {
+        max-width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+
+    .products__gallery__item_price_technics {
+      text-align: left;
+      margin-top: 10px;
+      color: #c29869;
+      font-family: 'Alumni Sans';
+      font-weight: 700;
+      font-size: 24px;
+      line-height: 1.8rem;
+
+      span {
+        font-size: 20px;
+        color: #000000;
+        font-weight: 400;
+        font-family: 'Alumni Sans';
+      }
+    }
+
+    .products__gallery__item_title_technics {
+      text-align: left;
+      margin-top: 10px;
+      font-family: 'Alumni Sans';
+      font-weight: 400;
+      font-size: 2rem;
+      color: #000000;
+    }
+
+    .content_technics {
+      padding-left: 5px;
+      font-family: 'Alumni Sans';
+      font-weight: 500;
+      font-size: 22px;
+      color: #000000;
+
+      img {
+        max-width: 100%;
+        -o-object-fit: cover;
+        object-fit: cover;
+      }
+    }
+
+    .characteristics_technics {
+      font-weight: 500;
+    }
+
+    .mass_technics {
+      font-weight: 500;
+
+      span {
+        font-weight: 400;
+      }
+    }
+
+    .volime_technics span,
+    .depth_technics span {
+      font-weight: 400;
+    }
+  }
+}
+.transparent-button2_technics {
+  min-width: 200px;
+  margin-top: 6px;
+  background: none;
+  border: 0.0625rem solid rgb(11, 11, 11); /* Ви можете налаштувати колір за потреби */
+  color: rgb(12, 12, 12); /* Колір тексту */
+  padding: 13px 1.875rem;
+  font-size: 1rem;
+}
+
+.cover_technics.card-image_technics {
+  font-family: "Open Sans";
+  max-width: 100%;
+  -o-object-fit: cover;
+  object-fit: cover;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  position: relative;
+  z-index: 1;
+  margin: 0 5px;
+  background-color: rgb(255, 255, 255);
+  transform: translateY(90px);
+}
+
+.card_technics:hover .cover_technics.card-image_technics {
+  background-color: rgb(255, 255, 255);
+  transform: translateY(0);
+}
+
+.page_gallery_technics {
+  margin-top: 100px;
+}
+
+.cover_technics.card-info_technics {
+  position: relative;
+  background-color: rgb(255, 255, 255);
+  padding-top: 30px;
+  padding: 20px 10px;
+  margin: 0 5px;
+  transform: translateY(-125px);
+}
+
+.card_technics:hover .cover_technics.card-info_technics {
+  transform: translateY(0);
+}
+
+.card_technics .cover_technics.card-image_technics .content_technics {
+  transition: 0.4s;
+  font-family: "Alumni Sans";
+  font-weight: 500;
+  font-size: 22px;
+  color: #000000;
+
+  img {
+    max-width: 100%;
+    -o-object-fit: cover;
+    object-fit: cover;
+  }
+}
+
+.card_technics:hover .cover_technics.card-image_technics .content_technics {
+  opacity: 1;
+}
+
+.products__span{}
+ 
+.title-big {
+  text-align: center;
+  line-height: 1.1;
+  margin-bottom: 140px;
+  font-weight: 500;
+  font-family: "Alumni Sans";
+  font-size: 80px;
+  letter-spacing: 6%;
+  color: #000000;
+}

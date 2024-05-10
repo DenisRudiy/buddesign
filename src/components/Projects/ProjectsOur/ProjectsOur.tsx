@@ -9,7 +9,7 @@ const ProjectsOur = () =>{
         <section className="page__projects">
         <h2 className="main-title__projects title-big">НАШІ ПРОЄКТИ</h2>
 
-        <div className="projects__content projects-content">
+        <div className="projects__content projects-content-1">
           <div className="projects-content-text projects-content-text-1">
             <h2 className="projects-content__title projects-content__title_1">
               Сучасний мінімалістичний зовнішній дизайн
@@ -23,7 +23,7 @@ const ProjectsOur = () =>{
           </div>
         </div>
 
-        <div className="projects__content projects-content">
+        <div className="projects__content projects-content-2">
           <div className="projects-content__img">
             <img src={`${process.env.PUBLIC_URL + "/projects2.png"}`} alt="decor" />
           </div>

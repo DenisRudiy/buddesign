@@ -82,3 +82,187 @@
     }
   }
 }
+@media (max-width:1315px) {
+  .AboutTechnique{
+    flex-direction: column;
+  }
+  .AboutWork{
+    flex-direction: column-reverse;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextDescription, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextDescription {
+    color: #999999;
+    width: 42vw;
+  }
+}
+
+@media (max-width:767px) {
+  .HomeServices .AboutTechnique .AboutTechniqueImg, .HomeServices .AboutTechnique .AboutWorkImg, .HomeServices .AboutWork .AboutTechniqueImg, .HomeServices .AboutWork .AboutWorkImg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 532px;
+    height: 324px;
+    background-size: cover;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg, .HomeServices .AboutTechnique .AboutWorkImg, .HomeServices .AboutWork .AboutTechniqueImg, .HomeServices .AboutWork .AboutWorkImg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 532px;
+    height: 324px;
+    background-size: cover;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextTitle, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 68px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  
+    .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextDescription, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextDescription {
+      color: #999999;
+      width: 70vw;
+    }
+    .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueButtons .AboutTechniqueButtonOne, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueButtons .AboutTechniqueButtonOne {
+      width: 98px;
+      height: 43px;
+      border: 1px solid black;
+      transition: 0.3s all;
+      border-radius: 2px;
+    }
+    .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueButtonMore, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueButtonMore {
+      width: 192px;
+      height: 49px;
+      font-size: 19px;
+      border: 1px solid black;
+      margin-top: 3px;
+      transition: 0.3s all;
+      border-radius: 2px;
+    }
+}
+
+@media (max-width:547px) {
+  .HomeServices .AboutTechnique .AboutTechniqueImg, .HomeServices .AboutTechnique .AboutWorkImg, .HomeServices .AboutWork .AboutTechniqueImg, .HomeServices .AboutWork .AboutWorkImg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 412px;
+    height: 245px;
+    background-size: cover;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg, .HomeServices .AboutTechnique .AboutWorkImg, .HomeServices .AboutWork .AboutTechniqueImg, .HomeServices .AboutWork .AboutWorkImg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 412px;
+    height: 245px;
+    background-size: cover;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText {
+    width: 184px;
+    height: 79px;
+    background-color: white;
+    font-family: "Alumni Sans", sans-serif;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgTitle {
+    text-transform: uppercase;
+    font-size: 24px;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgDescription, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgDescription, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgDescription, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgDescription {
+    text-transform: uppercase;
+    font-size: 17px;
+    color: #c5a47e;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextDescription, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextDescription {
+    color: #999999;
+    width: 87vw;
+    font-size: 12px;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextTitle, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextTitle, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 50px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextDescription, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextDescription {
+    color: #999999;
+    width: 87vw;
+    font-size: 12px;
+  }
+}
+
+@media (max-width:433px) {
+  .HomeServices .AboutTechnique .AboutTechniqueImg, .HomeServices .AboutTechnique .AboutWorkImg, .HomeServices .AboutWork .AboutTechniqueImg, .HomeServices .AboutWork .AboutWorkImg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 319px;
+    height: 180px;
+    background-size: cover;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText {
+    width: 147px;
+    height: 51px;
+    background-color: white;
+    font-family: "Alumni Sans", sans-serif;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgTitle {
+    text-transform: uppercase;
+    font-size: 19px;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgDescription, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgDescription, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgDescription, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgDescription {
+    text-transform: uppercase;
+    font-size: 15px;
+    color: #c5a47e;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextTitle, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 34px;
+    font-weight: 500;
+    letter-spacing: 3px;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueTextDescription, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueTextDescription {
+    color: #999999;
+    width: 87vw;
+    font-size: 9px;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueText .AboutTechniqueButtons .AboutTechniqueButtonOne, .HomeServices .AboutWork .AboutTechniqueText .AboutTechniqueButtons .AboutTechniqueButtonOne {
+    width: 77px;
+    height: 36px;
+    border: 1px solid black;
+    transition: 0.3s all;
+    border-radius: 2px;
+    font-size: 13px;
+  }
+}
+
+@media (max-width:319px) {
+  .HomeServices .AboutTechnique .AboutTechniqueImg, .HomeServices .AboutTechnique .AboutWorkImg, .HomeServices .AboutWork .AboutTechniqueImg, .HomeServices .AboutWork .AboutWorkImg {
+    display: flex;
+    align-items: flex-end;
+    justify-content: flex-start;
+    width: 258px;
+    height: 153px;
+    background-size: cover;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText {
+    width: 122px;
+    height: 43px;
+    background-color: white;
+    font-family: "Alumni Sans", sans-serif;
+  }
+  .HomeServices .AboutTechnique .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutTechnique .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutWork .AboutTechniqueImg .AboutTechniqueImgText .AboutTechniqueImgTitle, .HomeServices .AboutWork .AboutWorkImg .AboutTechniqueImgText .AboutTechniqueImgTitle {
+    text-transform: uppercase;
+    font-size: 15px;
+  }
+}

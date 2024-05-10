@@ -60,3 +60,37 @@
     }
   }
   
+
+  @media (max-width:846px) {
+    .products__gallery__item_price{
+      text-align: center !important;
+    }
+  .page__products__gallery{
+    margin-top: 80px !important;
+  }
+    .page__products__gallery .products__gallery__container {
+      max-width: 1500px !important;
+      display: grid;
+
+      column-gap: 50px !important;
+      row-gap: 50px !important;
+      grid-template-columns: repeat(1, 1fr) !important;
+      margin: 0 auto !important;
+    }
+  }
+  @media (max-width:654px) {
+    .page__products__gallery .products__gallery__container .products__gallery__item_img img {
+      max-width: 77% !important;
+      object-fit: cover !important;
+      background-size: cover !important;
+      margin: 0 auto !important; 
+    }
+    .page__products__gallery .products__gallery__item_title {
+      margin-top: 10px !important;
+      font-family: Alumni Sans;
+      font-weight: 400;
+      font-size: 2rem !important;
+      color: #000000;
+      text-align: center !important;
+    }
+  }

@@ -32,3 +32,11 @@
     }
   }
 }
+
+
+@media (max-width:965px) {
+  .HomeGallery{
+    position: relative !important;
+    top: calc(15vh - 412px);
+  }
+}

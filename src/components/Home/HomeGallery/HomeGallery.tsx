@@ -1,3 +1,4 @@
+import { Link } from "react-router-dom";
 import "./HomeGallery.scss";
 
 const HomeGallery = () => {
@@ -10,7 +11,10 @@ const HomeGallery = () => {
         <img src={process.env.PUBLIC_URL + "/gal3.jpg"} alt="" />
         <img src={process.env.PUBLIC_URL + "/gal4.jpg"} alt="" />
       </div>
-      <button className="HomeGalleryButton">Дивитися більше</button>
+    <Link to='gellery'>
+    <button className="HomeGalleryButton">Дивитися більше</button>
+    </Link>
+      
     </div>
   );
 };

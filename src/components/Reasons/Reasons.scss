@@ -23,3 +23,44 @@
     }
   }
 }
+@media (max-width:1025px) {
+  .Reasons .ReasonsCards {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 87px !important;
+    margin-bottom: 99px !important;
+  }
+}
+
+@media (max-width:823px) {
+  .Reasons .ReasonsTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 66px !important;
+    font-weight: 500;
+    letter-spacing: 2px;
+    padding-bottom: 86px;
+  }
+
+}
+
+@media (max-width:634px) {
+  .Reasons .ReasonsTitle {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 56px !important;
+    font-weight: 500;
+    letter-spacing: 1px;
+    padding-bottom: 66px;
+    text-align: center;
+  }
+}
+@media (max-width:831px) {
+  .ReasonsCard{
+    svg{
+      width: 65px;
+    }
+  }
+}

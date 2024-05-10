@@ -2,7 +2,6 @@
   "name": "buddesign",
   "version": "0.1.0",
   "private": true,
-  "homepage": "https://DenisRudiy.github.io/buddesign",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -12,19 +11,21 @@
     "@types/react": "^18.2.79",
     "@types/react-dom": "^18.2.25",
     "gh-pages": "^6.1.1",
+    "json-server": "^1.0.0-alpha.23",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.23.0",
     "react-scripts": "5.0.1",
+    "react-slick": "^0.30.2",
     "sass": "^1.75.0",
     "swiper": "^11.1.1",
     "typescript": "^4.9.5",
     "web-vitals": "^2.1.4"
   },
   "scripts": {
-    "predeploy": "npm run build",
-    "deploy": "gh-pages -d build ",
-    "start": "react-scripts start",
+    "start:server": "json-server --watch data/db.json --port 7000",
+    "start:client": "react-scripts start",
+    "start": "npm-run-all -p start:server start:client",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"
@@ -48,6 +49,8 @@
     ]
   },
   "devDependencies": {
+    "@types/react-slick": "^0.23.13",
+    "npm-run-all": "^4.1.5",
     "tailwindcss": "^3.4.3"
   }
 }

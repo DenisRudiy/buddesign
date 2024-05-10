@@ -40,10 +40,9 @@ const HomeServices = () => {
           </div>
           <button className="AboutTechniqueButtonMore">Дивитися більше</button>
         </div>
-        <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/work1.png"})` }} className="AboutWorkImg">
-          {" "}
+        <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/work2.png"})` }} className="AboutTechniqueImg">
           <div className="AboutTechniqueImgText">
-            <h1 className="AboutTechniqueImgTitle">Lorem Work</h1>
+            <h1 className="AboutTechniqueImgTitle">Lorem Technique</h1>
             <h4 className="AboutTechniqueImgDescription">Arch, intrerier</h4>
           </div>
         </div>

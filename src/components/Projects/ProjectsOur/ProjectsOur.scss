@@ -22,7 +22,7 @@
   
   .projects-content__img img {
     width: 100%;
-    height: auto;
+    height: 100%;
   }
   
   .projects-content__title {
@@ -43,7 +43,99 @@
     font-size: 1.25rem;
     line-height: 1.7025rem;
   }
+  @media (max-width:1028px) {
+    .projects-content-1{
+      flex-direction: column;
+    }
+    .projects-content-2{
+      flex-direction: column-reverse;
+    }
+    .projects-content-text, .projects-content__img {
+      flex: 1 1;
+      padding: 0;
+      box-sizing: border-box;
+      margin-bottom: -14px;
+    }
+    .projects-content-text, .projects-content__img {
+      flex: 1 1;
+      padding: 0;
+      box-sizing: border-box;
+      margin-bottom: 23px;
+    }
+  }
+
+@media (max-width:579px) {
+  .projects-content__text {
+    margin-left: 3rem !important;
+    max-width: 28.125rem;
+    font-weight: 400;
+    font-size: 19px !important;
+    line-height: 1.7025rem;
+  }
+  element {
+  }
+  .projects-content__title {
+    margin-left: 3rem !important;
   
+    max-width: 550px;
+  
+    line-height: 60px !important;
+  
+    margin-top: 5rem !important;
+  
+    font-size: 53px !important;
+  
+    font-family: "Alumni Sans";
+  
+    font-size: 500;
+  
+    color: #ffffff;
+  
+  }
+}
+
+
+@media (max-width:472px) {
+  .projects-content__title {
+    margin-left: -2 !important;
+    max-width: 550px;
+    line-height: 35px !important;
+    margin-top: 2rem !important;
+    font-size: 53px !important;
+    font-family: "Alumni Sans";
+    font-size: 500;
+    color: #ffffff;
+    font-size: 32px !important;
+  }
+  .projects-content__text {
+    margin-left: 3rem !important;
+    max-width: 28.125rem;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 24px;
+  }
+}
+@media (max-width:256px) {
+  .projects-content__text {
+    margin-left: 1rem !important;
+    max-width: 28.125rem;
+    font-weight: 400;
+    font-size: 16px !important;
+    line-height: 22px;
+  }
+  .projects-content__title {
+    margin-left: -2 !important;
+    max-width: 553px;
+    line-height: 35px !important;
+    margin-top: 1rem !important;
+    font-family: "Alumni Sans";
+    font-size: 500;
+    color: #ffffff;
+    font-size: 28px !important;
+    margin-left: 13px !important;
+  }
+}
+ /*  
   @media (max-width: 1150px) {
     .projects__content {
       background-color: #2b2b2b;
@@ -214,4 +306,4 @@
   }
   .projects-content__text_1{
     margin-right: 7%;
-  }
+  } */

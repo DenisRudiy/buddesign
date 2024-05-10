@@ -139,4 +139,17 @@
       max-width: 100%;
     }
   }
-  
+  .technics{
+    &__toptitle{
+      font-family: Alumni Sans;
+font-size: 80px;
+font-weight: 500;
+line-height: 96px;
+letter-spacing: 0.06em;
+text-align: center ;
+margin: 80px 30px;
+    }
+    &__title{
+        min-width: 800px;
+    }
+  }

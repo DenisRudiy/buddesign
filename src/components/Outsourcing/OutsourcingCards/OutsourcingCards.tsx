@@ -1,62 +1,33 @@
 import React from "react";
 
 import '../OutsourcingCards/OutsourcingCards.scss'
-const OutsourcingCards = () => {
+import { TypeOutsourcing } from "../../../services/dataService";
+
+interface OutsourcingCardsProps {
+  outsourcing: TypeOutsourcing[];
+} 
+const OutsourcingCards: React.FC<OutsourcingCardsProps> = ({ outsourcing }) => {
   return (
     <>
       <section className="page__products__gallery">
         <div className="products__gallery__container">
-          <div className="products__gallery__item">
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img" />
-            </div>
+        {
+              outsourcing.map((item) =>{
+                return(
+                  <>
+                  <div className="products__gallery__item" key={item.id}>
+                    <div className="products__gallery__item_img">
+                      <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img"  />
+                    </div>
              
-            <h2 className="products__gallery__item_title"> вантажні роботи</h2>
-          </div>
-          <div className="products__gallery__item">
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img" />
-            </div>
-             
-            <h2 className="products__gallery__item_title"> вантажні роботи</h2>
-          </div>
-          <div className="products__gallery__item">
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img" />
-            </div>
-             
-            <h2 className="products__gallery__item_title"> вантажні роботи</h2>
-          </div>
-          <div className="products__gallery__item">
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img" />
-            </div>
-             
-            <h2 className="products__gallery__item_title"> вантажні роботи</h2>
-          </div>
-          <div className="products__gallery__item">
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img" />
-            </div>
-             
-            <h2 className="products__gallery__item_title"> вантажні роботи</h2>
-          </div>
-          <div className="products__gallery__item">
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img" />
-            </div>
-             
-            <h2 className="products__gallery__item_title"> вантажні роботи</h2>
-          </div>
-          <div className="products__gallery__item">
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/outsourcing2.png`} alt="gallery_img" />
-            </div>
-             
-            <h2 className="products__gallery__item_title"> вантажні роботи</h2>
-          </div>
+                    <h2 className="products__gallery__item_title"> {item.title}</h2>
+                  </div>
+                  </>
+                )
+              })
+            }
+          
         </div>
-        {/* Repeat the structure for other items */}
       </section>
     </>
   );

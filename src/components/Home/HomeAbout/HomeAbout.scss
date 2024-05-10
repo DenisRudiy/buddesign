@@ -78,3 +78,223 @@
     }
   }
 }
+@media (max-width:1368px) {
+  .MainAbout {
+   
+    flex-direction: column;
+  }
+  .Photo{
+    img{
+      height: 634px !important;
+      width: 600px !important;
+  object-fit: cover;
+    }
+    margin-bottom: 60px !important;
+  }
+}
+@media (max-width:632px) {
+  .Photo{
+    img{
+      height: 480px !important;
+  width: 491px !important;
+  object-fit: cover;
+    }
+  }
+  .MainAbout .MainAboutContainer {
+    max-width: 632 !important;
+    display: flex;
+    flex-direction: column;
+
+      align-items: center !important;
+  }
+  .MainAbout .MainAboutContainer .AboutCompany {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 64px !important;
+    font-weight: 500;
+    letter-spacing: 1px !important; 
+    line-height: 65px !important;
+  }
+  .MainAbout .MainAboutContainer .AboutCompanyDescription {
+    width: 449px !important;
+    color: #999999;
+    font-size: 15px !important;
+    text-align: center;
+  }
+}
+@media (max-width:495px) {
+  .Photo{
+    img{
+      height: 480px !important;
+      width: 406px !important;
+      object-fit: cover;
+    }
+    margin-bottom: 60px !important;
+  }
+}
+@media (max-width:420px) {
+  .Photo{
+    img{
+      height: 383px !important;
+  width: 337px !important;
+  object-fit: cover;
+    }
+
+    margin-bottom: 60px !important;
+  }
+  
+}
+
+@media (max-width:495px) {
+  .Photo{
+    img{
+      height: 480px !important;
+      width: 406px !important;
+      object-fit: cover;
+    }
+    margin-bottom: 60px !important;
+  }
+}
+@media (max-width:420px) {
+  .Photo{
+    img{
+      height: 383px !important;
+  width: 337px !important;
+  object-fit: cover;
+    }
+
+    margin-bottom: 60px !important;
+  }
+  
+}
+/* @media (max-width:1605px) {
+  .about-us-decor img {
+    width: 100%;
+    height: auto;
+    opacity: 1 !important;
+    transition: all 0.5s ease;
+  }
+}
+@media (max-width:2054px){
+  .about-us-decor_text {
+    padding-left: 10px;
+    padding-top: 0%;
+    font-family: "Open Sans";
+    font-size: 15px;
+    font-weight: 400;
+    line-height: 19.79px;
+  }
+}
+@media (max-width:1649px){
+
+  .about-us-decor_text {
+    padding-left: 10px;
+    padding-top: 0%;
+    font-family: "Open Sans";
+    font-size: 14px;
+    font-weight: 400;
+    line-height: 16.79px;
+  }
+}
+@media (max-width:1562px){
+  .about-us-decor_subtitle {
+    padding-left: 10px;
+    padding-top: 0%;
+    font-family: "Alumni Sans";
+    font-size: 33px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: rgb(255, 255, 255);
+  }
+}
+@media (max-width:1355px){
+  .about-us-decor_number {
+    -webkit-text-fill-color: transparent;
+    -webkit-text-stroke: 2px var(--yellow);
+    padding-top: 0px;
+    padding-left: 10px;
+    font-size: 66px;
+    font-weight: 800;
+  }
+}
+
+@media (max-width:1448px){
+  .about-us-decor_text {
+    padding-left: 10px;
+    padding-top: 0%;
+    font-family: "Open Sans";
+    font-size: 11px;
+    font-weight: 400;
+    line-height: 16.79px;
+  }
+  .about-us-decor_subtitle {
+    padding-left: 10px;
+    padding-top: 0%;
+    font-family: "Alumni Sans";
+    font-size: 29px;
+    font-weight: 500;
+    letter-spacing: -0.01em;
+    color: rgb(255, 255, 255);
+  }
+}
+
+@media (max-width:1286px){
+  
+} */
+
+
+
+    
+@media (max-width:632px) {
+  .Photo{
+    img{
+      height: 480px !important;
+  width: 491px !important;
+  object-fit: cover;
+    }
+  }
+  .MainAbout .MainAboutContainer {
+    max-width: 632 !important;
+    display: flex;
+    flex-direction: column;
+
+      align-items: center !important;
+  }
+  .MainAbout .MainAboutContainer .AboutCompany {
+    text-transform: uppercase;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 64px !important;
+    font-weight: 500;
+    letter-spacing: 1px !important; 
+    line-height: 65px !important;
+  }
+  .MainAbout .MainAboutContainer .AboutCompanyDescription {
+    width: 449px !important;
+    color: #999999;
+    font-size: 15px !important;
+    text-align: center;
+  }
+}
+@media (max-width:495px) {
+  .Photo{
+    img{
+      height: 480px !important;
+      width: 406px !important;
+      object-fit: cover;
+    }
+    margin-bottom: 60px !important;
+  }
+}
+@media (max-width:420px) {
+  .Photo{
+    img{
+      height: 383px !important;
+  width: 337px !important;
+  object-fit: cover;
+    }
+
+    margin-bottom: 60px !important;
+  }
+  
+}
+

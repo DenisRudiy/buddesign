@@ -4,18 +4,15 @@ import '../RecyclablesAbout/RecyclablesAbout.scss'
 const RecyclablesAbout = () =>{
     return(
         <>
-        <h4 className="technics__Toptitle">Наша техніка</h4>
+        <h4 className="technics__toptitle">Вторсировина</h4>
             <section className="page__technics">
                 <div className="technics__container">
                     <div className="technics__technics">
                         <div className="technics__content">
                             <h4 className="technics__subtitle">INFO</h4>
-                            <h2 className="technics__title">СПЕЦТЕХНІКА</h2>
+                            <h2 className="technics__title">Вторсировина</h2>
                             <p className="technics__text">
-                                При виконанні багатьох робіт виникає необхідність у
-                                використанні спецтехніки. Наш парк має велику кількість
-                                екскаваторів та самоскидів, що дасть вам можливість вибрати
-                                оптимальний варіант для виконання конкретних завдань!
+                            Наша компанія спеціалізується на постачанні різноманітної вторсировини для виробництва та переробки. Наші матеріали відповідають всім стандартам якості та екологічним вимогам, що робить нас надійним постачальником для вашого бізнесу.
                             </p>
                             <button className="technics__button">Про нас</button>
                         </div>

@@ -1,6 +1,7 @@
 import EmailIcon from "../../icons/EmailIcon";
 import LocationIcon from "../../icons/LocationIcon";
 import PhoneIcon from "../../icons/PhoneIcon";
+import PhoneIconFooter from "../../icons/PhoneIconFooter";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -23,7 +24,7 @@ const Footer = () => {
           </div>
         </div>
         <div className="FooterLeftSectionData">
-          <PhoneIcon size={30}></PhoneIcon>
+          <PhoneIconFooter size={30}></PhoneIconFooter>
           <div className="FooterLeftSectionText">
             <h2 className="FooterLeftSectionTextTitle">Зателефонуйте нам</h2>
             <p className="FooterLeftSectionTextDescription">+380 99 999 99 99</p>

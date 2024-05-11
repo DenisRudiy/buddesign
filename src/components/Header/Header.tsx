@@ -20,8 +20,8 @@ const Header = () => {
   return (
     <>
       <div className="Header__container">
-        <div className={`Header ${isBurgerOpen ? 'active' : ''}`}>
-          <Link to="/">
+        <div className={`Header ${isBurgerOpen ? "active" : ""}`}>
+          {/* <Link to="/">
             <div className="HeaderLogo">
               <img src={process.env.PUBLIC_URL + "/BuddesignLogo.png"} alt="" />
               <h1 className="HeaderTitle">Buddesign</h1>
@@ -44,7 +44,9 @@ const Header = () => {
                 </div>
               </div>
             </Link>
-            <Link className="hideOption" to="/projects">Проекти</Link>
+            <Link className="hideOption" to="/projects">
+              Проекти
+            </Link>
             <Link to="#" onClick={scrollToBottom}>
               Контакты
             </Link>
@@ -52,13 +54,13 @@ const Header = () => {
               <Globe />
               <span>UA</span>
             </button>
-          </div>
+          </div> */}
         </div>
-        <div className={`burger ${isBurgerOpen ? 'active' : ''}`} onClick={handleBurgerClick}>
+        {/* <div className={`burger ${isBurgerOpen ? "active" : ""}`} onClick={handleBurgerClick}>
           <div className="bar1"></div>
           <div className="bar2"></div>
           <div className="bar3"></div>
-        </div>
+        </div> */}
       </div>
     </>
   );

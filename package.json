@@ -2,6 +2,7 @@
   "name": "buddesign",
   "version": "0.1.0",
   "private": true,
+  "homepage": "https://DenisRudiy.github.io/buddesign",
   "dependencies": {
     "@testing-library/jest-dom": "^5.17.0",
     "@testing-library/react": "^13.4.0",
@@ -26,6 +27,8 @@
     "start:server": "json-server --watch data/db.json --port 7000",
     "start:client": "react-scripts start",
     "start": "npm-run-all -p start:server start:client",
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build ",
     "build": "react-scripts build",
     "test": "react-scripts test",
     "eject": "react-scripts eject"

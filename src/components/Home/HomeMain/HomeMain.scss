@@ -56,3 +56,35 @@
     }
   }
 }
+
+@media (max-width: 1240px) {
+  .HomeMain {
+    .HomeMainData {
+      .HomeMainTitle {
+        font-size: 65px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .HomeMain {
+    .HomeMainData {
+      padding-left: 10vw !important;
+      padding-bottom: 200px !important;
+      .HomeMainTitle {
+        font-size: 55px !important;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .HomeMain {
+    .HomeMainData {
+      padding-left: 10vw !important;
+      padding-bottom: 200px !important;
+      .HomeMainTitle {
+        font-size: 45px !important;
+      }
+    }
+  }
+}

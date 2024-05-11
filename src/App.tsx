@@ -1,11 +1,11 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import React, {useEffect, useState} from "react";
+import React, { useEffect, useState } from "react";
 import Main from "./components/Home";
 import Technique from "./components/Technic";
 import "./styles/App.scss";
 import Phone from "./components/Phone";
-import Work from './components/Work'
+import Work from "./components/Work";
 import Products from "./components/Products";
 import Outsourcing from "./components/Outsourcing";
 import Houses from "./components/Houses";
@@ -19,14 +19,14 @@ import Gellery from "./components/Gellery";
 import Reasons from "./components/Reasons/Reasons";
 function App() {
   const [technics, setTechnics] = useState<TypeTechnicTypes[]>([]);
-  
+
   useEffect(() => {
     const loadTechnics = async () => {
       try {
         const data = await fetchTechnicTypes();
         setTechnics(data);
       } catch (error) {
-        console.error('Помилка при завантаженні продуктів:', error);
+        console.error("Помилка при завантаженні продуктів:", error);
       }
     };
 
@@ -36,7 +36,7 @@ function App() {
     <div className="App">
       <Router>
         <Header></Header>
-        <Phone></Phone> 
+        <Phone></Phone>
         <Routes>
           <Route path="/" Component={Main}></Route>
           <Route path="/technique" Component={Technique}></Route>
@@ -47,11 +47,11 @@ function App() {
           <Route path="/recyclables" Component={Recyclables}></Route>
           <Route path="/about" Component={AboutUs}></Route>
           <Route path="/projects" Component={Projects}></Route>
-          <Route path="/technique/types" Component={(props) => <TechnicCardsTypes {...props}  technics={technics}/>} />
+          <Route path="/technique/types" Component={(props) => <TechnicCardsTypes {...props} technics={technics} />} />
           <Route path="/gallery" Component={Gellery}></Route>
         </Routes>
-        <Reasons/>
-        <Footer/>
+        <Reasons />
+        <Footer />
       </Router>
     </div>
   );

@@ -1,8 +1,7 @@
 import React from "react";
 import Footer from "./Footer/Footer";
 
-
-import './Technic/TechnicMain/TechnicMain.scss'
+import "./Technic/TechnicMain/TechnicMain.scss";
 
 import Reasons from "./Reasons/Reasons";
 import AboutUsMain from "./AboutUs/AboutUsMain/AboutUsMain";
@@ -14,18 +13,17 @@ import Vacancii from "./AboutUs/Vacancii/Vacancii";
 
 const AboutUs = () => {
   return (
-    <> 
-    <div className="Main">
-<AboutUsMain/>
-<Info/>
-<AboutUsYears/>
-<Adventages/>
-<OurProjects/>
-<Vacancii/>
- 
-    </div>
+    <>
+      <div className="Main">
+        <AboutUsMain />
+        {/* <Info/> */}
+        <AboutUsYears />
+        <Adventages />
+        <OurProjects />
+        <Vacancii />
+      </div>
     </>
-  )
+  );
 };
 
 export default AboutUs;

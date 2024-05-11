@@ -9,13 +9,14 @@
     justify-content: center;
     align-items: center;
     border-radius: 50%;
-    border: 3px solid;
+    // border: 3px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     width: 60px;
     height: 60px;
     transition: 0.3s all;
     position: fixed;
     z-index: 2999;
-    border-color: white;
+    background-color: white;
 
     &:hover {
       scale: 1.05;
@@ -28,7 +29,6 @@
 }
 
 .PhoneColor {
-  fill: white;
   transition: 0.3s all;
 }
 
@@ -38,7 +38,7 @@
   left: 0;
   width: 100%;
   height: 100%;
-  background-color: #2B2B2B80;
+  background-color: #2b2b2b80;
   display: flex;
   justify-content: center;
   align-items: center;
@@ -85,7 +85,7 @@
     border-left: none;
     width: 339px;
     height: 65px;
-    background-color: #EDEDEDCC;
+    background-color: #edededcc;
     border-bottom: 1px solid rgba(237, 237, 237, 0.2);
     outline: none;
     margin-top: 30px;
@@ -97,7 +97,6 @@
     background-color: #007bff;
     color: #fff;
     cursor: pointer;
-
 
     &:not(:last-child) {
       margin-right: 10px;
@@ -124,11 +123,50 @@
     height: 52px;
     border-radius: 0 !important;
     color: #000 !important;
-    text-transform: uppercase !important; 
+    text-transform: uppercase !important;
   }
 }
 
 .technics__toptitle {
   color: #000;
   text-transform: uppercase;
+}
+
+@media only screen and (min-width: 320px) and (max-width: 1980px) {
+  .Phone {
+    right: 150px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1620px) {
+  .Phone {
+    right: 100px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1340px) {
+  .Phone {
+    right: 80px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1240px) {
+  .Phone {
+    right: 120px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 850px) {
+  .Phone {
+    right: 80px;
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .Phone {
+    bottom: 100px;
+    right: 60px;
+    .PhoneButton {
+      width: 50px;
+      height: 50px;
+      svg {
+        width: 30px;
+      }
+    }
+  }
 }

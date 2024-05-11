@@ -1,187 +1,234 @@
-
-
-
-.container_technics {
-    max-width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(450px, 1fr));
-    -moz-column-gap: 20px;
-    column-gap: 20px;
-    row-gap: 4.125rem;
-    margin: 0 auto;
-    gap: 60px;
-  
-    .card_technics {
-      margin-top: -90px;
-      position: relative;
-      cursor: pointer;
-  
-      .cover_technics {
-        transition: 0.4s;
-        font-family: 'Alumni Sans';
+.TechnicAbout {
+  @apply flex flex-col justify-center items-center;
+  .TechnicTitle {
+    @apply uppercase;
+    margin-bottom: 70px;
+    margin-top: 70px;
+    font-family: Alumni Sans;
+    font-size: 80px;
+    font-weight: 500;
+    line-height: 96px;
+    letter-spacing: 0.06em;
+    text-align: center;
+  }
+  .TechnicContainer {
+    @apply flex justify-center items-center;
+    gap: 100px;
+    .TechnicContent {
+      .TechnicContentSmallTitle {
+        @apply uppercase;
+        font-weight: 600;
+        font-size: 1.25rem;
+        letter-spacing: 7px;
+        color: #c5a47e;
+        font-family: Alumni Sans;
+        margin-top: 1.875rem;
+      }
+      .TechnicContentTitle {
+        @apply uppercase;
         font-weight: 500;
-        font-size: 22px;
+        font-family: Alumni Sans;
+        font-size: 80px;
+        letter-spacing: 6%;
         color: #000000;
-  
-        img {
-          max-width: 100%;
-          -o-object-fit: cover;
-          object-fit: cover;
-        }
+        margin-bottom: 2.5rem;
       }
-  
-      .products__gallery__item_price_technics {
-        text-align: left;
-        margin-top: 10px;
-        color: #c29869;
-        font-family: 'Alumni Sans';
-        font-weight: 700;
-        font-size: 24px;
-        line-height: 1.8rem;
-  
-        span {
-          font-size: 20px;
-          color: #000000;
-          font-weight: 400;
-          font-family: 'Alumni Sans';
-        }
-      }
-  
-      .products__gallery__item_title_technics {
-        text-align: left;
-        margin-top: 10px;
-        font-family: 'Alumni Sans';
+      .TechnicText {
+        margin-top: 40px;
+        margin-top: 0rem;
+        margin-bottom: 0rem;
         font-weight: 400;
-        font-size: 2rem;
-        color: #000000;
+        font-size: 1rem;
+        color: #999999;
+        line-height: 19px;
+        max-width: 613px;
       }
-  
-      .content_technics {
-        padding-left: 5px;
-        font-family: 'Alumni Sans';
-        font-weight: 500;
-        font-size: 22px;
-        color: #000000;
-  
+      .TechnicButton {
+        margin-top: 2.5rem;
+        background: white;
+        border: 0.0625rem solid black;
+        color: black;
+        padding: 0.9375rem 2.5rem;
+        margin-right: 1.25rem;
+        font-size: 1rem;
+        transition: 0.3s all;
+
+        &:hover {
+          scale: 1.05;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1740px) {
+  .TechnicAbout {
+    .TechnicTitle {
+      font-size: 70px;
+    }
+    .TechnicContainer {
+      gap: 80px;
+      .TechnicContent {
+        .TechnicContentTitle {
+          font-size: 70px;
+        }
+        .TechnicText {
+          width: 450px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1370px) {
+  .TechnicAbout {
+    .TechnicTitle {
+      font-size: 60px;
+    }
+    .TechnicContainer {
+      gap: 80px;
+      .TechnicContent {
+        .TechnicContentTitle {
+          font-size: 60px;
+        }
+      }
+      .TechnicDecoration {
         img {
-          max-width: 100%;
-          -o-object-fit: cover;
-          object-fit: cover;
+          width: 500px;
+          height: auto;
         }
       }
-  
-      .characteristics_technics {
-        font-weight: 500;
-      }
-  
-      .mass_technics {
-        font-weight: 500;
-  
-        span {
-          font-weight: 400;
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .TechnicAbout {
+    .TechnicTitle {
+      font-size: 60px;
+    }
+    .TechnicContainer {
+      gap: 80px;
+      .TechnicContent {
+        .TechnicContentTitle {
+          font-size: 60px;
+        }
+        .TechnicText {
+          width: 400px;
+          font-size: 15px;
         }
       }
-  
-      .volime_technics span,
-      .depth_technics span {
-        font-weight: 400;
+      .TechnicDecoration {
+        img {
+          width: 460px;
+          height: auto;
+        }
       }
     }
   }
-  
-  .technics{
-    &__toptitle{
-      font-family: Alumni Sans;
-font-size: 80px;
-font-weight: 500;
-line-height: 96px;
-letter-spacing: 0.06em;
-text-align: center ;
-margin: 80px 30px;
+}
+@media (max-width: 1100px) {
+  .TechnicAbout {
+    .TechnicTitle {
+      font-size: 65px;
     }
-    &__title{
-        min-width: 800px;
-    }
-  }
-
-  @media (max-width:1522px) {
-    .technics__technics{
-      flex-direction: column !important;
-
-    }
-    .technics__content {
-      flex: 0 0 0%;
-      padding-right: 0 !important;
-      margin-right: 0px;
-      text-align: center;
-    }
-    .technics__text {
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-      font-weight: 400;
-      font-size: 1rem;
-      color: #999999;
-      line-height: 19px;
-      max-width: 819px !important;
-      text-align: center;
+    .TechnicContainer {
+      @apply flex justify-center items-center flex-col-reverse;
+      gap: 20px;
+      .TechnicContent {
+        @apply flex flex-col justify-center items-center;
+        .TechnicContentTitle {
+          font-size: 65px;
+        }
+        .TechnicText {
+          text-align: center;
+          width: 600px;
+          font-size: 16px;
+        }
+      }
+      .TechnicDecoration {
+        img {
+          width: 620px;
+          height: auto;
+        }
+      }
     }
   }
-  @media (max-width: 914px) {
-    .technics__content {
-      flex: 0 0 0%;
-      padding-right: 0;
-      margin-right: 0px !important;
-      text-align: center;
+}
+@media (max-width: 900px) {
+  .TechnicAbout {
+    .TechnicTitle {
+      font-size: 65px;
     }
-    .technics__text {
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-      font-weight: 400;
-      font-size: 1rem;
-      color: #999999;
-      line-height: 19px;
-      max-width: 801px;
-      text-align: center;
-    }
-  }
- 
-
-  @media (max-width:902px) {
-    .technics__text {
-      margin-top: 40px;
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-      font-weight: 400;
-      font-size: 1rem;
-      color: #999999;
-      line-height: 19px;
-      max-width: 421px !important;
-      margin-left: 27%;
+    .TechnicContainer {
+      gap: 20px;
+      .TechnicContent {
+        .TechnicContentTitle {
+          font-size: 65px;
+        }
+        .TechnicText {
+          text-align: center;
+          width: 550px;
+          font-size: 16px;
+        }
+      }
+      .TechnicDecoration {
+        img {
+          width: 600px;
+          height: auto;
+        }
+      }
     }
   }
-  @media (max-width:578px) {
-    .technics__decoration img {
-      max-width: 59% !important;
-      margin: 31px auto;
+}
+@media (max-width: 700px) {
+  .TechnicAbout {
+    .TechnicTitle {
+      font-size: 55px;
     }
-    .technics__title{
-      font-size: 60px !important;
-      max-width: 500px !important;
+    .TechnicContainer {
+      gap: 20px;
+      .TechnicContent {
+        .TechnicContentTitle {
+          font-size: 55px;
+        }
+        .TechnicText {
+          text-align: center;
+          width: 450px;
+          font-size: 16px;
+        }
+      }
+      .TechnicDecoration {
+        img {
+          width: 500px;
+          height: auto;
+        }
+      }
     }
   }
-
-  @media (max-width:494px) {
-    .technics__text {
-      margin-top: 40px;
-      margin-top: 0rem;
-      margin-bottom: 0rem;
-      font-weight: 400;
-      font-size: 14px;
-      color: #999999;
-      line-height: 21px;
-      max-width: 364px !important;
+}
+@media (max-width: 600px) {
+  .TechnicAbout {
+    .TechnicTitle {
+      font-size: 45px;
     }
-    .technics__title{
-      font-size: 50px !important;
+    .TechnicContainer {
+      gap: 20px;
+      .TechnicContent {
+        .TechnicContentTitle {
+          font-size: 45px;
+          margin-bottom: 15px;
+        }
+        .TechnicText {
+          text-align: center;
+          width: 360px;
+          font-size: 15px;
+        }
+      }
+      .TechnicDecoration {
+        img {
+          width: 360px;
+          height: auto;
+        }
+      }
     }
   }
+}

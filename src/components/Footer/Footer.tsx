@@ -1,6 +1,5 @@
 import EmailIcon from "../../icons/EmailIcon";
 import LocationIcon from "../../icons/LocationIcon";
-import PhoneIcon from "../../icons/PhoneIcon";
 import PhoneIconFooter from "../../icons/PhoneIconFooter";
 import "./Footer.scss";
 

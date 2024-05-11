@@ -1,24 +1,22 @@
-import React, { useState, useEffect } from "react";
-import { Route, Routes,  } from "react-router-dom";
-import Footer from "./Footer/Footer";
+import { useState, useEffect } from "react";
+import { Route, Routes } from "react-router-dom";
 import TechnicMain from "./Technic/TechnicMain/TechnicMain";
-import './Technic/TechnicMain/TechnicMain.scss';
+import "./Technic/TechnicMain/TechnicMain.scss";
 import TechnicCardsTypes from "./Technic/TechnicCardsTypes/TechnicCardsTypes";
-import Reasons from "./Reasons/Reasons";
 import { TypeTechnicTypes, fetchTechnicTypes } from "../services/dataService";
 import TechnicCards from "./Technic/TechnicCards/TechnicCards";
 import TechnicAbout from "./Technic/TechnicAbout/TechnicAbout";
 
 const Technique = () => {
   const [technics, setTechnics] = useState<TypeTechnicTypes[]>([]);
-  
+
   useEffect(() => {
     const loadTechnics = async () => {
       try {
         const data = await fetchTechnicTypes();
         setTechnics(data);
       } catch (error) {
-        console.error('Помилка при завантаженні продуктів:', error);
+        console.error("Помилка при завантаженні продуктів:", error);
       }
     };
 
@@ -29,20 +27,12 @@ const Technique = () => {
     <>
       <div className="Main">
         <TechnicMain />
-        <TechnicAbout/>
+        <TechnicAbout />
         <Routes>
-       
-<Route path="/"  Component={(props) => <TechnicCards {...props}  technics={technics}/>} />
-        
-        <Route 
-          path="/technique/types" 
-          Component={(props) => <TechnicCardsTypes {...props}  technics={technics}/>} 
-        />
+          <Route path="/" Component={(props) => <TechnicCards {...props} technics={technics} />} />
+          <Route path="/technique/types" Component={(props) => <TechnicCardsTypes {...props} technics={technics} />} />
         </Routes>
-       
-     
       </div>
-    
     </>
   );
 };

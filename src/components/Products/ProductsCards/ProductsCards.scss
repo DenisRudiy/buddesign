@@ -1,62 +1,157 @@
-.page__products__gallery {
-   
-    max-width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    -moz-column-gap: 50px;
-    column-gap: 50px;
-    row-gap: 50px;
-    margin: 0 auto;
-  
-    .products__gallery__container {
-        margin-top: 300px;
-      max-width: 1500px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-      -moz-column-gap: 50px;
-      column-gap: 50px;
-      row-gap: 50px;
-  
-      @media (max-width: 56.25rem) {
-        max-width: 1500px;
-        display: grid;
-        grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-        -moz-column-gap: 50px;
-        column-gap: 50px;
-        row-gap: 50px;
+.ProductsCards {
+  @apply flex justify-center items-center flex-col;
+  padding-top: 150px;
+  .ProductsCardsBody {
+    @apply grid grid-cols-2;
+    gap: 50px;
+    .ProductsImg {
+      position: relative;
+      width: 650px;
+      height: 400px;
+
+      .ProductsImgBackground {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        filter: brightness(60%);
       }
-  
-      .products__gallery__item {
-        &_img img {
-          max-width: 100%;
-          -o-object-fit: cover;
-          object-fit: cover;
+      .ProductsImgText {
+        position: absolute;
+        width: 200px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+
+        .ProductsImgTitle {
+          font-family: "Alumni Sans", sans-serif;
+          text-transform: uppercase;
+          font-size: 30px;
+          margin: 0;
         }
-  
-        &_price {
-          margin-top: 1.25rem;
+
+        .ProductsImgPrice {
+          font-family: "Alumni Sans", sans-serif;
+          font-size: 20px;
+          margin: 0;
+          text-transform: uppercase;
+          font-size: 20px;
           color: #c5a47e;
-          font-family: Alumni Sans;
-          font-weight: 700;
-          font-size: 24px;
-          line-height: 1.8rem;
-  
-          span {
-            font-size: 20px;
-            color: #000000;
-            font-weight: 600;
-            font-family: Alumni Sans;
+        }
+      }
+    }
+  }
+}
+
+@media (max-width: 1740px) {
+  .ProductsCards {
+    .ProductsCardsTitle {
+      font-size: 70px;
+    }
+    .ProductsCardsBody {
+      .ProductsImg {
+        width: 550px;
+        height: 360px;
+      }
+    }
+  }
+}
+@media (max-width: 1370px) {
+  .ProductsCards {
+    .ProductsCardsTitle {
+      font-size: 60px;
+    }
+    .ProductsCardsBody {
+      .ProductsImg {
+        width: 500px;
+        height: 330px;
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .ProductsCards {
+    padding-bottom: 40px;
+    .ProductsCardsTitle {
+      font-size: 60px;
+    }
+    .ProductsCardsBody {
+      .ProductsImg {
+        width: 450px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .ProductsCards {
+    padding-bottom: 40px;
+    .ProductsCardsTitle {
+      font-size: 65px;
+    }
+    .ProductsCardsBody {
+      @apply grid grid-cols-1;
+      .ProductsImg {
+        width: 650px;
+        height: 400px;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .ProductsCards {
+    padding-bottom: 40px;
+    .ProductsCardsTitle {
+      font-size: 65px;
+    }
+    .ProductsCardsBody {
+      @apply grid grid-cols-1;
+      .ProductsImg {
+        width: 600px;
+        height: 360px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .ProductsCards {
+    padding-bottom: 80px;
+    .ProductsCardsTitle {
+      font-size: 55px;
+    }
+    .ProductsCardsBody {
+      @apply grid grid-cols-1;
+      .ProductsImg {
+        width: 500px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .ProductsCards {
+    padding-bottom: 80px;
+    .ProductsCardsTitle {
+      font-size: 45px;
+    }
+    .ProductsCardsBody {
+      @apply grid grid-cols-1;
+      .ProductsImg {
+        width: 360px;
+        height: 240px;
+        .ProductsImgText {
+          width: 150px;
+          padding: 8px;
+
+          .ProductsImgTitle {
+            font-size: 25px;
+          }
+
+          .ProductsImgPrice {
+            font-size: 18px;
           }
         }
       }
     }
-  
-    .products__gallery__item_title {
-      margin-top: 10px;
-      font-family: Alumni Sans;
-      font-weight: 400;
-      font-size: 2rem;
-      color: #000000;
-    }
   }
-  
+}

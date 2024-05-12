@@ -1,35 +1,30 @@
 import React from "react";
 
-import '../HousesCards/HousesCards.scss'
+import "../HousesCards/HousesCards.scss";
 import { TypeHouses } from "../../../services/dataService";
 interface HousesCardsProps {
   houses: TypeHouses[];
-} 
+}
 const HousesCards: React.FC<HousesCardsProps> = ({ houses }) => {
   return (
-    <>
-      <section className="page__products__gallery">
-        <div className="products__gallery__container">
-          {
-            houses.map((item) =>{
-              return(
-                <>
-
-            <div className="products__gallery__item " key={item.id}>
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/houses2.png`} alt="gallery_img" />
+    <div className="HousesCards">
+      <div className="HousesCardsBody">
+        {houses.map((item) => (
+          <div className="HousesImg" key={item.id}>
+            <div
+              className="HousesImgBackground"
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/houses2.png"})` }}
+            />
+            <div className="HousesImgText ">
+              <h2 className="HousesImgTitle"> {item.title}</h2>
+              <h4 className="HousesImgPrice">
+                $ {item.price} <span>|м²</span>
+              </h4>
             </div>
-            <h4 className="products__gallery__item_price">$ {item.price} <span>|м²</span></h4>
-            <h2 className="products__gallery__item_title"> {item.title}</h2>
-            </div>
-                </>
-              )
-            })
-          }
-        </div>
-       
-      </section>
-    </>
+          </div>
+        ))}
+      </div>
+    </div>
   );
 };
 

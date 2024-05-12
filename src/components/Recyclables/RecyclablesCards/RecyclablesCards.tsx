@@ -1,36 +1,30 @@
 import React from "react";
-import '../RecyclablesCards/RecyclablesCards.scss'
+import "../RecyclablesCards/RecyclablesCards.scss";
 import { TypeRecyclables } from "../../../services/dataService";
 interface RecyclablesCardsProps {
   recyclables: TypeRecyclables[];
-} 
-
+}
 
 const RecyclablesCards: React.FC<RecyclablesCardsProps> = ({ recyclables }) => {
-  
   return (
-    <>
-      <section className="page__products__gallery">
-        <div className="products__gallery__container">
-          {recyclables.map((item) =>{
-            return(
-              <>
-              <div className="products__gallery__item" key={item.id}>
-            <div className="products__gallery__item_img">
-              <img src={`${process.env.PUBLIC_URL}/recycebles3.png`} alt="gallery_img" />
+    <div className="RecyclablesCards">
+      <div className="RecyclablesCardsBody">
+        {recyclables.map((item) => (
+          <div className="RecyclablesImg" key={item.id}>
+            <div
+              className="RecyclablesImgBackground"
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/recycebles3.png"})` }}
+            />
+            <div className="RecyclablesImgText">
+              <h2 className="RecyclablesImgTitle"> {item.title}</h2>
+              <h4 className="RecyclablesImgPrice">
+                $ {item.price} <span>|кг</span>
+              </h4>
             </div>
-            <h4 className="products__gallery__item_price">$ {item.price} <span>|кг</span></h4>
-            <h2 className="products__gallery__item_title"> {item.title}</h2>
           </div>
-              </>
-            )
-          })}
-          
-        </div>
-       
-       
-      </section>
-    </>
+        ))}
+      </div>
+    </div>
   );
 };
 

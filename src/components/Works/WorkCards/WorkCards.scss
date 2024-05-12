@@ -1,95 +1,157 @@
+.WorkCards {
+  @apply flex justify-center items-center flex-col;
+  padding-top: 150px;
+  .WorkCardsBody {
+    @apply grid grid-cols-2;
+    gap: 50px;
+    .WorkImg {
+      position: relative;
+      width: 650px;
+      height: 400px;
 
+      .WorkImgBackground {
+        width: 100%;
+        height: 100%;
+        background-size: cover;
+        filter: brightness(60%);
+      }
+      .WorkImgText {
+        position: absolute;
+        width: 200px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
 
-.work-gallery__container {
-    max-width: 1500px;
-    display: grid;
-    grid-template-columns: repeat(auto-fit, minmax(350px, 1fr));
-    -moz-column-gap: 50px;
-         column-gap: 50px;
-    row-gap: 50px;
-  }
-  
-  @media (max-width: 56.25rem) {
-    .work-gallery__container {
-      max-width: 1500px;
-      display: grid;
-      grid-template-columns: repeat(auto-fit, minmax(300px, 400px));
-      -moz-column-gap: 50px;
-           column-gap: 50px;
-      row-gap: 50px;
-    }
-  }
-  .work-gallery__item_img img {
-    max-width: 100%;
-    -o-object-fit: cover;
-       object-fit: cover;
-  }
-  
-  .work-gallery__item_price {
-    margin-top: 1.25rem;
-    color: #c5a47e;
-    font-family: Alumni Sans;
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 1.8rem;
-  }
-  .work-gallery__item_price span {
-    font-size: 20px;
-    color: #000000;
-    font-weight: 600;
-    font-family: Alumni Sans;
-  }
-  
-  .work-gallery__item_title {
-    margin-top: 10px;
-    font-family: Alumni Sans;
-    font-weight: 400;
-    font-size: 2rem;
-    color: #000000;
-  }
+        .WorkImgTitle {
+          font-family: "Alumni Sans", sans-serif;
+          text-transform: uppercase;
+          font-size: 30px;
+          margin: 0;
+        }
 
-  @media (max-width: 62.5625rem) {
-    .work-gallery__container {
-      max-width: 93.75rem;
-      display: grid;
-      grid-template-columns: repeat(
-        auto-fit,
-        minmax(18.75rem, 18.75rem)
-      ) !important;
-      -moz-column-gap: 3.125rem;
-      column-gap: 3.125rem;
-      row-gap: 3.125rem;
-      justify-content: center !important;
-    }
-    .work-gallery__item {
-      justify-content: center !important;
-    }
-    .page__work-gallery {
-      margin-top: 70px !important;
+        .WorkImgPrice {
+          font-family: "Alumni Sans", sans-serif;
+          font-size: 20px;
+          margin: 0;
+          text-transform: uppercase;
+          font-size: 20px;
+          color: #c5a47e;
+        }
+      }
     }
   }
-  
-  @media (max-width: 43.75rem) {
-    .work-gallery__container {
-      -moz-column-gap: 30px !important;
-      column-gap: 30px !important;
-      row-gap: 30px !important;
-      grid-template-columns: repeat(auto-fit, minmax(150px, 300px)) !important;
-    }
-    .work-gallery__item_title {
-      margin-top: 0.625rem;
-      font-size: 28px !important;
-    }
-    .work-gallery__item_price {
-      margin-top: 20px;
-      font-size: 1.5rem;
-      line-height: 10px !important;
-    }
-  }  
+}
 
-  .page__work-gallery {
-    margin-top: 18.5rem;
-    display: flex;
-    justify-content: center;
-    margin-bottom: 12.5rem;
+@media (max-width: 1740px) {
+  .WorkCards {
+    .WorkCardsTitle {
+      font-size: 70px;
+    }
+    .WorkCardsBody {
+      .WorkImg {
+        width: 550px;
+        height: 360px;
+      }
+    }
   }
+}
+@media (max-width: 1370px) {
+  .WorkCards {
+    .WorkCardsTitle {
+      font-size: 60px;
+    }
+    .WorkCardsBody {
+      .WorkImg {
+        width: 500px;
+        height: 330px;
+      }
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .WorkCards {
+    padding-bottom: 40px;
+    .WorkCardsTitle {
+      font-size: 60px;
+    }
+    .WorkCardsBody {
+      .WorkImg {
+        width: 450px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 1100px) {
+  .WorkCards {
+    padding-bottom: 40px;
+    .WorkCardsTitle {
+      font-size: 65px;
+    }
+    .WorkCardsBody {
+      @apply grid grid-cols-1;
+      .WorkImg {
+        width: 650px;
+        height: 400px;
+      }
+    }
+  }
+}
+@media (max-width: 900px) {
+  .WorkCards {
+    padding-bottom: 40px;
+    .WorkCardsTitle {
+      font-size: 65px;
+    }
+    .WorkCardsBody {
+      @apply grid grid-cols-1;
+      .WorkImg {
+        width: 600px;
+        height: 360px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .WorkCards {
+    padding-bottom: 80px;
+    .WorkCardsTitle {
+      font-size: 55px;
+    }
+    .WorkCardsBody {
+      @apply grid grid-cols-1;
+      .WorkImg {
+        width: 500px;
+        height: 300px;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .WorkCards {
+    padding-bottom: 80px;
+    .WorkCardsTitle {
+      font-size: 45px;
+    }
+    .WorkCardsBody {
+      @apply grid grid-cols-1;
+      .WorkImg {
+        width: 360px;
+        height: 240px;
+        .WorkImgText {
+          width: 150px;
+          padding: 8px;
+
+          .WorkImgTitle {
+            font-size: 25px;
+          }
+
+          .WorkImgPrice {
+            font-size: 18px;
+          }
+        }
+      }
+    }
+  }
+}

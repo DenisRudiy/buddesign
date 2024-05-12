@@ -1,24 +1,21 @@
-import React from "react";
+import "../WorkMain/WorkMain.scss";
 
-import '../WorkMain/WorkMain.scss'
-const WorkMain = () =>{
-    return(
-        <>
-        <div className="HomeMain">
-            
-      <div
-        className="HomeMainBackground"
-        style={{
-          backgroundImage: `url(${process.env.PUBLIC_URL + "/work1.png"})`
-        }}
-      ></div>
-      <div className="HomeMainData">
-        <h1 className="HomeMainTitle">Lorem</h1>
-        <h1 className="HomeMainTitle"> Ipsum dolor sit</h1>
-
+const WorkMain = () => {
+  return (
+    <>
+      <div className="WorkMain">
+        <div
+          className="WorkMainBackground"
+          style={{
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/work1.png"})`,
+          }}
+        ></div>
+        <div className="WorkMainData">
+          <h1 className="WorkMainTitle">Lorem</h1>
+          <h1 className="WorkMainTitle"> Ipsum dolor sit</h1>
+        </div>
       </div>
-    </div>
-        </> 
-    )
-}
-export default WorkMain
+    </>
+  );
+};
+export default WorkMain;

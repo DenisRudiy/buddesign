@@ -1,192 +1,268 @@
-.MainAbout {
-    @apply flex justify-center items-center;
-    gap: 50px;
-    min-height: 900px;
-    .MainAboutContainer {
-      max-width: 1200px;
-      .MainImage {
-        @apply flex justify-center items-center;
+.InfoMainAbout {
+  @apply flex justify-center items-center;
+  gap: 50px;
+  min-height: 900px;
+  .InfoMainAboutContainer {
+    max-width: 1200px;
+    .InfoMainImage {
+      @apply flex justify-center items-center;
+      width: 420px;
+      height: 420px;
+      background-size: cover;
+      background-repeat: no-repeat;
+      position: relative;
+      .InfoMainImageBlock {
+        @apply flex justify-center items-center flex-col;
+        width: 360px;
+        height: 360px;
+        background-color: rgba(255, 255, 255, 0.8);
+        position: absolute;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        z-index: 20;
+
+        .InfoMainImageNumber {
+          font-family: "Khand", sans-serif;
+          font-weight: 600;
+          font-size: 180px;
+          height: 230px;
+          color: transparent;
+          background-clip: text;
+          background-size: 420px;
+          background-position: center;
+          -webkit-text-stroke: 2px #c5a47e;
+        }
+        .InfoMainImageText {
+          @apply uppercase;
+          color: #c5a47e;
+          font-weight: 500;
+        }
+      }
+    }
+    .InfoAboutUs {
+      @apply uppercase;
+      color: #c5a47e;
+      font-family: "Alumni Sans", sans-serif;
+      font-weight: 500;
+      letter-spacing: 6px;
+      font-size: 20px;
+      padding-top: 20px;
+    }
+    .InfoAboutCompany {
+      @apply uppercase;
+      font-family: "Alumni Sans", sans-serif;
+      font-size: 80px;
+      font-weight: 500;
+      letter-spacing: 4px;
+    }
+    .InfoAboutCompanyDescription {
+      width: 600px;
+      color: #999999;
+      font-size: 16px;
+    }
+    .InfoMainAboutButton {
+      width: 130px;
+      height: 50px;
+      border: 2px solid black;
+      margin-top: 20px;
+      transition: 0.3s all;
+      border-radius: 2px;
+
+      &:hover {
+        scale: 1.05;
+      }
+      &:active {
+        transform: translateY(10px);
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1740px) {
+  .InfoMainAbout {
+    .InfoMainAboutContainer {
+      .InfoMainImage {
+        width: 360px;
+        height: 360px;
+        .InfoMainImageBlock {
+          @apply flex justify-center items-center flex-col;
+          width: 300px;
+          height: 300px;
+          .InfoMainImageNumber {
+            font-size: 160px;
+            height: 200px;
+          }
+        }
+      }
+      .InfoAboutCompany {
+        font-size: 70px;
+      }
+      .InfoAboutCompanyDescription {
+        width: 500px;
+      }
+    }
+  }
+  .InfoPhoto {
+    img {
+      width: 570px;
+    }
+  }
+}
+@media (max-width: 1370px) {
+  .InfoMainAbout {
+    .InfoMainAboutContainer {
+      .InfoMainImage {
+        width: 340px;
+        height: 340px;
+        .InfoMainImageBlock {
+          @apply flex justify-center items-center flex-col;
+          width: 280px;
+          height: 280px;
+          .InfoMainImageNumber {
+            font-size: 150px;
+            height: 180px;
+          }
+        }
+      }
+      .InfoAboutCompany {
+        font-size: 60px;
+      }
+      .InfoAboutCompanyDescription {
+        width: 450px;
+      }
+    }
+  }
+  .InfoPhoto {
+    img {
+      width: 530px;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .InfoMainAbout {
+    .InfoMainAboutContainer {
+      .InfoMainImage {
+        width: 340px;
+        height: 340px;
+        .InfoMainImageBlock {
+          @apply flex justify-center items-center flex-col;
+          width: 280px;
+          height: 280px;
+          .InfoMainImageNumber {
+            font-size: 150px;
+            height: 180px;
+          }
+        }
+      }
+      .InfoAboutCompany {
+        font-size: 60px;
+      }
+      .InfoAboutCompanyDescription {
+        width: 450px;
+      }
+    }
+  }
+  .InfoPhoto {
+    img {
+      width: 530px;
+      object-fit: cover;
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .InfoMainAbout {
+    @apply flex-col;
+    .InfoMainAboutContainer {
+      @apply flex justify-center items-center flex-col;
+      .InfoMainImage {
         width: 420px;
         height: 420px;
-        background-size: cover;
-        background-repeat: no-repeat;
-        position: relative;
-        .MainImageBlock {
+        .InfoMainImageBlock {
           @apply flex justify-center items-center flex-col;
           width: 360px;
           height: 360px;
-          background-color: rgba(255, 255, 255, 0.8);
-          position: absolute;
-          display: flex;
-          align-items: center;
-          justify-content: center;
-          z-index: 20;
-  
-          .MainImageNumber {
-            font-family: "Alumni Sans", sans-serif;
-            font-weight: 600;
+          .InfoMainImageNumber {
             font-size: 180px;
-            height: 230px;
-            color: transparent;
-            background-clip: text;
-            background-size: 420px;
-            background-position: center;
-            -webkit-text-stroke: 2px #c5a47e;
-          }
-          .MainImageText {
-            @apply uppercase;
-            color: #c5a47e;
-            font-weight: 500;
+            height: 250px;
           }
         }
       }
-      .AboutUs {
-        @apply uppercase;
-        color: #c5a47e;
-        font-family: "Alumni Sans", sans-serif;
-        font-weight: 500;
-        letter-spacing: 6px;
-        font-size: 20px;
-        padding-top: 20px;
+      .InfoAboutCompany {
+        font-size: 65px;
       }
-      .AboutCompany {
-        @apply uppercase;
-        font-family: "Alumni Sans", sans-serif;
-        font-size: 80px;
-        font-weight: 500;
-        letter-spacing: 4px;
+      .InfoAboutCompanyDescription {
+        width: 500px;
       }
-      .AboutCompanyDescription {
-        width: 600px;
-        color: #999999;
-        font-size: 16px;
-      }
-      .MainAboutButton {
-        width: 130px;
-        height: 50px;
-        border: 2px solid black;
-        margin-top: 20px;
-        transition: 0.3s all;
-        border-radius: 2px;
-  
-        &:hover {
-          scale: 1.05;
-        }
-        &:active {
-          transform: translateY(10px);
+    }
+  }
+}
+@media (max-width: 700px) {
+  .InfoMainAbout {
+    @apply flex-col;
+    .InfoMainAboutContainer {
+      @apply flex justify-center items-center flex-col;
+      .InfoMainImage {
+        width: 360px;
+        height: 360px;
+        .InfoMainImageBlock {
+          @apply flex justify-center items-center flex-col;
+          width: 300px;
+          height: 300px;
+          .InfoMainImageNumber {
+            font-size: 160px;
+            height: 200px;
+          }
         }
       }
+      .InfoAboutCompany {
+        font-size: 55px;
+      }
+      .InfoAboutCompanyDescription {
+        width: 430px;
+        font-size: 15px;
+        font-weight: 500;
+      }
+    }
+    .InfoPhoto {
+      img {
+        width: 430px;
+        object-fit: cover;
+      }
     }
   }
-  
-
-
-  @media (max-width:441px) {
-    .MainAbout .MainAboutContainer .MainImage {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 354px;
-      height: 343px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
+}
+@media (max-width: 600px) {
+  .InfoMainAbout {
+    @apply flex-col;
+    .InfoMainAboutContainer {
+      @apply flex justify-center items-center flex-col;
+      .InfoMainImage {
+        width: 300px;
+        height: 300px;
+        .InfoMainImageBlock {
+          @apply flex justify-center items-center flex-col;
+          width: 260px;
+          height: 260px;
+          .InfoMainImageNumber {
+            font-size: 140px;
+            height: 180px;
+          }
+        }
+      }
+      .InfoAboutCompany {
+        font-size: 45px;
+      }
+      .InfoAboutCompanyDescription {
+        width: 360px;
+        font-size: 14px;
+        font-weight: 500;
+      }
     }
-    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
-      flex-direction: column;
-      width: 290px;
-      height: 283px;
-      background-color: rgba(255, 255, 255, 0.8);
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 20;
-    }
-    .MainAbout .MainAboutContainer .MainImage {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 358px;
-      height: 358px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
-      flex-direction: column;
-      width: 296px;
-      height: 308px;
-      background-color: rgba(255, 255, 255, 0.8);
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 20;
-    }
-    .MainAbout .MainAboutContainer .AboutCompany {
-      text-transform: uppercase;
-      font-family: "Alumni Sans", sans-serif;
-      font-size: 47px !important;
-      font-weight: 500;
-      letter-spacing: -1px !important;
-    }
-    .MainAbout .MainAboutContainer .AboutCompanyDescription {
-      width: 365px !important;
-      color: #999999;
-      font-size: 14px !important;
+    .InfoPhoto {
+      img {
+        width: 380px;
+      }
     }
   }
-  @media (max-width:429px) {
-    .MainAbout .MainAboutContainer .MainImage {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 362px;
-      height: 360px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
-      flex-direction: column;
-      width: 305px;
-      height: 306px;
-      background-color: rgba(255, 255, 255, 0.8);
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 20;
-    }
-  
-  }
-  @media (max-width:378px) {
-  
-    .MainAbout .MainAboutContainer .MainImage {
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      width: 323px;
-      height: 306px;
-      background-size: cover;
-      background-repeat: no-repeat;
-      position: relative;
-    }
-    .MainAbout .MainAboutContainer .MainImage .MainImageBlock {
-      flex-direction: column;
-      width: 272px;
-      height: 258px;
-      background-color: rgba(255, 255, 255, 0.8);
-      position: absolute;
-      display: flex;
-      align-items: center;
-      justify-content: center;
-      z-index: 20;
-    }
-    .MainAbout .MainAboutContainer .AboutCompanyDescription {
-      width: 320px !important;
-      color: #999999;
-      font-size: 12px !important;
-    }
-  }
+}

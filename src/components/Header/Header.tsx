@@ -82,14 +82,15 @@ const Header = () => {
                 <></>
               )}
             </button>
-            <Link to="/gallery" className="HeaderRouteItem">
-              Галерея
-            </Link>
+
             <Link to="/about" className="HeaderRouteItem">
               Про нас
             </Link>
             <Link to="/projects" className="HeaderRouteItem">
               Проекти
+            </Link>
+            <Link to="/gallery" className="HeaderRouteItem">
+              Галерея
             </Link>
             <Link to="#" onClick={scrollToBottom} className="HeaderRouteItem">
               Контакты
@@ -134,14 +135,15 @@ const Header = () => {
                 <Link to="/recyclables" className="modalNavItem">
                   Вторсировина
                 </Link>
-                <Link to="/gallery" className="modalNavItem">
-                  Галерея
-                </Link>
+
                 <Link to="/about" className="modalNavItem">
                   Про нас
                 </Link>
                 <Link to="/projects" className="modalNavItem">
                   Проекти
+                </Link>
+                <Link to="/gallery" className="modalNavItem">
+                  Галерея
                 </Link>
                 <Link to="#" onClick={scrollToBottom} className="modalNavItem">
                   Контакты

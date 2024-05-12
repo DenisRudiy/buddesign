@@ -1,452 +1,173 @@
-
-.page__new-vacancies {
-    margin-bottom: 40px;
-    /*background-image: url("../../../public/img/autsoursing/аутсортинг_patrn_background.png");*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .page__new-vacancies .new-vacancies__title {
-    margin-top: 5rem;
-    text-align: center;
-    line-height: 1.1;
-    font-weight: 500;
-    font-family: "Alumni Sans";
+.Vacancies {
+  @apply flex justify-center items-center flex-col;
+  .VacanciesTitle {
+    @apply uppercase;
+    font-family: "Alumni Sans", sans-serif;
     font-size: 80px;
-    letter-spacing: 6%;
-    color: #000000;
-    margin-bottom: 1.25rem;
-  }
-  .page__new-vacancies .new-vacancies__item__subtitle {
-    font-family: "Alumni Sans";
-    font-size: 24px;
-    color: #000000;
-    padding-left: 15px;
-  }
-  .page__new-vacancies .new-vacancies__item__subtitle span {
-    font-family: "Alumni Sans";
-    font-size: 24px;
-    font-weight: 600;
-    color: #c5a47e;
-  }
-  .page__new-vacancies .new-vacancies__item__title {
-    font-family: "Alumni Sans";
-    font-size: 32px;
-    font-weight: 400;
-    margin: 20xp 0 0 20px;
-    color: #000000;
-    padding-left: 15px;
-  }
-  .page__new-vacancies .new-vacancies__items {
-    display: flex;
-  }
-  .page__new-vacancies .new-vacancies__items__item {
-    margin-right: 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    margin-top: 2.5rem;
-    flex: 0 1 33.3333%;
-    padding-bottom: 40px;
-  }
-  .page__new-vacancies .new-vacancies__decor {
-    padding: 15px;
-  }
-  .page__new-vacancies .new-vacancies__decor img {
-    max-width: 100%;
-  }
-  .page__new-vacancies .new-vacancies__icons {
-    margin-top: 20px;
-    display: flex;
-    padding-left: 30px;
-  }
-  .page__new-vacancies .new-vacancies__icons-text {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 24px;
-  }
-  .page__new-vacancies .new-vacancies__icons-text1 {
-    margin-right: 20px;
-  }
-  .page__new-vacancies .new-vacancies__text {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 0px 15px;
-  }
-  .page__new-vacancies .new-vacancies__buttns {
-    margin-top: 20px;
-  }
-  .page__new-vacancies .new-vacancies__buttns__button-sent {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    background: white;
-    border: 2px solid black;
-    color: black;
-    padding: 7px 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 2px;
-    text-align: center;
-    width: 160px;
-  }
-  .page__new-vacancies .new-vacancies__buttns__button-phone {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding: 10px 10px;
-    background-color: #c5a47e;
-    border-radius: 2px;
-    text-align: center;
-    width: 160px;
-    margin-right: 10px;
-  }
-  .page__new-vacancies .new-vacancies__more {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  .page__new-vacancies .new-vacancies__more__button {
-    font-family: "Alumni Sans";
-    font-size: 22px;
-    background: white;
-    border: 2px solid black;
-    color: black;
-    padding: 10px 40px;
-    border-radius: 2px;
-    text-align: center;
-  }
-  @media (max-width: 1200px) {
-    .page__new-vacancies .new-vacancies__items {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .page__new-vacancies .new-vacancies__buttns__button-sent {
-      font-size: 18px;
-      background: white;
-      padding: 7px 10px;
-      margin-left: 15px;
-      margin-right: 15px;
-      border-radius: 2px;
-      width: 160px;
-    }
-    .page__new-vacancies .new-vacancies__buttns__button-phone {
-      font-size: 18px;
-      padding: 10px 10px;
-      width: 160px;
-    }
-    .page__new-vacancies .new-vacancies__buttns {
-      display: flex;
-      justify-content: center;
-    }
-    .page__new-vacancies .new-vacancies__item__title {
-      font-size: 30px;
-    }
-  }
-  @media (max-width: 700px) {
-    .page__new-vacancies .new-vacancies__title {
-      margin-top: 40px;
-      font-size: 60px;
-      margin-bottom: 10px;
-    }
-  }
-  
-  .page__new-vacancies {
-    margin-bottom: 40px;
-    /*background-image: url("../../../public/img/autsoursing/аутсортинг_patrn_background.png");*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .page__new-vacancies .new-vacancies__title {
-    margin-top: 5rem;
-    text-align: center;
-    line-height: 1.1;
     font-weight: 500;
-    font-family: "Alumni Sans";
-    font-size: 80px;
-    letter-spacing: 6%;
-    color: #000000;
-    margin-bottom: 1.25rem;
+    letter-spacing: 4px;
+    padding-top: 80px;
   }
-  .page__new-vacancies .new-vacancies__item__subtitle {
-    font-family: "Alumni Sans";
-    font-size: 24px;
-    color: #000000;
-    padding-left: 15px;
-  }
-  .page__new-vacancies .new-vacancies__item__subtitle span {
-    font-family: "Alumni Sans";
-    font-size: 24px;
-    font-weight: 600;
-    color: #c5a47e;
-  }
-  .page__new-vacancies .new-vacancies__item__title {
-    font-family: "Alumni Sans";
-    font-size: 32px;
-    font-weight: 400;
-    margin: 20xp 0 0 20px;
-    color: #000000;
-    padding-left: 15px;
-  }
-  .page__new-vacancies .new-vacancies__items {
-    display: flex;
-  }
-  .page__new-vacancies .new-vacancies__items__item {
-    margin-right: 30px;
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    margin-top: 2.5rem;
-    flex: 0 1 33.3333%;
-    padding-bottom: 40px;
-  }
-  .page__new-vacancies .new-vacancies__decor {
-    padding: 15px;
-  }
-  .page__new-vacancies .new-vacancies__decor img {
-    max-width: 100%;
-  }
-  .page__new-vacancies .new-vacancies__icons {
-    margin-top: 20px;
-    display: flex;
-    padding-left: 30px;
-  }
-  .page__new-vacancies .new-vacancies__icons-text {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 24px;
-  }
-  .page__new-vacancies .new-vacancies__icons-text1 {
-    margin-right: 20px;
-  }
-  .page__new-vacancies .new-vacancies__text {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 0px 15px;
-  }
-  .page__new-vacancies .new-vacancies__buttns {
-    margin-top: 20px;
-  }
-  .page__new-vacancies .new-vacancies__buttns__button-sent {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    background: white;
-    border: 2px solid black;
-    color: black;
-    padding: 7px 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 2px;
-    text-align: center;
-    width: 160px;
-  }
-  .page__new-vacancies .new-vacancies__buttns__button-phone {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding: 10px 10px;
-    background-color: #c5a47e;
-    border-radius: 2px;
-    text-align: center;
-    width: 160px;
-    margin-right: 10px;
-  }
-  .page__new-vacancies .new-vacancies__more {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  .page__new-vacancies .new-vacancies__more__button {
-    font-family: "Alumni Sans";
-    font-size: 22px;
-    background: white;
-    border: 2px solid black;
-    color: black;
-    padding: 10px 40px;
-    border-radius: 2px;
-    text-align: center;
-  }
-  .page__new-vacancies .page__new-vacancies {
-    margin-bottom: 40px;
-   /* background-image: url("../../../public/img/autsoursing/аутсортинг_patrn_background.png");*/
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-  }
-  .page__new-vacancies .new-vacancies__item__subtitle {
-    font-family: "Alumni Sans";
-    font-size: 24px;
-    color: #000000;
-    padding-left: 15px;
-  }
-  .page__new-vacancies .new-vacancies__item__subtitle span {
-    font-family: "Alumni Sans";
-    font-size: 24px;
-    font-weight: 600;
-    color: #c5a47e;
-  }
-  .page__new-vacancies .new-vacancies__item__title {
-    font-family: "Alumni Sans";
-    font-size: 32px;
-    font-weight: 400;
-    margin: 20xp 0 0 20px;
-    color: #000000;
-    padding-left: 15px;
-  }
-  .page__new-vacancies .new-vacancies_items {
-    display: flex;
-  }
-  .page__new-vacancies .new-vacancies__item {
-    margin-right: 30px;
-  }
-  .page__new-vacancies .new-vacancies-item {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    margin-top: 2.5rem;
-    flex: 0 1 33.3333%;
-    padding-bottom: 40px;
-  }
-  .page__new-vacancies .new-vacancies__decor {
-    padding: 15px;
-  }
-  .page__new-vacancies .new-vacancies__decor img {
-    max-width: 100%;
-  }
-  .page__new-vacancies .new-vacancie__icons {
-    margin-top: 20px;
-    display: flex;
-    padding-left: 30px;
-  }
-  .page__new-vacancies .new-vacancie__icons-text {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    font-weight: 400;
-    color: #000000;
-    line-height: 24px;
-  }
-  .page__new-vacancies .new-vacancie__icons-text1 {
-    margin-right: 20px;
-  }
-  .page__new-vacancies .new-vacancie__text {
-    margin-top: 10px;
-    font-weight: 400;
-    font-size: 16px;
-    padding: 0px 15px;
-  }
-  .page__new-vacancies .new-vacancie__buttns {
-    margin-top: 20px;
-  }
-  .page__new-vacancies .new-vacancie__button-sent {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    background: white;
-    border: 2px solid black;
-    color: black;
-    padding: 7px 10px;
-    margin-left: 15px;
-    margin-right: 15px;
-    border-radius: 2px;
-    text-align: center;
-    width: 160px;
-  }
-  .page__new-vacancies .new-vacancie__button-phone {
-    font-family: "Alumni Sans";
-    font-size: 20px;
-    color: rgb(255, 255, 255);
-    padding: 10px 10px;
-    background-color: #c5a47e;
-    border-radius: 2px;
-    text-align: center;
-    width: 160px;
-    margin-right: 10px;
-  }
-  .page__new-vacancies .new-vacancie__more {
-    display: flex;
-    justify-content: center;
-    margin-top: 40px;
-  }
-  .page__new-vacancies .new-vacancie__more_button {
-    font-family: "Alumni Sans";
-    font-size: 22px;
-    background: white;
-    border: 2px solid black;
-    color: black;
-    padding: 10px 40px;
-    border-radius: 2px;
-    text-align: center;
-  }
-  @media (max-width: 1200px) {
-    .page__new-vacancies .new-vacancies_items {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .page__new-vacancies .new-vacancie__button-sent {
-      font-size: 18px;
-      background: white;
-      padding: 7px 10px;
-      margin-left: 15px;
-      margin-right: 15px;
-      border-radius: 2px;
-      width: 160px;
-    }
-    .page__new-vacancies .new-vacancie__button-phone {
-      font-size: 18px;
-      padding: 10px 10px;
-      width: 160px;
-    }
-    .page__new-vacancies .new-vacancie__buttns {
-      display: flex;
-      justify-content: center;
-    }
-    .page__new-vacancies .new-vacancies__item__title {
-      font-size: 30px;
+  .VacanciesBody {
+    @apply flex justify-center items-center flex-wrap;
+    gap: 30px;
+    .VacanciesItem {
+      padding: 15px;
+      width: 480px;
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      .VacanciesImg {
+        width: 450px;
+        height: auto;
+      }
+      .VacanciesItemText {
+        padding-top: 30px;
+        .VacanciesItemTitle {
+          @apply uppercase;
+          font-family: "Alumni Sans", sans-serif;
+          font-size: 32px;
+        }
+        .VacanciesItemSalary {
+          font-family: "Alumni Sans", sans-serif;
+          font-size: 20px;
+          span {
+            font-size: 24px;
+            color: #c5a47e;
+          }
+        }
+        .VacanciesItemDetails {
+          @apply flex gap-5;
+          font-family: "Alumni Sans", sans-serif;
+          font-size: 22px;
+          padding: 15px 0px;
+          .VacanciesItemDetailsEmployment {
+            @apply flex gap-1 items-center;
+          }
+          .VacanciesItemDetailsExperience {
+            @apply flex gap-1 items-center;
+          }
+        }
+        .VacanciesItemDescription {
+          color: #5b5b5b;
+        }
+        .VacanciesItemButtons {
+          @apply flex;
+          padding: 30px 0px;
+          gap: 10px;
+          .VacanciesItemButtonSend,
+          .VacanciesItemButtonPhone {
+            @apply uppercase;
+            font-family: "Alumni Sans", sans-serif;
+            font-size: 22px;
+            width: 220px;
+            height: 65px;
+            transition: 0.3s all;
+            &:hover {
+              scale: 1.01;
+            }
+            &:active {
+              transform: translateY(10px);
+            }
+          }
+          .VacanciesItemButtonSend {
+            border: 2px solid black;
+          }
+          .VacanciesItemButtonPhone {
+            background-color: #c5a47e;
+            color: white;
+          }
+        }
+      }
     }
   }
-  @media (max-width: 1200px) {
-    .page__new-vacancies .new-vacancies__items {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .page__new-vacancies .new-vacancies__buttns__button-sent {
-      font-size: 18px;
-      background: white;
-      padding: 7px 10px;
-      margin-left: 15px;
-      margin-right: 15px;
-      border-radius: 2px;
-      width: 160px;
-    }
-    .page__new-vacancies .new-vacancies__buttns__button-phone {
-      font-size: 18px;
-      padding: 10px 10px;
-      width: 160px;
-    }
-    .page__new-vacancies .new-vacancies__buttns {
-      display: flex;
-      justify-content: center;
-    }
-    .page__new-vacancies .new-vacancies__item__title {
-      font-size: 30px;
+}
+@media (max-width: 1740px) {
+  .Vacancies {
+    .VacanciesTitle {
+      font-size: 70px;
     }
   }
-  @media (max-width: 700px) {
-    .page__new-vacancies .new-vacancies__title {
-      margin-top: 40px;
-      font-size: 60px;
-      margin-bottom: 10px;
+}
+@media (max-width: 1240px) {
+  .Vacancies {
+    .VacanciesTitle {
+      font-size: 65px;
     }
   }
-
-  .page__new-vacancies .new-vacancies-item {
-    box-shadow: 0px 4px 10px rgba(0, 0, 0, 0.3);
-    margin-top: 2.5rem;
-    flex: 0 1 33.3333%;
-    padding-bottom: 40px;
-    max-width: 533px;
+}
+@media (max-width: 700px) {
+  .Vacancies {
+    .VacanciesTitle {
+      font-size: 55px;
+    }
   }
-  .page__new-vacancies .new-vacancies_items {
-    display: flex;
-    justify-content: center;
-    gap: 85px;
+}
+@media (max-width: 600px) {
+  .Vacancies {
+    .VacanciesTitle {
+      font-size: 45px;
+    }
   }
+}
+@media (max-width: 500px) {
+  .Vacancies {
+    .VacanciesBody {
+      .VacanciesItem {
+        width: 400px;
+        .VacanciesImg {
+          width: 370px;
+        }
+        .VacanciesItemText {
+          padding-top: 30px;
+          .VacanciesItemTitle {
+            font-size: 28px;
+          }
+          .VacanciesItemDetails {
+            @apply flex gap-3;
+            font-size: 20px;
+          }
+          .VacanciesItemButtons {
+            @apply flex;
+            padding: 30px 0px;
+            gap: 10px;
+            .VacanciesItemButtonSend,
+            .VacanciesItemButtonPhone {
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media (max-width: 430px) {
+  .Vacancies {
+    .VacanciesBody {
+      .VacanciesItem {
+        padding: 15px;
+        width: 350px;
+        .VacanciesImg {
+          width: 320px;
+        }
+        .VacanciesItemText {
+          padding-top: 30px;
+          .VacanciesItemTitle {
+            font-size: 28px;
+          }
+          .VacanciesItemDetails {
+            @apply flex gap-3;
+            font-size: 20px;
+          }
+          .VacanciesItemButtons {
+            @apply flex;
+            padding: 30px 0px;
+            gap: 10px;
+            .VacanciesItemButtonSend,
+            .VacanciesItemButtonPhone {
+              height: 50px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

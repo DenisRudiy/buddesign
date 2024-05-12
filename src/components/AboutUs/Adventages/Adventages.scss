@@ -1,73 +1,107 @@
-
-.advantages__title {
-    margin-top: 5rem;
-    text-align: center;
-    line-height: 1.1;
-    font-weight: 500;
-    font-family: Alumni Sans;
+.Adventages {
+  @apply flex justify-center items-center flex-col;
+  .AdventagesTitle {
+    @apply uppercase;
+    font-family: "Alumni Sans", sans-serif;
     font-size: 80px;
-    letter-spacing: 6%;
-    color: #000000;
-    margin-bottom: 1.25rem;
+    font-weight: 500;
+    letter-spacing: 4px;
+    padding-top: 80px;
   }
-  
-  .advantages__subtitle {
+  .AdventagesDescription {
     text-align: center;
   }
-  
-  .advantages_items {
+  .AdventagesCards {
     display: flex;
     justify-content: center;
     align-items: center;
-    gap: 80px;
     flex-wrap: wrap;
-  }
-  
-  @media (max-width: 62.5rem) {
-    .advantages_items {
-      flex-wrap: wrap;
-      justify-content: center;
-    }
-    .advantages-item {
-      flex: 1 1 100%;
-    }
-  }
-  .advantages-item:not(:last-child) {
-    margin-right: 40px;
-  }
-  
-  .advantages-item {
-    padding-left: 20px;
-    box-shadow: 0px 6px 10px rgba(0, 0, 0, 0.1);
-    margin-top: 2.5rem;
-    flex: 0 1 33.3333%;
-    padding-bottom: 3.75rem;
-  }
-  
-  .advantages-item__title {
-    padding-top: 1.875rem;
-    font-family: "Alumni Sans";
-    font-weight: 500;
-    font-size: 2.25rem;
-    letter-spacing: 6%;
-    color: #000000;
-    margin-bottom: 2.5rem;
-  }
-  
-  .advantages-item__list-li::before {
-    content: "";
-    display: inline-block;
-    height: 10px;
-    width: 10px;
-    margin-right: 10px;
-    border-radius: 50%;
-    background-color: #c5a47e;
-  }
-  
-  .advantages-item__list-li {
-    margin-bottom: 40px;
-  }
+    gap: 80px;
+    padding-top: 40px;
+    .AdventagesItem {
+      box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px, rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+      height: 450px;
+      width: 340px;
+      padding: 30px 10px;
+      position: relative;
+      background-color: white;
+      margin: 15px;
+      ::before {
+        content: "";
+        width: 350px;
+        height: 340px;
+        background-color: #c5a47e;
+        z-index: -1;
+        position: absolute;
+        left: 0;
+        top: -20px;
+      }
+      ::after {
+        content: "";
+        background-color: #2b2b2b;
+        z-index: -1;
+        position: absolute;
+        width: 100px;
+        height: 100px;
+        bottom: -15px;
+        left: -15px;
+      }
 
-  .advantages__item{
-    max-width: 350px;
+      .AdventagesItemTitle {
+        @apply uppercase;
+        font-family: "Alumni Sans", sans-serif;
+        font-size: 30px;
+        font-weight: 500;
+        letter-spacing: 4px;
+        text-align: center;
+      }
+      .AdventagesItemList {
+        padding-left: 10px;
+        padding-top: 40px;
+        .AdventagesItemListData {
+          @apply flex gap-2 items-center;
+          padding: 15px 0px;
+
+          .AdventagesItemListDot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+            background-color: #c5a47e;
+          }
+          p {
+            width: 250px;
+          }
+        }
+      }
+    }
   }
+}
+
+@media (max-width: 1740px) {
+  .Adventages {
+    .AdventagesTitle {
+      font-size: 70px;
+    }
+  }
+}
+@media (max-width: 1240px) {
+  .Adventages {
+    .AdventagesTitle {
+      font-size: 65px;
+    }
+  }
+}
+@media (max-width: 700px) {
+  .Adventages {
+    .AdventagesTitle {
+      font-size: 55px;
+    }
+  }
+}
+@media (max-width: 600px) {
+  .Adventages {
+    .AdventagesTitle {
+      font-size: 45px;
+    }
+  }
+}

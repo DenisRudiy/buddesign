@@ -58,21 +58,21 @@ export default HomeProjects;
 const sliderData = [
   {
     id: 0,
-    img: "1.jpg",
+    img: "/1.jpg",
     name: "Lorem House",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis rerum rem blanditiis amet, a odio iste placeat unde! Perspiciatis aut incidunt ab officia cum autem impedit perferendis ducimus iusto.",
   },
   {
     id: 1,
-    img: "2.jpg",
+    img: "/2.jpg",
     name: "Lorem House",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis rerum rem blanditiis amet, a odio iste placeat unde! Perspiciatis aut incidunt ab officia cum autem impedit perferendis ducimus iusto.",
   },
   {
     id: 2,
-    img: "3.jpg",
+    img: "/3.jpg",
     name: "Lorem House",
     description:
       "Lorem ipsum dolor sit amet consectetur adipisicing elit. Vitae omnis rerum rem blanditiis amet, a odio iste placeat unde! Perspiciatis aut incidunt ab officia cum autem impedit perferendis ducimus iusto.",

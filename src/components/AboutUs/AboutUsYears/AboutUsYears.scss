@@ -1,153 +1,141 @@
-
-
-   @import url(https://fonts.googleapis.com/css?family=Open+Sans:300,regular,500,600,700,800,300italic,italic,500italic,600italic,700italic,800italic);
-   @import url(https://fonts.googleapis.com/css?family=Alumni+Sans:100,200,300,regular,500,600,700,800,900,100italic,200italic,300italic,italic,500italic,600italic,700italic,800italic,900italic);
-   
-   .about-us-decor{
-    
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(25%, 1fr));
-    &__item {
-        cursor: pointer;
-        border: 1px solid rgb(153, 149, 149);
-      }
-      img {
-        width: 100%;
-        height: auto;
-        opacity: 0;
-        transition: all 0.5s ease;
-      } 
-      &__item:hover {
-        img {
-          opacity: 1;
-        }
-      }
-      &_all_text {
-        position: absolute;
-        color: white;
-        width: 25%;
-        height: auto;
-      }
-      &_number {
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px var(--yellow);
-        padding-top: 5px;
-        padding-left: 10px;
-        font-size: 86px;
-        font-weight: 800;
-      }
-      &_text {
-        padding-left: 10px;
-        padding-top: 13%;
-        font-size: 13px;
-        font-family: "Open Sans";
-        font-size: 16px;
-        font-weight: 400;
-        line-height: 21.79px;
-      }
-      &_subtitle {
-        padding-left: 10px;
-        padding-top: 9%;
-        font-family: "Alumni Sans";
-        font-size: 35px;
-        font-weight: 500;
-        letter-spacing: -0.01em;
-        color: rgb(255, 255, 255);
-      }
-      &__item:hover {
-        &_subtitle {
-          color: rgb(255, 255, 255);
-        }
-      }
-   }
-  
-   :root {
-    --yellow: rgb(202, 174, 51);
-    --black: rgb(0, 0, 0);
-  }
- 
-   
-
-
-  @media (max-width:2200px) {
-    .about-us-decor img {
+.AboutUsYears {
+  min-height: 500px;
+  .AboutUsYearsBody {
+    @apply grid grid-cols-4;
+    .AboutUsYearsItem {
+      background-color: white;
+      position: relative;
+      z-index: 100;
+      border: 1px solid #999999;
       width: 100%;
-      height: auto;
-      opacity: 1;
-      transition: all 0.5s ease;
-    }
-  }
-  
-  @media (max-width:1993px) {
-    
-    .about-us-decor {
-      display: grid;
-      grid-template-columns: repeat(2, minmax(25%, 1fr));
-      margin: 0 auto;
-      gap: 50px;
-    }
-    .page__about-us.about-us{
-      display: flex;
-  
-  }
-    }
-  
-    @media (max-width:1273px) {
-      .about-us-decor {
-      
-        gap: 20px;
-      }
-      .about-us-decor__item {
-        cursor: pointer;
-        border: 1px solid rgb(153, 149, 149);
-        max-width: 427px;
-        max-height: 485px;
-      }
-      .about-us-decor_number {
-        -webkit-text-fill-color: transparent;
-        -webkit-text-stroke: 2px var(--yellow);
-        padding-top: 0px;
-        padding-left: 10px;
-        font-size: 69px;
-        font-weight: 794;
-      }
-      .about-us-decor_text {
-        padding-left: 10px;
-        padding-top: 0%;
-        font-family: "Open Sans";
-        font-size: 11px;
-        font-weight: 400;
-        line-height: 15.79px;
-      }
-      .about-us-decor_subtitle {
-        padding-left: 10px;
-        padding-top: 6%;
-        font-family: "Alumni Sans";
-        font-size: 27px;
-        font-weight: 500;
-        letter-spacing: -0.01em;
-        color: rgb(255, 255, 255);
-      }
-    }
+      height: 500px;
+      cursor: pointer;
+      transition: 0.5s all;
 
-@media (max-width:875px) {
-  .about-us-decor {
-   grid-template-columns: repeat(1, minmax(25%, 1fr));
-  
-  }
-  .about-us-decor_all_text {
-    position: absolute;
-    color: white;
-    width: 48%;
-    height: auto;
+      &:hover .AboutUsYearsItemImgBackground {
+        opacity: 1;
+      }
+      &:hover .AboutUsYearsItemData .AboutUsYearsItemText .AboutUsYearsItemTitle {
+        color: white;
+      }
+      .AboutUsYearsItemImgBackground {
+        position: absolute;
+        z-index: 10;
+        width: 100%;
+        height: 500px;
+        background-size: cover;
+        filter: brightness(60%);
+        transition: 0.5s all;
+        opacity: 0;
+      }
+      .AboutUsYearsItemData {
+        @apply flex flex-col justify-between;
+        height: 500px;
+        position: relative;
+        z-index: 100;
+        padding: 10px;
+        .AboutUsYearsItemNumber {
+          font-family: "Khand", sans-serif;
+          font-weight: 600;
+          font-size: 100px;
+          height: 230px;
+          color: transparent;
+          background-clip: text;
+          background-size: 420px;
+          background-position: center;
+          -webkit-text-stroke: 1.5px #c5a47e;
+          padding: 0px 10px;
+        }
+        .AboutUsYearsItemText {
+          .AboutUsYearsItemDescription {
+            color: white;
+          }
+          .AboutUsYearsItemTitle {
+            font-family: "Alumni Sans", sans-serif;
+            font-size: 40px;
+            color: black;
+            padding-bottom: 40px;
+            transition: 0.5;
+          }
+        }
+      }
+    }
   }
 }
-
-@media (max-width:446px) {
-  .about-us-decor_all_text {
-    position: absolute;
-    color: white;
-    width: 93%;
-    height: auto;
+@media only screen and (min-width: 320px) and (max-width: 1840px) {
+  .AboutUsYears {
+    .AboutUsYearsBody {
+      .AboutUsYearsItem {
+        .AboutUsYearsItemData {
+          .AboutUsYearsItemNumber {
+            font-size: 90px;
+          }
+          .AboutUsYearsItemText {
+            .AboutUsYearsItemTitle {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1640px) {
+  .AboutUsYears {
+    .AboutUsYearsBody {
+      @apply grid grid-cols-2;
+      .AboutUsYearsItem {
+        .AboutUsYearsItemData {
+          .AboutUsYearsItemNumber {
+            font-size: 90px;
+          }
+          .AboutUsYearsItemText {
+            .AboutUsYearsItemTitle {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 1240px) {
+  .AboutUsYears {
+    padding-top: 100px;
+    .AboutUsYearsBody {
+      @apply grid grid-cols-2;
+      .AboutUsYearsItem {
+        .AboutUsYearsItemData {
+          .AboutUsYearsItemNumber {
+            font-size: 90px;
+          }
+          .AboutUsYearsItemText {
+            .AboutUsYearsItemTitle {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 940px) {
+  .AboutUsYears {
+    padding-top: 100px;
+    .AboutUsYearsBody {
+      @apply grid grid-cols-1;
+      .AboutUsYearsItem {
+        .AboutUsYearsItemData {
+          .AboutUsYearsItemNumber {
+            font-size: 90px;
+          }
+          .AboutUsYearsItemText {
+            .AboutUsYearsItemTitle {
+              font-size: 35px;
+            }
+          }
+        }
+      }
+    }
   }
 }

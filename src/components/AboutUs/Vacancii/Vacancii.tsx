@@ -1,124 +1,90 @@
-import React from "react";
+import SandClockIcon from "../../../icons/SandClockIcon";
+import UserIcon from "../../../icons/UserIcon";
+import "../Vacancii/Vacancii.scss";
 
-import '../Vacancii/Vacancii.scss'
-const Vacancii = () =>{
-    return(
-        <>
-
-<section className="page__new-vacancies new-vacancies" >
-          <div className="new-vacancies__container">
-            <h2 className="new-vacancies__title">НАШІ ВАКАНСІЇ</h2>
-            <div className="new-vacancies_items">
-              <div className="new-vacancies__item new-vacancies-item">
-                <div className="new-vacancies__decor">
-                  <img src={`${process.env.PUBLIC_URL + " /AboutUs4.png"}`}  alt="decor" />
-                </div>
-                <h2 className="new-vacancies__item__title">
-                  ВОДІЙ НА САМОСВАЛ (КАТЕГОРІЯ Е)
-                </h2>
-                <h4 className="new-vacancies__item__subtitle">
-                  від <span>$400</span>
-                </h4>
-                <div className="new-vacancie__icons">
-                  <p className="new-vacancie__icons-text1 new-vacancie__icons-text">
-                    ПОВНА ЗАЙНЯТІСТЬ
-                  </p>
-                  <p className="new-vacancie__icons-text2 new-vacancie__icons-text">
-                    ОФІЙІЙНЕ ПРАЦЕВЛАШТУВАННЯ
-                  </p>
-                </div>
-                <div className="new-vacancie__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="new-vacancie__buttns">
-                  <button className="new-vacancie__button-sent">
-                    ВІДПРАВИТИ РЕЗЮМЕ
-                  </button>
-                  <button className="new-vacancie__button-phone">
-                    (099) 099-99-99
-                  </button>
-                </div>
-              </div>
-              <div className="new-vacancies__item new-vacancies-item">
-                <div className="new-vacancies__decor">
-                  <img src={`${process.env.PUBLIC_URL + " /AboutUs4.png"}`}  alt="decor" />
-                </div>
-                <h2 className="new-vacancies__item__title">
-                  ВОДІЙ НА САМОСВАЛ (КАТЕГОРІЯ Е)
-                </h2>
-                <h4 className="new-vacancies__item__subtitle">
-                  від <span>$400</span>
-                </h4>
-                <div className="new-vacancie__icons">
-                  <p className="new-vacancie__icons-text1 new-vacancie__icons-text">
-                    ПОВНА ЗАЙНЯТІСТЬ
-                  </p>
-                  <p className="new-vacancie__icons-text2 new-vacancie__icons-text">
-                    ОФІЙІЙНЕ ПРАЦЕВЛАШТУВАННЯ
-                  </p>
-                </div>
-                <div className="new-vacancie__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="new-vacancie__buttns">
-                  <button className="new-vacancie__button-sent">
-                    ВІДПРАВИТИ РЕЗЮМЕ
-                  </button>
-                  <button className="new-vacancie__button-phone">
-                    (099) 099-99-99
-                  </button>
-                </div>
-              </div>
-              <div className="new-vacancies__item new-vacancies-item">
-                <div className="new-vacancies__decor">
-                  <img src={`${process.env.PUBLIC_URL + " /AboutUs4.png"}`}  alt="decor" />
-                </div>
-                <h2 className="new-vacancies__item__title">
-                  ВОДІЙ НА САМОСВАЛ (КАТЕГОРІЯ Е)
-                </h2>
-                <h4 className="new-vacancies__item__subtitle">
-                  від <span>$400</span>
-                </h4>
-                <div className="new-vacancie__icons">
-                  <p className="new-vacancie__icons-text1 new-vacancie__icons-text">
-                    ПОВНА ЗАЙНЯТІСТЬ
-                  </p>
-
-<p className="new-vacancie__icons-text2 new-vacancie__icons-text">
-                    ОФІЙІЙНЕ ПРАЦЕВЛАШТУВАННЯ
-                  </p>
-                </div>
-                <div className="new-vacancie__text">
-                  Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed
-                  do eiusmod tempor incididunt ut labore et dolore magna aliqua.
-                  Ut enim ad minim veniam, quis nostrud exercitation ullamco
-                  laboris nisi ut aliquip ex ea commodo consequat.
-                </div>
-                <div className="new-vacancie__buttns">
-                  <button className="new-vacancie__button-sent">
-                    ВІДПРАВИТИ РЕЗЮМЕ
-                  </button>
-                  <button className="new-vacancie__button-phone">
-                    (099) 099-99-99
-                  </button>
-                </div>
-              </div>
+const Vacancii = () => {
+  return (
+    <div className="Vacancies">
+      <h2 className="VacanciesTitle">Наші вакансії</h2>
+      <div className="VacanciesBody">
+        <div className="VacanciesItem">
+          <img src={process.env.PUBLIC_URL + "/vac1.jpg"} alt="" className="VacanciesImg" />
+          <div className="VacanciesItemText">
+            <h1 className="VacanciesItemTitle">Водій на самоскид (категорія С)</h1>
+            <h5 className="VacanciesItemSalary">
+              від <span> 20 000 грн</span>
+            </h5>
+            <div className="VacanciesItemDetails">
+              <h2 className="VacanciesItemDetailsEmployment">
+                <SandClockIcon></SandClockIcon>Офіційне працевлаштування
+              </h2>
+              <h2 className="VacanciesItemDetailsExperience">
+                <UserIcon></UserIcon>Повна зайнятість
+              </h2>
             </div>
-            <div className="new-vacancie__more">
-              <button className="new-vacancie__more_button">
-                ДИВИТИСЯ БІЛЬШЕ
-              </button>
+            <p className="VacanciesItemDescription">
+              Шукаємо відповідальних, порядних водіїв. Надсилайте своє резюме або телефонуйте за вказаним номером
+              телефону. Будемо раді ,що саме Ви станете частиною нашої команди Buddesign!
+            </p>
+            <div className="VacanciesItemButtons">
+              <button className="VacanciesItemButtonSend">Відправити резюме</button>
+              <button className="VacanciesItemButtonPhone">(099) 099-99-99</button>
             </div>
           </div>
-        </section>
-        </>
-    )
-}
+        </div>
+        <div className="VacanciesItem">
+          <img src={process.env.PUBLIC_URL + "/vac2.jpg"} alt="" className="VacanciesImg" />
+          <div className="VacanciesItemText">
+            <h1 className="VacanciesItemTitle">Водій на напівпричіп (категорія С,Е)</h1>
+            <h5 className="VacanciesItemSalary">
+              від <span> 20 000 грн</span>
+            </h5>
+            <div className="VacanciesItemDetails">
+              <h2 className="VacanciesItemDetailsEmployment">
+                <SandClockIcon></SandClockIcon>Офіційне працевлаштування
+              </h2>
+              <h2 className="VacanciesItemDetailsExperience">
+                <UserIcon></UserIcon>Повна зайнятість
+              </h2>
+            </div>
+            <p className="VacanciesItemDescription">
+              Шукаємо відповідальних, порядних водіїв. Надсилайте своє резюме або телефонуйте за вказаним номером
+              телефону. Будемо раді ,що саме Ви станете частиною нашої команди Buddesign!
+            </p>
+            <div className="VacanciesItemButtons">
+              <button className="VacanciesItemButtonSend">Відправити резюме</button>
+              <button className="VacanciesItemButtonPhone">(099) 099-99-99</button>
+            </div>
+          </div>
+        </div>
+        <div className="VacanciesItem">
+          <img src={process.env.PUBLIC_URL + "/vac3.jpg"} alt="" className="VacanciesImg" />
+          <div className="VacanciesItemText">
+            <h1 className="VacanciesItemTitle">Водій на екскаватор JCB 3CX, 4CX</h1>
+            <h5 className="VacanciesItemSalary">
+              ЗП. <span> 180 грн/год</span>
+            </h5>
+            <div className="VacanciesItemDetails">
+              <h2 className="VacanciesItemDetailsEmployment">
+                <SandClockIcon></SandClockIcon>Офіційне працевлаштування
+              </h2>
+              <h2 className="VacanciesItemDetailsExperience">
+                <UserIcon></UserIcon>Повна зайнятість
+              </h2>
+            </div>
+            <p className="VacanciesItemDescription">
+              Шукаємо відповідальних, порядних водіїв. Надсилайте своє резюме або телефонуйте за вказаним номером
+              телефону. Будемо раді ,що саме Ви станете частиною нашої команди Buddesign!
+            </p>
+            <div className="VacanciesItemButtons">
+              <button className="VacanciesItemButtonSend">Відправити резюме</button>
+              <button className="VacanciesItemButtonPhone">(099) 099-99-99</button>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  );
+};
 
-export default Vacancii
+export default Vacancii;

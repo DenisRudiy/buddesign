@@ -11,10 +11,9 @@ const HomeGallery = () => {
         <img src={process.env.PUBLIC_URL + "/gal3.jpg"} alt="" />
         <img src={process.env.PUBLIC_URL + "/gal4.jpg"} alt="" />
       </div>
-    <Link to='gellery'>
-    <button className="HomeGalleryButton">Дивитися більше</button>
-    </Link>
-      
+      <Link to="gellery">
+        <button className="HomeGalleryButton">Дивитися більше</button>
+      </Link>
     </div>
   );
 };

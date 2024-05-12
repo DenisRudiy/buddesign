@@ -10,7 +10,7 @@ const Info = () => {
               className="InfoMainImageNumber"
               style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/hero.jpg"})` }}
             >
-              10
+              30
             </h2>
             <p className="InfoMainImageText">Років досвіду</p>
           </div>

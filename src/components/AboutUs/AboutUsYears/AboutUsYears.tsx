@@ -9,7 +9,7 @@ const AboutUsYears = () => {
             style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/aboutus2.png"})` }}
           ></div>
           <div className="AboutUsYearsItemData">
-            <h1 className="AboutUsYearsItemNumber">10+</h1>
+            <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
               <p className="AboutUsYearsItemDescription">
                 Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et

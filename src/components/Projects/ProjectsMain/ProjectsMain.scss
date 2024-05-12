@@ -1,0 +1,90 @@
+.ProjectsMain {
+  width: 100vw;
+  height: calc(100vh - 90px);
+  .ProjectsMainBackground {
+    @apply flex justify-start items-end;
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100vw;
+    height: 100vh;
+    z-index: -1;
+    overflow: hidden;
+    background-size: cover;
+    background-repeat: no-repeat;
+    &::before {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 100%;
+      background-color: #2b2b2b;
+      background-size: cover;
+      opacity: 0.8;
+      z-index: 1;
+    }
+  }
+  .ProjectsMainData {
+    @apply flex flex-col justify-end;
+    position: relative;
+    z-index: 100;
+    color: white;
+    padding-left: 20vw;
+    padding-bottom: 200px;
+    height: calc(100vh - 90px);
+    .ProjectsMainTitle {
+      font-size: 75px;
+      font-weight: 600;
+      padding: 0;
+    }
+    .ProjectsMainButton {
+      font-family: "Open Sans", sans-serif;
+      width: 200px;
+      height: 60px;
+      border: 2px solid white;
+      margin-top: 30px;
+      transition: 0.3s all;
+      border-radius: 2px;
+
+      &:hover {
+        scale: 1.05;
+      }
+      &:active {
+        transform: translateY(10px);
+      }
+    }
+  }
+}
+
+@media (max-width: 1240px) {
+  .ProjectsMain {
+    .ProjectsMainData {
+      .ProjectsMainTitle {
+        font-size: 65px;
+      }
+    }
+  }
+}
+@media (max-width: 700px) {
+  .ProjectsMain {
+    .ProjectsMainData {
+      padding-left: 10vw !important;
+      padding-bottom: 200px !important;
+      .ProjectsMainTitle {
+        font-size: 55px !important;
+      }
+    }
+  }
+}
+@media (max-width: 600px) {
+  .ProjectsMain {
+    .ProjectsMainData {
+      padding-left: 10vw !important;
+      padding-bottom: 200px !important;
+      .ProjectsMainTitle {
+        font-size: 45px !important;
+      }
+    }
+  }
+}

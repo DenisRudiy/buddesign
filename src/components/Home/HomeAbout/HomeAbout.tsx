@@ -7,7 +7,7 @@ const HomeAbout = () => {
         <div className="MainImage" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/hero.jpg"})` }}>
           <div className="MainImageBlock">
             <h2 className="MainImageNumber" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/hero.jpg"})` }}>
-              10
+              30
             </h2>
             <p className="MainImageText">Років досвіду</p>
           </div>

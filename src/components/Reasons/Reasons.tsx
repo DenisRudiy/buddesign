@@ -10,15 +10,15 @@ const Reasons = () => {
       <div className="ReasonsCards">
         <div className="ReasonsCard">
           <TimerIcon></TimerIcon>
-          <h2 className="ReasonsCardTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <h2 className="ReasonsCardTitle">Виконання робіт у встановлені терміни</h2>
         </div>
         <div className="ReasonsCard">
           <BillIcon></BillIcon>
-          <h2 className="ReasonsCardTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <h2 className="ReasonsCardTitle">Висока якість та особлива увага деталям</h2>
         </div>
         <div className="ReasonsCard">
           <CalendarIcon></CalendarIcon>
-          <h2 className="ReasonsCardTitle">Lorem ipsum dolor sit amet, consectetur adipiscing elit</h2>
+          <h2 className="ReasonsCardTitle">Інновації та надійність</h2>
         </div>
       </div>
     </div>

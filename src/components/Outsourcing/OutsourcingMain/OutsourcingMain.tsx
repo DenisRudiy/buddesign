@@ -9,8 +9,7 @@ const OutsourcingMain = () => {
           style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/OutsorcingMain.webp"})` }}
         ></div>
         <div className="OutsourcingMainData">
-          <h1 className="OutsourcingMainTitle">Lorem</h1>
-          <h1 className="OutsourcingMainTitle"> Ipsum dolor sit</h1>
+          <h1 className="OutsourcingMainTitle"> Аутсорсинг</h1>
         </div>
       </div>
     </>

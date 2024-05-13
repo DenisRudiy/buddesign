@@ -34,7 +34,10 @@
     padding-bottom: 200px;
     height: calc(100vh - 90px);
     .ProductsMainTitle {
-      font-size: 75px;
+      @apply uppercase;
+      font-size: 95px;
+      font-family: Alumni Sans;
+      letter-spacing: 0.06em;
       font-weight: 600;
       padding: 0;
     }
@@ -45,7 +48,7 @@
   .ProductsMain {
     .ProductsMainData {
       .ProductsMainTitle {
-        font-size: 65px;
+        font-size: 85px;
       }
     }
   }
@@ -55,9 +58,6 @@
     .ProductsMainData {
       padding-left: 10vw !important;
       padding-bottom: 200px !important;
-      .ProductsMainTitle {
-        font-size: 55px !important;
-      }
     }
   }
 }
@@ -65,9 +65,9 @@
   .ProductsMain {
     .ProductsMainData {
       padding-left: 10vw !important;
-      padding-bottom: 200px !important;
+      padding-bottom: 100px !important;
       .ProductsMainTitle {
-        font-size: 45px !important;
+        font-size: 75px !important;
       }
     }
   }

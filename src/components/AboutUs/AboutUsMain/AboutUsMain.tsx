@@ -9,8 +9,8 @@ const AboutUsMain = () => {
           style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/AboutMain.webp"})` }}
         ></div>
         <div className="AboutUsMainData">
-          <h1 className="AboutUsMainTitle">Lorem</h1>
-          <h1 className="AboutUsMainTitle"> Ipsum dolor sit</h1>
+          <h1 className="AboutUsMainTitle">Про</h1>
+          <h1 className="AboutUsMainTitle">Нашу компанію</h1>
         </div>
       </div>
     </>

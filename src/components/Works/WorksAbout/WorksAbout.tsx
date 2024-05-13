@@ -2,7 +2,6 @@ import "../WorksAbout/WorksAbout.scss";
 const WorksAbout = () => {
   return (
     <div className="WorksAbout" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
-      <h4 className="WorksTitle">Роботи</h4>
       <div className="WorksContainer">
         <div className="WorksContent">
           <h4 className="WorksContentSmallTitle">INFO</h4>

@@ -1,16 +1,6 @@
 .OutsourcingAbout {
   @apply flex flex-col justify-center items-center;
-  .OutsourcingTitle {
-    @apply uppercase;
-    margin-bottom: 70px;
-    margin-top: 70px;
-    font-family: Alumni Sans;
-    font-size: 80px;
-    font-weight: 500;
-    line-height: 96px;
-    letter-spacing: 0.06em;
-    text-align: center;
-  }
+  padding-top: 70px;
   .OutsourcingContainer {
     @apply flex justify-center items-center;
     gap: 100px;

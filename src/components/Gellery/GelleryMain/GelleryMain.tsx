@@ -14,8 +14,7 @@ const GelleryMain = () => {
           }}
         ></div>
         <div className="GelleryMainData">
-          <h1 className="GelleryMainTitle">Lorem</h1>
-          <h1 className="GelleryMainTitle"> Ipsum dolor sit</h1>
+          <h1 className="GelleryMainTitle">Галерея</h1>
         </div>
       </div>
     </>

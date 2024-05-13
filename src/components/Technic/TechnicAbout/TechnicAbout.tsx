@@ -2,8 +2,7 @@ import "./TechnicAbout.scss";
 
 const TechnicAbout = () => {
   return (
-    <div className="TechnicAbout">
-      <h4 className="TechnicTitle">Наша техніка</h4>
+    <div className="TechnicAbout" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
       <div className="TechnicContainer">
         <div className="TechnicContent">
           <h4 className="TechnicContentSmallTitle">INFO</h4>

@@ -21,12 +21,10 @@ const HomeAbout = () => {
             <p className="MainImageText">Років досвіду</p>
           </div>
         </div>
-        <h5 className="AboutUs">Про нас</h5>
         <h1 className="AboutCompany">Про нашу компанію</h1>
         <p className="AboutCompanyDescription">
-          Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-          magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo
-          consequat.
+          Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та сучасною
+          технікою.
         </p>
         <Link to="/buddesign/about" onClick={scrollToTop}>
           <button className="MainAboutButton">Про нас</button>

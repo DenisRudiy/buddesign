@@ -76,10 +76,27 @@ export type TypeTechnicTypes = {
   title: string;
   type: string;
   img: string;
-  price: number;
-  weight: number;
-  deep: number;
-  obem: number;
+};
+
+//TECHNIQU
+export async function fetchTechnic(type: string): Promise<TypeTechnic[]> {
+  const response = await fetch(`http://localhost:7000/${type}`);
+  if (!response.ok) {
+    throw new Error("Помилка при отриманні продуктів");
+  }
+  return await response.json();
+}
+
+export type TypeTechnic = {
+  id: string;
+  title: string;
+  img: string;
+  loadCapacity: string;
+  volume: string;
+  size: string;
+  deep: string;
+  heigh: string;
+  price: string;
 };
 
 //Outsoursing

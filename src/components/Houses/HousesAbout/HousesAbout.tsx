@@ -3,7 +3,6 @@ import "../HousesAbout/HousesAbout.scss";
 const HousesAbout = () => {
   return (
     <div className="HousesAbout" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
-      <h4 className="HousesTitle">Будинки</h4>
       <div className="HousesContainer">
         <div className="HousesContent">
           <h4 className="HousesContentSmallTitle">INFO</h4>

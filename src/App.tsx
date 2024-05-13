@@ -1,6 +1,5 @@
 import { BrowserRouter as Router, Routes, Route } from "react-router-dom";
 import Header from "./components/Header/Header";
-import React, { useEffect, useState } from "react";
 import Main from "./components/Home";
 import Technique from "./components/Technic";
 import "./styles/App.scss";
@@ -13,25 +12,10 @@ import Recyclables from "./components/Recyclables";
 import AboutUs from "./components/AboutUs";
 import Projects from "./components/Projects";
 import Footer from "./components/Footer/Footer";
-import TechnicCardsTypes from "./components/Technic/TechnicCardsTypes/TechnicCardsTypes";
-import { TypeTechnicTypes, fetchTechnicTypes } from "./services/dataService";
 import Gellery from "./components/Gellery";
 import Reasons from "./components/Reasons/Reasons";
+import CurrTechnic from "./components/CurrTechnic";
 function App() {
-  const [technics, setTechnics] = useState<TypeTechnicTypes[]>([]);
-
-  useEffect(() => {
-    const loadTechnics = async () => {
-      try {
-        const data = await fetchTechnicTypes();
-        setTechnics(data);
-      } catch (error) {
-        console.error("Помилка при завантаженні продуктів:", error);
-      }
-    };
-
-    loadTechnics();
-  }, []);
   return (
     <div className="App">
       <Router>
@@ -40,6 +24,19 @@ function App() {
         <Routes>
           <Route path="/buddesign/" Component={Main}></Route>
           <Route path="/buddesign/technique" Component={Technique}></Route>
+          <Route
+            path="/buddesign/technique/tipper"
+            Component={() => <CurrTechnic type={"tipper"}></CurrTechnic>}
+          ></Route>
+          <Route
+            path="/buddesign/technique/excavator"
+            Component={() => <CurrTechnic type={"excavator"}></CurrTechnic>}
+          ></Route>
+          <Route
+            path="/buddesign/technique/bulldozer"
+            Component={() => <CurrTechnic type={"bulldozer"}></CurrTechnic>}
+          ></Route>
+          <Route path="/buddesign/technique/other" Component={() => <CurrTechnic type={"other"}></CurrTechnic>}></Route>
           <Route path="/buddesign/works" Component={Work}></Route>
           <Route path="/buddesign/products" Component={Products}></Route>
           <Route path="/buddesign/outsourcing" Component={Outsourcing}></Route>
@@ -47,10 +44,6 @@ function App() {
           <Route path="/buddesign/recyclables" Component={Recyclables}></Route>
           <Route path="/buddesign/about" Component={AboutUs}></Route>
           <Route path="/buddesign/projects" Component={Projects}></Route>
-          <Route
-            path="/buddesign/technique/types"
-            Component={(props) => <TechnicCardsTypes {...props} technics={technics} />}
-          />
           <Route path="/buddesign/gallery" Component={Gellery}></Route>
         </Routes>
         <Reasons />

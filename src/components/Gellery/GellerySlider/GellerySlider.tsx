@@ -12,7 +12,7 @@ const GellerySlider = () => {
 
   return (
     <div className="HomeProjects" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
-      <h1 className="HomeProjectsTitle">відео</h1>
+      <h1 className="GalleryProjectsTitle">відео</h1>
       <Swiper
         modules={[Navigation]}
         speed={400}

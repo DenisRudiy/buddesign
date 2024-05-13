@@ -1,100 +1,175 @@
 {
-  "cars": [
+  "technic1": [
     {
       "id": 0,
-      "title": "Ескаватор-навантажувач",
-      "price": 500,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "title": "DAF CF 85.360 самоскид (30т)",
+      "img": "/ForHome/HomeCar2.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "8000"
     },
     {
       "id": 1,
-      "title": "Ескаватор-навантажувач",
-      "price": 4000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "title": "DAF CF 85.410 самоскид (30т)",
+      "img": "/ForHome/HomeCar2.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "8000"
     },
     {
       "id": 2,
-      "title": "Ескаватор-навантажувач",
-      "price": 2000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "title": "DAF CF 85.460 самоскид (30т)",
+      "img": "/ForHome/HomeCar2.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "8000"
     },
     {
       "id": 3,
-      "title": "Ескаватор-навантажувач",
-      "price": 5000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "title": "DAF CF 105.430 самоскид (40т)",
+      "img": "/ForHome/HomeCar2.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "8000"
     },
     {
       "id": 4,
-      "title": "Ескаватор-навантажувач",
-      "price": 6000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "title": "DAF XF105.410 самоскид (40т)",
+      "img": "/ForHome/HomeCar2.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "8000"
     },
     {
       "id": 5,
-      "title": "Ескаватор-навантажувач",
-      "price": 1000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "title": "DAF XF105.410 трал",
+      "img": "/ForHome/HomeCar2.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "договірна"
+    }
+  ],
+  "technic2": [
+    {
+      "id": 0,
+      "title": "Гусеничний екскаватор DOOSAN 260",
+      "img": "/ForHome/HomeCar1.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "8000"
     },
     {
-      "id": 6,
-      "title": "Ескаватор-навантажувач",
-      "price": 4000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "id": 1,
+      "title": "Екскаватор JCB 3 СХ",
+      "img": "/ForHome/HomeCar1.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "7000"
     },
     {
-      "id": 7,
-      "title": "Ескаватор-навантажувач",
-      "price": 5000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "id": 2,
+      "title": "Екскаватор JCB 4 СХ",
+      "img": "/ForHome/HomeCar1.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "7500"
+    }
+  ],
+  "technic3": [
+    {
+      "id": 0,
+      "title": "Бульдозер Caterpillar D6R",
+      "img": "/ForHome/HomeCar4.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "14000"
     },
     {
-      "id": 8,
-      "title": "Ескаватор-навантажувач",
-      "price": 5000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "id": 0,
+      "title": "Бульдозер ДТ 75",
+      "img": "/ForHome/HomeCar4.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "6000"
+    }
+  ],
+  "technic4": [
+    {
+      "id": 0,
+      "title": "Дорожній каток SEM 518 (20т)",
+      "img": "/ForHome/HomeCar3.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "9000"
     },
     {
-      "id": 9,
-      "title": "Ескаватор-навантажувач",
-      "price": 5000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "id": 1,
+      "title": "Автокран КС-55727-С-12 (г/п 25 т)",
+      "img": "/ForHome/HomeCar3.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "9000"
     },
     {
-      "id": 10,
-      "title": "Ескаватор-навантажувач",
-      "price": 5000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "id": 2,
+      "title": "Гідравлічні ножиці на базі Doosan 260",
+      "img": "/ForHome/HomeCar3.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "договірна"
     },
     {
-      "id": 11,
-      "title": "Ескаватор-навантажувач",
-      "price": 5000,
-      "weight": 8.7,
-      "deep": 5.46,
-      "obem": 0.33
+      "id": 3,
+      "title": "Гідромолот на базі Doosan 260 ",
+      "img": "/ForHome/HomeCar3.webp",
+      "loadCapacity": "",
+      "volume": "",
+      "size": "",
+      "deep": "",
+      "heigh": "",
+      "price": "договірна"
     }
   ],
   "jobs": [
@@ -425,7 +500,6 @@
       "price": 5000
     }
   ],
-
   "Rematerial": [
     {
       "id": 0,
@@ -492,7 +566,7 @@
     {
       "id": 0,
       "title": "Самоскиди",
-      "type": "Техніка",
+      "type": "tipper",
       "img": "/ForHome/HomeCar2.webp",
       "price": 500,
       "weight": 8.7,
@@ -502,7 +576,7 @@
     {
       "id": 1,
       "title": "Екскаватори",
-      "type": "Техніка",
+      "type": "excavator",
       "img": "/ForHome/HomeCar1.webp",
       "price": 4000,
       "weight": 8.7,
@@ -512,7 +586,7 @@
     {
       "id": 2,
       "title": "Бульдозери",
-      "type": "Техніка",
+      "type": "bulldozer",
       "img": "/ForHome/HomeCar4.webp",
       "price": 2000,
       "weight": 8.7,
@@ -522,7 +596,7 @@
     {
       "id": 3,
       "title": "Інше",
-      "type": "Техніка",
+      "type": "other",
       "img": "/ForHome/HomeCar3.webp",
       "price": 5000,
       "weight": 8.7,

@@ -11,8 +11,7 @@ const WorkMain = () => {
           }}
         ></div>
         <div className="WorkMainData">
-          <h1 className="WorkMainTitle">Lorem</h1>
-          <h1 className="WorkMainTitle"> Ipsum dolor sit</h1>
+          <h1 className="WorkMainTitle"> Наші Роботи</h1>
         </div>
       </div>
     </>

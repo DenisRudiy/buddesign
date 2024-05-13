@@ -12,9 +12,8 @@ const AboutUsYears = () => {
             <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
               <p className="AboutUsYearsItemDescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.{" "}
+                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
+                сучасною технікою.
               </p>
               <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
             </div>
@@ -26,12 +25,11 @@ const AboutUsYears = () => {
             style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/aboutus2.png"})` }}
           ></div>
           <div className="AboutUsYearsItemData">
-            <h1 className="AboutUsYearsItemNumber">10+</h1>
+            <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
               <p className="AboutUsYearsItemDescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.{" "}
+                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
+                сучасною технікою.
               </p>
               <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
             </div>
@@ -43,12 +41,11 @@ const AboutUsYears = () => {
             style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/aboutus2.png"})` }}
           ></div>
           <div className="AboutUsYearsItemData">
-            <h1 className="AboutUsYearsItemNumber">10+</h1>
+            <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
               <p className="AboutUsYearsItemDescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.{" "}
+                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
+                сучасною технікою.
               </p>
               <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
             </div>
@@ -60,12 +57,11 @@ const AboutUsYears = () => {
             style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/aboutus2.png"})` }}
           ></div>
           <div className="AboutUsYearsItemData">
-            <h1 className="AboutUsYearsItemNumber">10+</h1>
+            <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
               <p className="AboutUsYearsItemDescription">
-                Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et
-                dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip
-                ex ea commodo consequat.{" "}
+                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
+                сучасною технікою.
               </p>
               <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
             </div>

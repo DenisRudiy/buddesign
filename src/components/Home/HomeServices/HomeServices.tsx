@@ -35,9 +35,8 @@ const HomeServices = () => {
         <div className="AboutTechniqueText">
           <h1 className="AboutTechniqueTextTitle">Про нашу техніку</h1>
           <p className="AboutTechniqueTextDescription">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae at temporibus quis necessitatibus eius nam
-            sunt laboriosam corrupti quo nobis tenetur ducimus, reiciendis dicta, est delectus inventore qui rem
-            quaerat.
+            Наш парк має велику кількість техніки: екскаватори, самоскиди, бульдозери та ін.. Саме тому, ви маєте
+            можливість обрати оптимальний варіант, для виконання конкретних завдань, на високому рівні.
           </p>
           <div className="AboutTechniqueButtons">
             <button className="AboutTechniqueButtonOne" onClick={() => changeTechnic(0)}>
@@ -47,7 +46,7 @@ const HomeServices = () => {
               Зразок 2
             </button>
             <button className="AboutTechniqueButtonOne" onClick={() => changeTechnic(2)}>
-              Зразок 1
+              Зразок 3
             </button>
           </div>
           <Link to="/buddesign/technique">
@@ -61,9 +60,8 @@ const HomeServices = () => {
         <div className="AboutTechniqueText">
           <h1 className="AboutTechniqueTextTitle">Про нашу роботу</h1>
           <p className="AboutTechniqueTextDescription">
-            Lorem ipsum dolor sit amet, consectetur adipisicing elit. Vitae at temporibus quis necessitatibus eius nam
-            sunt laboriosam corrupti quo nobis tenetur ducimus, reiciendis dicta, est delectus inventore qui rem
-            quaerat.
+            Широкий спектр високоякісних послуг ,надійних фахівців ,сучасних технологій та техніки, дає змогу
+            реалізувати всі проєкти у встановлені терміни.
           </p>
           <div className="AboutTechniqueButtons">
             <button className="AboutTechniqueButtonOne" onClick={() => changeWork(0)}>
@@ -73,7 +71,7 @@ const HomeServices = () => {
               Зразок 2
             </button>
             <button className="AboutTechniqueButtonOne" onClick={() => changeWork(2)}>
-              Зразок 1
+              Зразок 3
             </button>
           </div>
           <Link to="/buddesign/works">

@@ -1,9 +1,8 @@
-import React from "react";
 import "../OutsourcingAbout/OutsourcingAbout.scss";
+
 const OutsourcingAbout = () => {
   return (
     <div className="OutsourcingAbout" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
-      <h4 className="OutsourcingTitle">Аутсорсинг</h4>
       <div className="OutsourcingContainer">
         <div className="OutsourcingContent">
           <h4 className="OutsourcingContentSmallTitle">INFO</h4>

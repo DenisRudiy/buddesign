@@ -1,6 +1,12 @@
+import { Link } from "react-router-dom";
 import "../OurProjects/OurProjects.scss";
 
 const OurProjects = () => {
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
   return (
     <div className="OurProjects">
       <div className="OurProjectsTitle">НАШІ ПРОЄКТИ</div>
@@ -25,9 +31,11 @@ const OurProjects = () => {
         </div>
       </div>
       <div className="OurProjectsButtonContainer">
-        <button className="OurProjectsButton">
-          <p className="OurProjectsButtonText">Дивитися більше</p>
-        </button>
+        <Link to="/buddesign/projects">
+          <button className="OurProjectsButton" onClick={scrollToTop}>
+            <p className="OurProjectsButtonText">Дивитися більше</p>
+          </button>
+        </Link>
       </div>
     </div>
   );

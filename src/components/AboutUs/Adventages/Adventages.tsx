@@ -4,10 +4,6 @@ const Adventages = () => {
   return (
     <div className="Adventages">
       <h2 className="AdventagesTitle">НАШІ ПЕРЕВАГИ</h2>
-      <h4 className="AdventagesDescription">
-        Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
-        magna aliqua.
-      </h4>
       <div className="AdventagesCards">
         <div className="AdventagesItem">
           <div className="AdventagesItemTitle">Клієнтоорієнтованість</div>

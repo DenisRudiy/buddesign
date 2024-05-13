@@ -7,7 +7,7 @@ const WorkMain = () => {
         <div
           className="WorkMainBackground"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + "/work1.png"})`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/WorksMain.webp"})`,
           }}
         ></div>
         <div className="WorkMainData">

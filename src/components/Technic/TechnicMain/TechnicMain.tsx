@@ -6,7 +6,7 @@ const TechnicMain = () => {
       <div className="TechnicMain">
         <div
           className="TechnicMainBackground"
-          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/tech1.png"})` }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/TechnicMain.webp"})` }}
         ></div>
         <div className="TechnicMainData">
           <h1 className="TechnicMainTitle">Lorem</h1>

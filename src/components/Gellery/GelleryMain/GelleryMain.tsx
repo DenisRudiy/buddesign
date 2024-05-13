@@ -7,7 +7,7 @@ const GelleryMain = () => {
         <div
           className="GelleryMainBackground"
           style={{
-            backgroundImage: `url(${process.env.PUBLIC_URL + "/gal3.jpg"})`,
+            backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/GalleryMain.webp"})`,
             objectFit: "contain",
             backgroundSize: "cover",
             maxWidth: "2800px",

@@ -6,7 +6,7 @@ const RecyclablesMain = () => {
       <div className="RecyclablesMain">
         <div
           className="RecyclablesMainBackground"
-          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/recycebles1.png"})` }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/RecycablesMain.webp"})` }}
         ></div>
         <div className="RecyclablesMainData">
           <h1 className="RecyclablesMainTitle">Lorem</h1>

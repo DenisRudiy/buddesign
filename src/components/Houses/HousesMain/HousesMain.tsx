@@ -7,7 +7,7 @@ const HousesMain = () => {
       <div className="HousesMain">
         <div
           className="HousesMainBackground"
-          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/houses2.png"})` }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/HousesMain.webp"})` }}
         ></div>
         <div className="HousesMainData">
           <h1 className="HousesMainTitle">Lorem</h1>

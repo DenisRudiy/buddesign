@@ -39,19 +39,19 @@ function App() {
         <Phone></Phone>
         <Routes>
           <Route path="/buddesign/" Component={Main}></Route>
-          <Route path="/technique" Component={Technique}></Route>
-          <Route path="/works" Component={Work}></Route>
-          <Route path="/products" Component={Products}></Route>
-          <Route path="/outsourcing" Component={Outsourcing}></Route>
-          <Route path="/houses" Component={Houses}></Route>
-          <Route path="/recyclables" Component={Recyclables}></Route>
-          <Route path="/about" Component={AboutUs}></Route>
-          <Route path="/projects" Component={Projects}></Route>
+          <Route path="/buddesign/technique" Component={Technique}></Route>
+          <Route path="/buddesign/works" Component={Work}></Route>
+          <Route path="/buddesign/products" Component={Products}></Route>
+          <Route path="/buddesign/outsourcing" Component={Outsourcing}></Route>
+          <Route path="/buddesign/houses" Component={Houses}></Route>
+          <Route path="/buddesign/recyclables" Component={Recyclables}></Route>
+          <Route path="/buddesign/about" Component={AboutUs}></Route>
+          <Route path="/buddesign/projects" Component={Projects}></Route>
           <Route
             path="/buddesign/technique/types"
             Component={(props) => <TechnicCardsTypes {...props} technics={technics} />}
           />
-          <Route path="/gallery" Component={Gellery}></Route>
+          <Route path="/buddesign/gallery" Component={Gellery}></Route>
         </Routes>
         <Reasons />
         <Footer />

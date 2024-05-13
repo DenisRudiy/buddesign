@@ -21,6 +21,13 @@ const Header = () => {
     });
   };
 
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+      behavior: "smooth",
+    });
+  };
+
   useEffect(() => {
     const handleResize = () => {
       setWindowWidth(window.innerWidth);
@@ -59,22 +66,22 @@ const Header = () => {
               Наші послуги
               {isDropdown ? (
                 <div className="HeaderDropdownServices">
-                  <Link to="/technique" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
+                  <Link to="/buddesign/technique" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
                     Техніка
                   </Link>
-                  <Link to="/works" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
+                  <Link to="/buddesign/works" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
                     Роботи
                   </Link>
-                  <Link to="/products" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
+                  <Link to="/buddesign/products" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
                     Товари
                   </Link>
-                  <Link to="/outsourcing" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
+                  <Link to="/buddesign/outsourcing" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
                     Аутсорсинг
                   </Link>
-                  <Link to="/houses" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
+                  <Link to="/buddesign/houses" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
                     Будинки
                   </Link>
-                  <Link to="/recyclables" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
+                  <Link to="/buddesign/recyclables" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
                     Вторсировина
                   </Link>
                 </div>
@@ -83,13 +90,13 @@ const Header = () => {
               )}
             </button>
 
-            <Link to="/about" className="HeaderRouteItem">
+            <Link to="/buddesign/about" className="HeaderRouteItem">
               Про нас
             </Link>
-            <Link to="/projects" className="HeaderRouteItem">
+            <Link to="/buddesign/projects" className="HeaderRouteItem">
               Проекти
             </Link>
-            <Link to="/gallery" className="HeaderRouteItem">
+            <Link to="/buddesign/gallery" className="HeaderRouteItem">
               Галерея
             </Link>
             <Link to="#" onClick={scrollToBottom} className="HeaderRouteItem">
@@ -117,32 +124,32 @@ const Header = () => {
                 </button>
               </div>
               <div className="ModalBody">
-                <Link to="/technique" className="modalNavItem">
+                <Link to="/buddesign/technique" className="modalNavItem" onClick={scrollToTop}>
                   Техніка
                 </Link>
-                <Link to="/works" className="modalNavItem">
+                <Link to="/buddesign/works" className="modalNavItem" onClick={scrollToTop}>
                   Роботи
                 </Link>
-                <Link to="/products" className="modalNavItem">
+                <Link to="/buddesign/products" className="modalNavItem" onClick={scrollToTop}>
                   Товари
                 </Link>
-                <Link to="/outsourcing" className="modalNavItem">
+                <Link to="/buddesign/outsourcing" className="modalNavItem" onClick={scrollToTop}>
                   Аутсорсинг
                 </Link>
-                <Link to="/houses" className="modalNavItem">
+                <Link to="/buddesign/houses" className="modalNavItem" onClick={scrollToTop}>
                   Будинки
                 </Link>
-                <Link to="/recyclables" className="modalNavItem">
+                <Link to="/buddesign/recyclables" className="modalNavItem" onClick={scrollToTop}>
                   Вторсировина
                 </Link>
 
-                <Link to="/about" className="modalNavItem">
+                <Link to="/buddesign/about" className="modalNavItem" onClick={scrollToTop}>
                   Про нас
                 </Link>
-                <Link to="/projects" className="modalNavItem">
+                <Link to="/buddesign/projects" className="modalNavItem" onClick={scrollToTop}>
                   Проекти
                 </Link>
-                <Link to="/gallery" className="modalNavItem">
+                <Link to="/buddesign/gallery" className="modalNavItem" onClick={scrollToTop}>
                   Галерея
                 </Link>
                 <Link to="#" onClick={scrollToBottom} className="modalNavItem">

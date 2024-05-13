@@ -1,13 +1,12 @@
-import React from "react";
-
 import "../ProjectsMain/ProjectsMain.scss";
+
 const ProjectsMain = () => {
   return (
     <>
       <div className="ProjectsMain">
         <div
           className="ProjectsMainBackground"
-          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/projects1.png"})` }}
+          style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/ProjectsMain.webp"})` }}
         ></div>
         <div className="ProjectsMainData">
           <h1 className="ProjectsMainTitle">Lorem</h1>

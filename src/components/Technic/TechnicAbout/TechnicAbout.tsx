@@ -9,11 +9,9 @@ const TechnicAbout = () => {
           <h4 className="TechnicContentSmallTitle">INFO</h4>
           <h2 className="TechnicContentTitle">Спецтехніка</h2>
           <p className="TechnicText">
-            При виконанні багатьох робіт виникає необхідність у викоританні спецтехніки. Наш парк має велику кількість
-            екскаваторів та самоскидів, що дасть вам можливість вибрати оптимальний варіант для виконання конкретних
-            завдань!
+            Наш парк має велику кількість техніки: екскаватори, самоскиди, бульдозери та ін.. Саме тому, ви маєте
+            можливість обрати оптимальний варіант, для виконання конкретних завдань, на високому рівні.
           </p>
-          <button className="TechnicButton">Про нас</button>
         </div>
         <div className="TechnicDecoration">
           <img src={`${process.env.PUBLIC_URL + "/tech2.png"}`} alt="decor" />

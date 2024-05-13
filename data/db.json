@@ -1,5 +1,5 @@
 {
-  "products": [
+  "cars": [
     {
       "id": 0,
       "title": "Ескаватор-навантажувач",
@@ -100,115 +100,221 @@
   "jobs": [
     {
       "id": 0,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Демонтаж (будь-якої складності, гідромолот, гідроножиці)",
+      "img": "/Works/Works1.webp",
       "price": 400
     },
     {
       "id": 1,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Розробка котлованів",
+      "img": "/Works/Works2.webp",
       "price": 300
     },
     {
       "id": 2,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Вивіз сміття",
+      "img": "/Works/Works3.webp",
       "price": 500
     },
     {
       "id": 3,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Перевезення вантажів",
+      "img": "/Works/Works4.webp",
       "price": 600
     },
     {
       "id": 4,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Монолітні роботи",
+      "img": "/Works/Works5.webp",
       "price": 300
     },
     {
       "id": 5,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Благоустрій території",
+      "img": "/Works/Works6.webp",
       "price": 100
     },
     {
       "id": 6,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Асфальтування",
+      "img": "/Works/Works7.webp",
       "price": 500
     },
     {
       "id": 7,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Берегоукріплення / розчистка / розборка / поглиблення водойм",
+      "img": "/Works/Works8.webp",
       "price": 400
     },
     {
       "id": 8,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Підняття рівня ділянки/ засипка яру",
+      "img": "/Works/Works9.webp",
       "price": 600
     },
     {
       "id": 9,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Зрізання дерев",
+      "img": "/Works/Works10.webp",
       "price": 300
     },
     {
       "id": 10,
-      "title": "МОНОЛІТНІ РОБОТИ",
+      "title": "Підготовка майданчику до початку будівельних робіт",
+      "img": "/Works/Works11.webp",
       "price": 500
     }
   ],
-  "Goods": [
+  "products": [
     {
       "id": 0,
-      "title": "БЕТОННА СУМІШ",
-      "price": 400
+      "title": "Щебінь ф 2-5мм",
+      "img": "/Products/Products1.webp",
+      "price": 170
     },
     {
       "id": 1,
-      "title": "БЕТОННА СУМІШ",
-      "price": 300
+      "title": "Щебінь ф 5-8мм",
+      "img": "/Products/Products1.webp",
+      "price": 200
     },
     {
       "id": 2,
-      "title": "БЕТОННА СУМІШ",
-      "price": 500
+      "title": "Щебінь ф 5-10мм",
+      "img": "/Products/Products1.webp",
+      "price": 280
     },
     {
       "id": 3,
-      "title": "БЕТОННА СУМІШ",
-      "price": 600
+      "title": "Щебінь ф 5-20мм",
+      "img": "/Products/Products1.webp",
+      "price": 270
     },
     {
       "id": 4,
-      "title": "БЕТОННА СУМІШ",
-      "price": 300
+      "title": "Щебінь ф 10-20мм",
+      "img": "/Products/Products1.webp",
+      "price": 270
     },
     {
       "id": 5,
-      "title": "БЕТОННА СУМІШ",
-      "price": 100
+      "title": "Щебінь ф 20-40мм",
+      "img": "/Products/Products1.webp",
+      "price": 220
     },
     {
       "id": 6,
-      "title": "БЕТОННА СУМІШ",
-      "price": 500
+      "title": "Щебінь ф 40-70мм",
+      "img": "/Products/Products1.webp",
+      "price": 220
     },
     {
       "id": 7,
-      "title": "БЕТОННА СУМІШ",
-      "price": 400
+      "title": "Щебінь ф 0,05-40 мм(суміш)",
+      "img": "/Products/Products1.webp",
+      "price": 215
     },
     {
       "id": 8,
-      "title": "БЕТОННА СУМІШ",
-      "price": 600
+      "title": "Щебінь ф 0,05-70 мм(суміш)",
+      "img": "/Products/Products1.webp",
+      "price": 215
     },
     {
       "id": 9,
-      "title": "БЕТОННА СУМІШ",
-      "price": 300
+      "title": "Щебінь ф 0,05-5 мм(відсів)",
+      "img": "/Products/Products1.webp",
+      "price": 215
     },
     {
       "id": 10,
-      "title": "БЕТОННА СУМІШ-",
-      "price": 500
+      "title": "Щебінь ф 300-500 мм(бут)",
+      "img": "/Products/Products1.webp",
+      "price": 650
+    },
+    {
+      "id": 11,
+      "title": "Щебінь ф 150-300 мм(бут)",
+      "img": "/Products/Products1.webp",
+      "price": 650
+    },
+    {
+      "id": 12,
+      "title": "Щебінь ф 70-120 мм(бут)",
+      "img": "/Products/Products1.webp",
+      "price": 400
+    },
+    {
+      "id": 13,
+      "title": "Річний пісок",
+      "img": "/Products/Products2.webp",
+      "price": 250
+    },
+    {
+      "id": 14,
+      "title": "Овражний пісок",
+      "img": "/Products/Products3.webp",
+      "price": 115
+    },
+    {
+      "id": 15,
+      "title": "Суглинні грунти",
+      "img": "/Products/Products4.webp",
+      "price": 50
+    },
+    {
+      "id": 16,
+      "title": "Торф`яно-болотні грунти",
+      "img": "/Products/Products5.webp",
+      "price": 200
+    },
+    {
+      "id": 17,
+      "title": "Чорнозем",
+      "img": "/Products/Products6.webp",
+      "price": 300
+    },
+    {
+      "id": 18,
+      "title": "Глина",
+      "img": "/Products/Products7.webp",
+      "price": 40
+    },
+    {
+      "id": 19,
+      "title": "Супіщані грунти",
+      "img": "/Products/Products8.webp",
+      "price": 50
+    },
+    {
+      "id": 20,
+      "title": "Гравій",
+      "img": "/Products/Products9.webp",
+      "price": 250
+    },
+    {
+      "id": 21,
+      "title": "Керамзит",
+      "img": "/Products/Products10.webp",
+      "price": 2650
+    },
+    {
+      "id": 22,
+      "title": "Пісок для піскоструя",
+      "img": "/Products/Products11.webp",
+      "price": 2400
+    },
+    {
+      "id": 23,
+      "title": "Перегній",
+      "img": "/Products/Products12.webp",
+      "price": 60
+    },
+    {
+      "id": 24,
+      "title": "Грунт на підсипку",
+      "img": "/Products/Products13.webp",
+      "price": 20
     }
   ],
   "Business": [
@@ -387,6 +493,7 @@
       "id": 0,
       "title": "Самоскиди",
       "type": "Техніка",
+      "img": "/ForHome/HomeCar2.webp",
       "price": 500,
       "weight": 8.7,
       "deep": 5.46,
@@ -396,6 +503,7 @@
       "id": 1,
       "title": "Екскаватори",
       "type": "Техніка",
+      "img": "/ForHome/HomeCar1.webp",
       "price": 4000,
       "weight": 8.7,
       "deep": 5.46,
@@ -405,6 +513,7 @@
       "id": 2,
       "title": "Бульдозери",
       "type": "Техніка",
+      "img": "/ForHome/HomeCar4.webp",
       "price": 2000,
       "weight": 8.7,
       "deep": 5.46,
@@ -414,6 +523,7 @@
       "id": 3,
       "title": "Інше",
       "type": "Техніка",
+      "img": "/ForHome/HomeCar3.webp",
       "price": 5000,
       "weight": 8.7,
       "deep": 5.46,

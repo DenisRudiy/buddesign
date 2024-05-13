@@ -13,7 +13,6 @@ const HousesAbout = () => {
             відповідної якості та надійності. Ми гарантуємо високу якість наших продуктів та швидку поставку, що робить
             нас надійним партнером для будь-якого будівельного проекту.
           </p>
-          <button className="HousesButton">Про нас</button>
         </div>
         <div className="HousesDecoration">
           <img src={`${process.env.PUBLIC_URL + "/houses1.png"}`} alt="decor" />

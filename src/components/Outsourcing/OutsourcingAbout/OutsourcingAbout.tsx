@@ -9,11 +9,9 @@ const OutsourcingAbout = () => {
           <h4 className="OutsourcingContentSmallTitle">INFO</h4>
           <h2 className="OutsourcingContentTitle">Аутсорсинг та Аутстафінг</h2>
           <p className="OutsourcingText">
-            Звертаючись до нас, Ви платите тільки за відпрацьований час працівників! Ми надаємо Вам ту кількість
-            працівників, в яких є необхідність. Таким чином вирішується проблема пікового завантаження і простою
-            персоналу.
+            Звертаючись до нас, ви платите тільки за відпрацьований час працівників. Ми надамо вам ту кількість
+            працівників, в яких є необхідність. Саме так, вирішується проблема пікового навантаження і простою персоналу
           </p>
-          <button className="OutsourcingButton">Про нас</button>
         </div>
         <div className="OutsourcingDecoration">
           <img src={`${process.env.PUBLIC_URL + "/outsourcingAbout.png"}`} alt="decor" />

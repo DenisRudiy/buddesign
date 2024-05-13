@@ -15,7 +15,7 @@ const TechnicCards: React.FC<TechnicsCardsProps> = ({ technics }) => {
             <div className="TechniqueImg">
               <div
                 className="TechniqueImgBackground"
-                style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/car1.png"})` }}
+                style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
               />
               <div className="TechniqueImgText">
                 <h1 className="TechniqueImgTitle">{item.title}</h1>

@@ -1,7 +1,7 @@
 //products:
 
 export async function fetchProducts(): Promise<TypeProduct[]> {
-  const response = await fetch("http://localhost:7000/Goods");
+  const response = await fetch("http://localhost:7000/products");
   if (!response.ok) {
     throw new Error("Помилка при отриманні продуктів");
   }
@@ -11,15 +11,13 @@ export async function fetchProducts(): Promise<TypeProduct[]> {
 export type TypeProduct = {
   id: string;
   title: string;
+  img: string;
   price: number;
-  weight: number;
-  deep: number;
-  obem: number;
 };
 
 //JOBS
 export async function fetchWork(): Promise<TypeWork[]> {
-  const response = await fetch("http://localhost:7000/products");
+  const response = await fetch("http://localhost:7000/jobs");
   if (!response.ok) {
     throw new Error("Помилка при отриманні продуктів");
   }
@@ -29,6 +27,7 @@ export async function fetchWork(): Promise<TypeWork[]> {
 export type TypeWork = {
   id: string;
   title: string;
+  img: string;
   price: number;
 };
 
@@ -76,6 +75,7 @@ export type TypeTechnicTypes = {
   id: string;
   title: string;
   type: string;
+  img: string;
   price: number;
   weight: number;
   deep: number;

@@ -8,12 +8,7 @@ const RecyclablesAbout = () => {
         <div className="RecyclablesContent">
           <h4 className="RecyclablesContentSmallTitle">INFO</h4>
           <h2 className="RecyclablesContentTitle">Вторсировина</h2>
-          <p className="RecyclablesText">
-            Наша компанія спеціалізується на постачанні різноманітної вторсировини для виробництва та переробки. Наші
-            матеріали відповідають всім стандартам якості та екологічним вимогам, що робить нас надійним постачальником
-            для вашого бізнесу.
-          </p>
-          <button className="RecyclablesButton">Про нас</button>
+          <p className="RecyclablesText">Наш місія - це збереження ресурсів і турбота про навколишнє середовище</p>
         </div>
         <div className="RecyclablesDecoration">
           <img src={`${process.env.PUBLIC_URL + "/recycebles2.png"}`} alt="decor" />

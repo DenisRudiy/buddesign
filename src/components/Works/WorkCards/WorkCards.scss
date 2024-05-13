@@ -2,22 +2,28 @@
   @apply flex justify-center items-center flex-col;
   padding-top: 150px;
   .WorkCardsBody {
-    @apply grid grid-cols-2;
+    @apply grid grid-cols-3;
     gap: 50px;
     .WorkImg {
       position: relative;
-      width: 650px;
-      height: 400px;
+      width: 500px;
+      height: 300px;
+      cursor: pointer;
+      transition: 0.3s all;
+
+      &:hover {
+        scale: 1.01;
+      }
 
       .WorkImgBackground {
         width: 100%;
         height: 100%;
         background-size: cover;
-        filter: brightness(60%);
+        filter: brightness(90%);
       }
       .WorkImgText {
         position: absolute;
-        width: 200px;
+        width: 300px;
         bottom: 0;
         left: 0;
         background-color: rgb(255, 255, 255);
@@ -26,17 +32,22 @@
         .WorkImgTitle {
           font-family: "Alumni Sans", sans-serif;
           text-transform: uppercase;
-          font-size: 30px;
+          font-size: 22px;
           margin: 0;
         }
-
-        .WorkImgPrice {
+      }
+      .WorkImgTextBig {
+        position: absolute;
+        width: 300px;
+        bottom: 0;
+        left: 0;
+        background-color: rgb(255, 255, 255);
+        padding: 10px;
+        .WorkImgTitleBig {
           font-family: "Alumni Sans", sans-serif;
-          font-size: 20px;
-          margin: 0;
           text-transform: uppercase;
-          font-size: 20px;
-          color: #c5a47e;
+          font-size: 22px;
+          margin: 0;
         }
       }
     }
@@ -49,10 +60,7 @@
       font-size: 70px;
     }
     .WorkCardsBody {
-      .WorkImg {
-        width: 550px;
-        height: 360px;
-      }
+      @apply grid grid-cols-2;
     }
   }
 }

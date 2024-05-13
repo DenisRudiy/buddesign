@@ -14,12 +14,12 @@ const ProductsCards: React.FC<ProductsCardsProps> = ({ products }) => {
           <div className="ProductsImg" key={product.id}>
             <div
               className="ProductsImgBackground"
-              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/product2.png"})` }}
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + product.img})` }}
             />
             <div className="ProductsImgText">
               <h2 className="ProductsImgTitle">{product.title}</h2>
               <h4 className="ProductsImgPrice">
-                $ {product.price} <span>|т.</span>
+                грн {product.price} <span>|кг.</span>
               </h4>
             </div>
           </div>

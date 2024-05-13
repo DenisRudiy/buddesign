@@ -14,14 +14,18 @@ const WorkCards: React.FC<WorksCardsProps> = ({ works }) => {
           <div className="WorkImg">
             <div
               className="WorkImgBackground"
-              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/work2.png"})` }}
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
             />
-            <div className="WorkImgText">
-              <h1 className="WorkImgTitle">{item.title}</h1>
-              <h4 className="WorkImgPrice ">
-                $ {item.price} <span>|т.</span>
-              </h4>
-            </div>
+
+            {item.title.length < 17 ? (
+              <div className="WorkImgText">
+                <h1 className="WorkImgTitle">{item.title}</h1>
+              </div>
+            ) : (
+              <div className="WorkImgTextBig">
+                <h1 className="WorkImgTitleBig">{item.title}</h1>
+              </div>
+            )}
           </div>
         ))}
       </div>

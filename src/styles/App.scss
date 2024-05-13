@@ -157,6 +157,21 @@
     right: 80px;
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 650px) {
+  .modal-content {
+    width: 400px;
+    height: 500px;
+    h2 {
+      font-size: 45px;
+    }
+    form {
+      gap: 20px;
+      input {
+        margin: 0;
+      }
+    }
+  }
+}
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .Phone {
     bottom: 100px;
@@ -166,6 +181,24 @@
       height: 50px;
       svg {
         width: 30px;
+      }
+    }
+  }
+}
+@media only screen and (min-width: 30px) and (max-width: 420px) {
+  .modal-content {
+    width: 350px;
+    height: 450px;
+    padding: 10px;
+    h2 {
+      font-size: 45px;
+    }
+    form {
+      gap: 20px;
+      input {
+        width: 250px;
+        height: 50px;
+        margin: 0;
       }
     }
   }

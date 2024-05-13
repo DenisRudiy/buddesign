@@ -24,6 +24,7 @@ const GellerySlider = () => {
           swiper.params.navigation.prevEl = navigationPrevRef.current;
           swiper.params.navigation.nextEl = navigationNextRef.current;
         }}
+        resistanceRatio={0}
         className="HomeProjectSlider"
       >
         {sliderData.map((item, index) => (

@@ -5,12 +5,14 @@ import WorkCards from "./Works/WorkCards/WorkCards";
 import { TypeWork, fetchWork } from "../services/dataService";
 const Work = () => {
   const [works, setWorks] = useState<TypeWork[]>([]);
+  const [isLoad, setIsLoad] = useState(true);
 
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const data = await fetchWork();
-        setWorks(data);
+        let data: any;
+        data = await fetchWork();
+        setWorks(data.jobs);
       } catch (error) {
         console.error("Помилка при завантаженні продуктів:", error);
       }
@@ -18,12 +20,17 @@ const Work = () => {
 
     loadProducts();
   }, []);
+  useEffect(() => {
+    if (works.length !== 0) {
+      setIsLoad(false);
+    }
+  }, [works]);
   return (
     <>
       <div className="Main">
         <WorkMain />
         <WorksAbout />
-        <WorkCards works={works} />
+        {isLoad ? <>Loading...</> : <WorkCards works={works} />}
       </div>
     </>
   );

@@ -12,22 +12,25 @@ const CurrTechnic = ({ type }: any) => {
         let data: any;
         switch (type) {
           case "tipper":
-            data = await fetchTechnic("technic1");
+            data = await fetchTechnic();
+            setCurrTechnics(data.technic1);
             break;
           case "excavator":
-            data = await fetchTechnic("technic2");
+            data = await fetchTechnic();
+            setCurrTechnics(data.technic2);
             break;
           case "bulldozer":
-            data = await fetchTechnic("technic3");
+            data = await fetchTechnic();
+            setCurrTechnics(data.technic3);
             break;
           case "other":
-            data = await fetchTechnic("technic4");
+            data = await fetchTechnic();
+            setCurrTechnics(data.technic4);
             break;
           default:
             console.log("Тип техники: default");
             break;
         }
-        setCurrTechnics(data);
       } catch (error) {
         console.error("Error when loading:", error);
       }

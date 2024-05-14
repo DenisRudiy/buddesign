@@ -4,10 +4,14 @@ import { Link } from "react-router-dom";
 
 const TechnicData = ["/ForHome/HomeCar1.webp", "/ForHome/HomeCar2.webp", "/ForHome/HomeCar3.webp"];
 const WorksData = ["/ForHome/HomeWorks1.webp", "/ForHome/HomeWorks2.webp", "/ForHome/HomeWorks3.webp"];
+const TechnicText = ["Екскаватори", "Бульдозери", "Крани"];
+const WorksText = ["Монтажні роботи", "Асфальтування", "Перевезення вантажів"];
 
 const HomeServices = () => {
   const [technic, setTechnic] = useState(TechnicData[0]);
+  const [technicText, setTechnicText] = useState(TechnicText[0]);
   const [work, setWork] = useState(WorksData[0]);
+  const [workText, setWorkText] = useState(WorksText[0]);
 
   const changeTechnic = (index: number) => {
     setTechnic(TechnicData[index]);
@@ -28,8 +32,8 @@ const HomeServices = () => {
       <div className="AboutTechnique">
         <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + technic})` }} className="AboutTechniqueImg">
           <div className="AboutTechniqueImgText">
-            <h1 className="AboutTechniqueImgTitle">Lorem Technique</h1>
-            <h4 className="AboutTechniqueImgDescription">Arch, intrerier</h4>
+            <h1 className="AboutTechniqueImgTitle">{technicText}</h1>
+            <h4 className="AboutTechniqueImgDescription">Техніка</h4>
           </div>
         </div>
         <div className="AboutTechniqueText">
@@ -39,13 +43,31 @@ const HomeServices = () => {
             можливість обрати оптимальний варіант, для виконання конкретних завдань, на високому рівні.
           </p>
           <div className="AboutTechniqueButtons">
-            <button className="AboutTechniqueButtonOne" onClick={() => changeTechnic(0)}>
+            <button
+              className="AboutTechniqueButtonOne"
+              onClick={() => {
+                changeTechnic(0);
+                setTechnicText(TechnicText[0]);
+              }}
+            >
               Зразок 1
             </button>
-            <button className="AboutTechniqueButtonOne" onClick={() => changeTechnic(1)}>
+            <button
+              className="AboutTechniqueButtonOne"
+              onClick={() => {
+                changeTechnic(1);
+                setTechnicText(TechnicText[1]);
+              }}
+            >
               Зразок 2
             </button>
-            <button className="AboutTechniqueButtonOne" onClick={() => changeTechnic(2)}>
+            <button
+              className="AboutTechniqueButtonOne"
+              onClick={() => {
+                changeTechnic(2);
+                setTechnicText(TechnicText[2]);
+              }}
+            >
               Зразок 3
             </button>
           </div>
@@ -64,13 +86,31 @@ const HomeServices = () => {
             реалізувати всі проєкти у встановлені терміни.
           </p>
           <div className="AboutTechniqueButtons">
-            <button className="AboutTechniqueButtonOne" onClick={() => changeWork(0)}>
+            <button
+              className="AboutTechniqueButtonOne"
+              onClick={() => {
+                changeWork(0);
+                setWorkText(WorksText[0]);
+              }}
+            >
               Зразок 1
             </button>
-            <button className="AboutTechniqueButtonOne" onClick={() => changeWork(1)}>
+            <button
+              className="AboutTechniqueButtonOne"
+              onClick={() => {
+                changeWork(1);
+                setWorkText(WorksText[1]);
+              }}
+            >
               Зразок 2
             </button>
-            <button className="AboutTechniqueButtonOne" onClick={() => changeWork(2)}>
+            <button
+              className="AboutTechniqueButtonOne"
+              onClick={() => {
+                changeWork(2);
+                setWorkText(WorksText[2]);
+              }}
+            >
               Зразок 3
             </button>
           </div>
@@ -82,8 +122,8 @@ const HomeServices = () => {
         </div>
         <div style={{ backgroundImage: `url(${process.env.PUBLIC_URL + work})` }} className="AboutTechniqueImg">
           <div className="AboutTechniqueImgText">
-            <h1 className="AboutTechniqueImgTitle">Lorem Technique</h1>
-            <h4 className="AboutTechniqueImgDescription">Arch, intrerier</h4>
+            <h1 className="AboutTechniqueImgTitle">{workText}</h1>
+            <h4 className="AboutTechniqueImgDescription">Роботи</h4>
           </div>
         </div>
       </div>

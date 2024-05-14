@@ -6,12 +6,14 @@ import { fetchProducts, TypeProduct } from "../services/dataService";
 
 const Products = () => {
   const [products, setProducts] = useState<TypeProduct[]>([]);
+  const [isLoad, setIsLoad] = useState(true);
 
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        const data = await fetchProducts();
-        setProducts(data);
+        let data: any;
+        data = await fetchProducts();
+        setProducts(data.products);
       } catch (error) {
         console.error("Помилка при завантаженні продуктів:", error);
       }
@@ -20,12 +22,18 @@ const Products = () => {
     loadProducts();
   }, []);
 
+  useEffect(() => {
+    if (products.length !== 0) {
+      setIsLoad(false);
+    }
+  }, [products]);
+
   return (
     <>
       <div className="Main">
         <ProductsMain />
         <ProductsAbout />
-        <ProductsCards products={products} />
+        {isLoad ? <>Loading...</> : <ProductsCards products={products} />}
       </div>
     </>
   );

@@ -1,7 +1,7 @@
 //products:
 
 export async function fetchProducts(): Promise<TypeProduct[]> {
-  const response = await fetch("http://localhost:7000/products");
+  const response = await fetch("https://denisrudiy.github.io/host_api_bud_prod/db.json");
   if (!response.ok) {
     throw new Error("Помилка при отриманні продуктів");
   }
@@ -17,7 +17,7 @@ export type TypeProduct = {
 
 //JOBS
 export async function fetchWork(): Promise<TypeWork[]> {
-  const response = await fetch("http://localhost:7000/jobs");
+  const response = await fetch("https://denisrudiy.github.io/host_adpi_bud_works/db.json");
   if (!response.ok) {
     throw new Error("Помилка при отриманні продуктів");
   }
@@ -79,8 +79,8 @@ export type TypeTechnicTypes = {
 };
 
 //TECHNIQU
-export async function fetchTechnic(type: string): Promise<TypeTechnic[]> {
-  const response = await fetch(`http://localhost:7000/${type}`);
+export async function fetchTechnic(): Promise<TypeTechnic[]> {
+  const response = await fetch(`https://denisrudiy.github.io/host_api_budd/db.json`);
   if (!response.ok) {
     throw new Error("Помилка при отриманні продуктів");
   }

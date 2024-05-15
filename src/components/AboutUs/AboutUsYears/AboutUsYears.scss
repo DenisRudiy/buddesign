@@ -139,3 +139,57 @@
     }
   }
 }
+@media only screen and (min-width: 320px) and (max-width: 700px) {
+  .AboutUsYears {
+    .AboutUsYearsBody {
+      .AboutUsYearsItem {
+        height: 400px;
+        .AboutUsYearsItemImgBackground {
+          height: 400px;
+        }
+        .AboutUsYearsItemData {
+          height: 400px;
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 600px) {
+  .AboutUsYears {
+    .AboutUsYearsBody {
+      .AboutUsYearsItem {
+        .AboutUsYearsItemData {
+          .AboutUsYearsItemNumber {
+            font-size: 70px;
+          }
+        }
+      }
+    }
+  }
+}
+@media only screen and (min-width: 320px) and (max-width: 500px) {
+  .AboutUsYears {
+    .AboutUsYearsBody {
+      .AboutUsYearsItem {
+        height: 350px;
+        .AboutUsYearsItemImgBackground {
+          height: 350px;
+        }
+        .AboutUsYearsItemData {
+          height: 350px;
+          .AboutUsYearsItemNumber {
+            font-size: 70px;
+          }
+          .AboutUsYearsItemText {
+            .AboutUsYearsItemTitle {
+              font-size: 28px;
+            }
+            .AboutUsYearsItemDescription {
+              font-size: 15px;
+            }
+          }
+        }
+      }
+    }
+  }
+}

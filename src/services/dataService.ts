@@ -49,7 +49,7 @@ export type TypeHouses = {
 
 //Recyclables
 export async function fetchrRecyclables(): Promise<TypeRecyclables[]> {
-  const response = await fetch("http://localhost:7000/Rematerial");
+  const response = await fetch("https://denisrudiy.github.io/host_api_bud_remat/db.json");
   if (!response.ok) {
     throw new Error("Помилка при отриманні продуктів");
   }
@@ -59,6 +59,7 @@ export async function fetchrRecyclables(): Promise<TypeRecyclables[]> {
 export type TypeRecyclables = {
   id: string;
   title: string;
+  img: string;
   price: number;
 };
 

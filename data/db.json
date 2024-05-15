@@ -503,63 +503,33 @@
   "Rematerial": [
     {
       "id": 0,
-      "title": "МАКУЛАТУРА",
+      "title": "Пляшки будь-яких видів",
+      "img": "/Recyclables/Recyclables1.webp",
       "price": 500
     },
     {
       "id": 1,
-      "title": "МАКУЛАТУРА",
+      "title": "Макулатура",
+      "img": "/Recyclables/Recyclables2.webp",
       "price": 4000
     },
     {
       "id": 2,
-      "title": "МАКУЛАТУРА",
+      "title": "Брухт алюмінієвих банок",
+      "img": "/Recyclables/Recyclables3.webp",
       "price": 2000
     },
     {
       "id": 3,
-      "title": "МАКУЛАТУРА",
+      "title": "Склобій",
+      "img": "/Recyclables/Recyclables4.webp",
       "price": 5000
     },
     {
       "id": 4,
-      "title": "МАКУЛАТУРА",
+      "title": "Плівка будь-яких видів",
+      "img": "/Recyclables/Recyclables5.webp",
       "price": 6000
-    },
-    {
-      "id": 5,
-      "title": "МАКУЛАТУРА",
-      "price": 1000
-    },
-    {
-      "id": 6,
-      "title": "МАКУЛАТУРА",
-      "price": 4000
-    },
-    {
-      "id": 7,
-      "title": "МАКУЛАТУРА",
-      "price": 5000
-    },
-    {
-      "id": 8,
-      "title": "МАКУЛАТУРА",
-      "price": 5000
-    },
-    {
-      "id": 9,
-      "title": "МАКУЛАТУРА",
-      "price": 5000
-    },
-    {
-      "id": 10,
-      "title": "МАКУЛАТУРА",
-      "price": 5000
-    },
-    {
-      "id": 11,
-      "title": "МАКУЛАТУРА",
-      "price": 5000
     }
   ],
   "TechnicTypes": [

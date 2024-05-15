@@ -100,7 +100,7 @@ const Header = () => {
               Галерея
             </Link>
             <Link to="#" onClick={scrollToBottom} className="HeaderRouteItem">
-              Контакты
+              Контакти
             </Link>
             <button className="HeaderLanguage">
               <ArrowDown />
@@ -153,7 +153,7 @@ const Header = () => {
                   Галерея
                 </Link>
                 <Link to="#" onClick={scrollToBottom} className="modalNavItem">
-                  Контакты
+                  Контакти
                 </Link>
               </div>
             </div>

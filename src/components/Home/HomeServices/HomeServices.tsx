@@ -37,7 +37,7 @@ const HomeServices = () => {
           </div>
         </div>
         <div className="AboutTechniqueText">
-          <h1 className="AboutTechniqueTextTitle">Про нашу техніку</h1>
+          <h1 className="AboutTechniqueTextTitle">Техніка</h1>
           <p className="AboutTechniqueTextDescription">
             Наш парк має велику кількість техніки: екскаватори, самоскиди, бульдозери та ін.. Саме тому, ви маєте
             можливість обрати оптимальний варіант, для виконання конкретних завдань, на високому рівні.
@@ -80,7 +80,7 @@ const HomeServices = () => {
       </div>
       <div className="AboutWork">
         <div className="AboutTechniqueText">
-          <h1 className="AboutTechniqueTextTitle">Про нашу роботу</h1>
+          <h1 className="AboutTechniqueTextTitle">Роботи</h1>
           <p className="AboutTechniqueTextDescription">
             Широкий спектр високоякісних послуг ,надійних фахівців ,сучасних технологій та техніки, дає змогу
             реалізувати всі проєкти у встановлені терміни.

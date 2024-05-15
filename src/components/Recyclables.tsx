@@ -1,77 +1,37 @@
 import RecyclablesMain from "./Recyclables/RecyclablesMain/RecyclablesMain";
 import RecyclablesAbout from "./Recyclables/RecyclablesAbout/RecyclablesAbout";
 import RecyclablesCards from "./Recyclables/RecyclablesCards/RecyclablesCards";
-
-let recyclables: any;
-recyclables = [
-  {
-    id: 0,
-    title: "МАКУЛАТУРА",
-    price: 500,
-  },
-  {
-    id: 1,
-    title: "МАКУЛАТУРА",
-    price: 4000,
-  },
-  {
-    id: 2,
-    title: "МАКУЛАТУРА",
-    price: 2000,
-  },
-  {
-    id: 3,
-    title: "МАКУЛАТУРА",
-    price: 5000,
-  },
-  {
-    id: 4,
-    title: "МАКУЛАТУРА",
-    price: 6000,
-  },
-  {
-    id: 5,
-    title: "МАКУЛАТУРА",
-    price: 1000,
-  },
-  {
-    id: 6,
-    title: "МАКУЛАТУРА",
-    price: 4000,
-  },
-  {
-    id: 7,
-    title: "МАКУЛАТУРА",
-    price: 5000,
-  },
-  {
-    id: 8,
-    title: "МАКУЛАТУРА",
-    price: 5000,
-  },
-];
+import { useEffect, useState } from "react";
+import { fetchrRecyclables, TypeRecyclables } from "../services/dataService";
 
 const Recyclables = () => {
-  // const [recyclables, setRecyclables] = useState<TypeRecyclables[]>([]);
+  const [recyclables, setRecyclables] = useState<TypeRecyclables[]>([]);
+  const [isLoad, setIsLoad] = useState(true);
 
-  // useEffect(() => {
-  //   const loadRecyclables = async () => {
-  //     try {
-  //       const data = await fetchrRecyclables();
-  //       setRecyclables(data);
-  //     } catch (error) {
-  //       console.error("Помилка при завантаженні продуктів:", error);
-  //     }
-  //   };
+  useEffect(() => {
+    const loadRecyclables = async () => {
+      try {
+        let data: any;
+        data = await fetchrRecyclables();
+        setRecyclables(data.Rematerial);
+      } catch (error) {
+        console.error("Помилка при завантаженні продуктів:", error);
+      }
+    };
 
-  //   loadRecyclables();
-  // }, []);
+    loadRecyclables();
+  }, []);
+  useEffect(() => {
+    if (recyclables.length !== 0) {
+      setIsLoad(false);
+    }
+  }, [recyclables]);
   return (
     <>
       <div className="Main">
         <RecyclablesMain />
         <RecyclablesAbout />
-        <RecyclablesCards recyclables={recyclables} />
+        {isLoad ? <>Loading...</> : <RecyclablesCards recyclables={recyclables} />}
       </div>
     </>
   );

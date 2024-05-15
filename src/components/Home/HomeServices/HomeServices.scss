@@ -19,14 +19,21 @@
         width: 250px;
         height: 90px;
         background-color: white;
-        font-family: "Alumni Sans", sans-serif;
         .AboutTechniqueImgTitle {
+          font-family: "Open Sans";
+          letter-spacing: -1.5px;
           text-transform: uppercase;
-          font-size: 32px;
+          font-size: 18px;
+          padding: 10px 0px;
+          margin: 0;
         }
         .AboutTechniqueImgDescription {
+          font-family: "Open Sans";
+          letter-spacing: -1.5px;
+          font-size: 16px;
+          margin: 0;
           text-transform: uppercase;
-          font-size: 20px;
+          font-size: 16px;
           color: #c5a47e;
         }
       }

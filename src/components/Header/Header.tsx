@@ -24,7 +24,6 @@ const Header = () => {
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
-      behavior: "smooth",
     });
   };
 
@@ -124,32 +123,95 @@ const Header = () => {
                 </button>
               </div>
               <div className="ModalBody">
-                <Link to="/buddesign/technique" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/technique"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Техніка
                 </Link>
-                <Link to="/buddesign/works" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/works"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Роботи
                 </Link>
-                <Link to="/buddesign/products" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/products"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Товари
                 </Link>
-                <Link to="/buddesign/outsourcing" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/outsourcing"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Аутсорсинг
                 </Link>
-                <Link to="/buddesign/houses" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/houses"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Будинки
                 </Link>
-                <Link to="/buddesign/recyclables" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/recyclables"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Вторсировина
                 </Link>
 
-                <Link to="/buddesign/about" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/about"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Про нас
                 </Link>
-                <Link to="/buddesign/projects" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/projects"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Проекти
                 </Link>
-                <Link to="/buddesign/gallery" className="modalNavItem" onClick={scrollToTop}>
+                <Link
+                  to="/buddesign/gallery"
+                  className="modalNavItem"
+                  onClick={() => {
+                    scrollToTop();
+                    showModal();
+                  }}
+                >
                   Галерея
                 </Link>
                 <Link to="#" onClick={scrollToBottom} className="modalNavItem">

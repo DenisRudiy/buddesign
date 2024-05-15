@@ -12,8 +12,9 @@
   .ReasonsCards {
     @apply flex justify-center items-center;
     .ReasonsCard {
-      @apply flex justify-center items-center flex-col;
+      @apply flex  items-center flex-col;
       text-align: center;
+      height: 175px;
       .ReasonsCardTitle {
         font-family: "Alumni Sans", sans-serif;
         font-size: 30px;

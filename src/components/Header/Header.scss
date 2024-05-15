@@ -5,15 +5,14 @@
   color: white;
   height: 100px;
   width: 100vw;
-  padding-left: 20vw;
-  padding-right: 5vw;
+  padding: 0px 128px;
   position: relative;
   border-bottom: 1px solid white;
   .HeaderLogo {
     @apply flex items-center;
     gap: 5px;
     .HeaderTitle {
-      font-size: 50px;
+      font-size: 40px;
       font-weight: 600;
       text-transform: uppercase;
       margin-top: 10px;
@@ -26,6 +25,7 @@
     gap: 25px;
     font-size: 16px;
     overflow: hidden;
+    padding-top: 10px;
     .HeaderDropdownButton {
       @apply uppercase;
     }
@@ -123,6 +123,7 @@
 }
 .headerMobile {
   @apply flex justify-center items-center gap-5;
+  padding-top: 10px;
 }
 .Modal {
   opacity: 1;
@@ -190,57 +191,70 @@
     }
   }
 }
-
 .show {
   right: 0px !important;
 }
 
-@media (max-width: 1920px) {
+@media (max-width: 1000px) {
   .Header {
-    padding-left: 10vw;
+    padding: 0px 64px;
+    .HeaderLogo {
+      img {
+        width: 50px;
+        height: auto;
+      }
+      .HeaderTitle {
+        font-size: 35px;
+      }
+    }
   }
 }
-@media (max-width: 1400px) {
+@media (max-width: 600px) {
   .Header {
-    padding-left: 5vw;
+    padding: 0px 36px;
     .HeaderLogo {
+      img {
+        width: 50px;
+        height: auto;
+      }
       .HeaderTitle {
-        font-size: 45px;
+        font-size: 35px;
       }
     }
   }
 }
 @media (max-width: 500px) {
   .Header {
-    padding-left: 5vw;
     .HeaderLogo {
-      .HeaderTitle {
-        font-size: 35px;
-      }
       img {
-        width: 50px;
+        width: 45px;
         height: auto;
       }
+      .HeaderTitle {
+        font-size: 30px;
+      }
+    }
+    .HeaderLanguage {
+      font-size: 26px;
     }
   }
 }
 @media (max-width: 450px) {
   .Header {
-    padding-left: 3vw;
     .HeaderLogo {
+      img {
+        width: 40px;
+        height: auto;
+      }
       .HeaderTitle {
         font-size: 30px;
-      }
-      img {
-        width: 50px;
-        height: auto;
       }
     }
   }
 }
 @media (max-width: 400px) {
   .Header {
-    padding-left: 3vw;
+    padding: 0px 16px;
     .HeaderLogo {
       gap: 1px;
       .HeaderTitle {
@@ -250,6 +264,9 @@
         width: 45px;
         height: auto;
       }
+    }
+    .headerMobile {
+      gap: 10px;
     }
   }
 }

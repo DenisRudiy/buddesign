@@ -11,6 +11,7 @@
     z-index: -1;
     overflow: hidden;
     background-size: cover;
+    background-position: center;
     background-repeat: no-repeat;
     &::before {
       content: "";
@@ -30,7 +31,7 @@
     position: relative;
     z-index: 100;
     color: white;
-    padding-left: 20vw;
+    padding-left: 128px;
     padding-bottom: 200px;
     height: calc(100vh - 90px);
     .OutsourcingMainTitle {
@@ -53,21 +54,37 @@
     }
   }
 }
+@media (max-width: 1000px) {
+  .OutsourcingMain {
+    .OutsourcingMainData {
+      padding-left: 64px !important;
+    }
+  }
+}
 @media (max-width: 700px) {
   .OutsourcingMain {
     .OutsourcingMainData {
-      padding-left: 10vw !important;
-      padding-bottom: 200px !important;
+      padding-bottom: 150px !important;
     }
   }
 }
 @media (max-width: 600px) {
   .OutsourcingMain {
     .OutsourcingMainData {
-      padding-left: 10vw !important;
+      padding-left: 36px !important;
       padding-bottom: 100px !important;
       .OutsourcingMainTitle {
-        font-size: 75px !important;
+        font-size: 65px !important;
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .OutsourcingMain {
+    .OutsourcingMainData {
+      padding-left: 16px !important;
+      .OutsourcingMainTitle {
+        font-size: 55px !important;
       }
     }
   }

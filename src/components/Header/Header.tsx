@@ -1,9 +1,9 @@
 import { useEffect, useState } from "react";
 import { Link } from "react-router-dom";
 import "./Header.scss";
-import Globe from "../../icons/GlobeIcon";
 import BurgerIcon from "../../icons/BurgerIcon";
 import CrossIcon from "../../icons/CrossIcon";
+import ArrowDown from "../../icons/ArrowDown";
 
 const Header = () => {
   const [isDropdown, setIsDropdown] = useState(false);
@@ -103,7 +103,7 @@ const Header = () => {
               Контакты
             </Link>
             <button className="HeaderLanguage">
-              <Globe />
+              <ArrowDown />
               <span>UA</span>
             </button>
           </div>
@@ -111,7 +111,7 @@ const Header = () => {
         {isMobile ? (
           <div className="headerMobile">
             <button className="HeaderLanguage">
-              <Globe />
+              <ArrowDown />
               <span>UA</span>
             </button>
             <button className="MenuButton" onClick={showModal}>

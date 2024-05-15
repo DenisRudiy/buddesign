@@ -36,10 +36,10 @@
     height: calc(100vh - 90px);
     .HomeMainTitle {
       @apply uppercase;
-      font-size: 95px;
-      font-family: Alumni Sans;
+      font-size: 75px;
+      font-family: "Oswald";
       letter-spacing: 0.06em;
-      font-weight: 600;
+      font-weight: 400;
       padding: 0;
     }
     .HomeMainButton {

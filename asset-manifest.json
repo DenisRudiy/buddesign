@@ -1,13 +1,13 @@
 {
   "files": {
-    "main.css": "/buddesign/static/css/main.924e6a39.css",
-    "main.js": "/buddesign/static/js/main.bea40f2e.js",
+    "main.css": "/buddesign/static/css/main.6b498630.css",
+    "main.js": "/buddesign/static/js/main.6e7c5cbc.js",
     "index.html": "/buddesign/index.html",
-    "main.924e6a39.css.map": "/buddesign/static/css/main.924e6a39.css.map",
-    "main.bea40f2e.js.map": "/buddesign/static/js/main.bea40f2e.js.map"
+    "main.6b498630.css.map": "/buddesign/static/css/main.6b498630.css.map",
+    "main.6e7c5cbc.js.map": "/buddesign/static/js/main.6e7c5cbc.js.map"
   },
   "entrypoints": [
-    "static/css/main.924e6a39.css",
-    "static/js/main.bea40f2e.js"
+    "static/css/main.6b498630.css",
+    "static/js/main.6e7c5cbc.js"
   ]
 }

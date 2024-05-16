@@ -3,6 +3,7 @@
   bottom: 200px;
   right: 200px;
   z-index: 2000;
+  transition: 0.3s all;
 
   .PhoneButton {
     display: flex;
@@ -17,6 +18,35 @@
     position: fixed;
     z-index: 2999;
     background-color: white;
+
+    &:hover {
+      scale: 1.05;
+    }
+
+    &:active {
+      transform: translateY(10px);
+    }
+  }
+}
+.BtnUp {
+  position: fixed;
+  bottom: 120px;
+  right: 200px;
+  z-index: 2000;
+  transition: 0.3s all;
+
+  .BtnUpButton {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 50%;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    width: 60px;
+    height: 60px;
+    transition: 0.3s all;
+    position: fixed;
+    z-index: 2999;
+    background-color: rgba($color: #c5a47e, $alpha: 0.6);
 
     &:hover {
       scale: 1.05;
@@ -133,27 +163,32 @@
 }
 
 @media only screen and (min-width: 320px) and (max-width: 1980px) {
-  .Phone {
+  .Phone,
+  .BtnUp {
     right: 150px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1620px) {
-  .Phone {
+  .Phone,
+  .BtnUp {
     right: 100px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1340px) {
-  .Phone {
+  .Phone,
+  .BtnUp {
     right: 80px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 1240px) {
-  .Phone {
+  .Phone,
+  .BtnUp {
     right: 120px;
   }
 }
 @media only screen and (min-width: 320px) and (max-width: 850px) {
-  .Phone {
+  .Phone,
+  .BtnUp {
     right: 80px;
   }
 }
@@ -174,9 +209,20 @@
 }
 @media only screen and (min-width: 320px) and (max-width: 500px) {
   .Phone {
-    bottom: 100px;
+    bottom: 120px;
     right: 60px;
     .PhoneButton {
+      width: 50px;
+      height: 50px;
+      svg {
+        width: 30px;
+      }
+    }
+  }
+  .BtnUp {
+    bottom: 60px;
+    right: 60px;
+    .BtnUpButton {
       width: 50px;
       height: 50px;
       svg {

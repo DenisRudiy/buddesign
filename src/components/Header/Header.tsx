@@ -6,14 +6,10 @@ import CrossIcon from "../../icons/CrossIcon";
 import ArrowDown from "../../icons/ArrowDown";
 
 const Header = () => {
-  const [isDropdown, setIsDropdown] = useState(false);
   const [modal, setModal] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const isMobile = windowWidth <= 1200;
 
-  const showServicesDropdown = () => {
-    setIsDropdown(!isDropdown);
-  };
   const scrollToBottom = () => {
     window.scrollTo({
       top: document.documentElement.scrollHeight,
@@ -61,33 +57,29 @@ const Header = () => {
           <></>
         ) : (
           <div className="HeaderRoutes">
-            <button className="HeaderDropdownButton" onClick={showServicesDropdown}>
+            <div className="Dropdown">
               Наші послуги
-              {isDropdown ? (
-                <div className="HeaderDropdownServices">
-                  <Link to="/buddesign/technique" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
-                    Техніка
-                  </Link>
-                  <Link to="/buddesign/works" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
-                    Роботи
-                  </Link>
-                  <Link to="/buddesign/products" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
-                    Товари
-                  </Link>
-                  <Link to="/buddesign/outsourcing" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
-                    Аутсорсинг
-                  </Link>
-                  <Link to="/buddesign/houses" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
-                    Будинки
-                  </Link>
-                  <Link to="/buddesign/recyclables" className="HeaderServicesRouteItem" onClick={showServicesDropdown}>
-                    Вторсировина
-                  </Link>
-                </div>
-              ) : (
-                <></>
-              )}
-            </button>
+              <div className="HeaderDropdownServices">
+                <Link to="/buddesign/technique" className="HeaderServicesRouteItem">
+                  Техніка
+                </Link>
+                <Link to="/buddesign/works" className="HeaderServicesRouteItem">
+                  Роботи
+                </Link>
+                <Link to="/buddesign/products" className="HeaderServicesRouteItem">
+                  Товари
+                </Link>
+                <Link to="/buddesign/outsourcing" className="HeaderServicesRouteItem">
+                  Аутсорсинг
+                </Link>
+                <Link to="/buddesign/houses" className="HeaderServicesRouteItem">
+                  Будинки
+                </Link>
+                <Link to="/buddesign/recyclables" className="HeaderServicesRouteItem">
+                  Вторсировина
+                </Link>
+              </div>
+            </div>
 
             <Link to="/buddesign/about" className="HeaderRouteItem">
               Про нас

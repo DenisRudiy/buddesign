@@ -1,6 +1,12 @@
-import EmailIcon from "../../icons/EmailIcon";
-import LocationIcon from "../../icons/LocationIcon";
-import PhoneIconFooter from "../../icons/PhoneIconFooter";
+import { Link } from "react-router-dom";
+import BottleIcon from "../../icons/BottleIcon";
+import HouseIcon from "../../icons/HouseIcon";
+import InstagramIcon from "../../icons/InstagramIcon";
+import TechniqueIcon from "../../icons/TechniqueIcon";
+import TelegramIcon from "../../icons/TelegramIcon";
+import TikTokIcon from "../../icons/TikTokIcon";
+import ToolsIcon from "../../icons/ToolsIcon";
+import ViberIcon from "../../icons/ViberIcon";
 import "./Footer.scss";
 
 const Footer = () => {
@@ -9,35 +15,35 @@ const Footer = () => {
       <div className="FooterLeftSection">
         <h1 className="FooterLeftSectionTitle">Наші контакти</h1>
         <div className="FooterLeftSectionData">
-          <LocationIcon></LocationIcon>
+          <TechniqueIcon></TechniqueIcon>
           <div className="FooterLeftSectionText">
             <h2 className="FooterLeftSectionTextTitle">Спецтехніка та роботи</h2>
 
-            <p className="FooterLeftSectionTextDescription">067 359 4797 -основний</p>
+            <p className="FooterLeftSectionTextDescription">067 359 4797 - основний</p>
             <p className="FooterLeftSectionTextDescription">067 329 4797</p>
             <p className="FooterLeftSectionTextDescription">093 041 2181</p>
-            <p className="FooterLeftSectionTextDescription">пошта 0930412181@ukr.net</p>
+            <p className="FooterLeftSectionTextDescription">0930412181@ukr.net</p>
           </div>
         </div>
         <div className="FooterLeftSectionData">
-          <EmailIcon></EmailIcon>
+          <ToolsIcon></ToolsIcon>
           <div className="FooterLeftSectionText">
             <h2 className="FooterLeftSectionTextTitle">Аутсорсинг</h2>
-            <p className="FooterLeftSectionTextDescription">068 946 8981- основний</p>
+            <p className="FooterLeftSectionTextDescription">068 946 8981 - основний</p>
             <p className="FooterLeftSectionTextDescription">093 035 1703</p>
-            <p className="FooterLeftSectionTextDescription">пошта buddizaine21@gmail.com</p>
+            <p className="FooterLeftSectionTextDescription">buddizaine21@gmail.com</p>
           </div>
         </div>
         <div className="FooterLeftSectionData">
-          <PhoneIconFooter size={30}></PhoneIconFooter>
+          <BottleIcon></BottleIcon>
           <div className="FooterLeftSectionText">
             <h2 className="FooterLeftSectionTextTitle">Вторсировина</h2>
             <p className="FooterLeftSectionTextDescription">067 506 9886</p>
-            <p className="FooterLeftSectionTextDescription">пошта Vtor.Plast@ukr.net</p>
+            <p className="FooterLeftSectionTextDescription">Vtor.Plast@ukr.net</p>
           </div>
         </div>
         <div className="FooterLeftSectionData">
-          <PhoneIconFooter size={30}></PhoneIconFooter>
+          <HouseIcon></HouseIcon>
           <div className="FooterLeftSectionText">
             <h2 className="FooterLeftSectionTextTitle">Будинки</h2>
             <p className="FooterLeftSectionTextDescription">067 433 88 22</p>
@@ -50,6 +56,27 @@ const Footer = () => {
         <input type="text" className="FooterRightSectionInput" placeholder="Ім'я" />
         <input type="text" className="FooterRightSectionInput" placeholder="Телефон" />
         <button className="FooterRightSectionButton">Відправити</button>
+
+        <div className="FooterSocialButtons">
+          <button className="FooterSocialButton">
+            <Link
+              to="https://www.instagram.com/buddesign.21?igsh=Y2FneWFvdnhxajZy"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <InstagramIcon></InstagramIcon>
+            </Link>
+          </button>
+          <button className="FooterSocialButton">
+            <TelegramIcon></TelegramIcon>
+          </button>
+          <button className="FooterSocialButton">
+            <ViberIcon></ViberIcon>
+          </button>
+          <button className="FooterSocialButton">
+            <TikTokIcon></TikTokIcon>
+          </button>
+        </div>
       </div>
     </div>
   );

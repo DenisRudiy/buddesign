@@ -15,12 +15,14 @@ import Footer from "./components/Footer/Footer";
 import Gellery from "./components/Gellery";
 import Reasons from "./components/Reasons/Reasons";
 import CurrTechnic from "./components/CurrTechnic";
+import BtnUp from "./components/BtnUp";
 function App() {
   return (
     <div className="App">
       <Router>
         <Header></Header>
         <Phone></Phone>
+        <BtnUp></BtnUp>
         <Routes>
           <Route path="/buddesign/" Component={Main}></Route>
           <Route path="/buddesign/technique" Component={Technique}></Route>

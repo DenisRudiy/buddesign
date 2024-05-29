@@ -9,27 +9,186 @@
     letter-spacing: 4px;
     padding: 40px 0px;
   }
+  .GalleryModal {
+    @apply flex justify-center items-center;
+    position: fixed;
+    z-index: 10000;
+    width: 100vw;
+    height: 100vh;
+    top: 0;
+    left: 0;
+    .GalleryModalOverlay {
+      position: fixed;
+      z-index: 9999;
+      width: 100vw;
+      height: 100vh;
+      top: 0;
+      left: 0;
+      background-color: rgba($color: #111111, $alpha: 0.45);
+      backdrop-filter: blur(8px) !important;
+    }
+    .GalleryModalBody {
+      border-radius: 2px;
+      position: fixed;
+      z-index: 10000;
+      width: 1400px;
+      height: 1000px;
+      background-color: rgba($color: #ffffff, $alpha: 0.95);
+      box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px,
+        rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+      padding: 20px;
+      .GalleryHeader {
+        @apply flex justify-end items-center;
+        width: 100%;
+        .GalleryHeaderClose {
+          @apply flex justify-center items-center;
+          width: 40px;
+          height: 40px;
+          border-radius: 50%;
+          transition: 0.3s all;
+
+          &:hover {
+            background-color: rgb(218, 218, 218);
+          }
+          &:active {
+            transform: translateY(10px);
+          }
+        }
+      }
+      .ModalImage {
+        margin-top: 20px;
+        width: 1400px;
+        height: 900px;
+        object-fit: cover;
+      }
+    }
+  }
   .GelleryPhotosBody {
     @apply grid grid-cols-4;
-    img {
-      width: 100%;
-      height: 100%;
-      object-fit: cover;
+    .GelleryPhotosItem {
+      position: relative;
+      cursor: pointer;
+      transition: 0.3s all;
+
+      &:hover img {
+        filter: brightness(40%);
+      }
+      &:hover .GalleryPhotosItemText {
+        opacity: 1;
+      }
+
+      img {
+        width: 100%;
+        height: 520px;
+        object-fit: cover;
+        transition: 0.5s all;
+      }
+      .GalleryPhotosItemText {
+        opacity: 0;
+        transition: 0.3s all;
+        h1 {
+          text-transform: uppercase;
+          font-family: "Alumni Sans", sans-serif;
+          position: absolute;
+          top: 50%;
+          left: 10px;
+          font-size: 20px;
+          color: #c5a47e;
+          z-index: 1000px;
+        }
+        h2 {
+          font-family: "Alumni Sans", sans-serif;
+          position: absolute;
+          top: 55%;
+          left: 10px;
+          font-size: 50px;
+          color: white;
+          z-index: 1000px;
+        }
+        p {
+          position: absolute;
+          top: 70%;
+          left: 10px;
+          font-size: 16px;
+          color: white;
+          z-index: 1000px;
+        }
+      }
+    }
+  }
+  .GelleryPhotosPagination {
+    @apply flex justify-center items-center;
+    gap: 20px;
+    padding: 20px;
+    font-family: "Alumni Sans", sans-serif;
+    font-size: 24px;
+
+    .GelleryPhotosPaginationButton {
+      width: 50px;
+      height: 50px;
+      border-radius: 2px;
+      border: 1px solid black;
+      transition: 0.3s all;
+
+      &:hover {
+        background-color: rgba($color: #c5a47e, $alpha: 0.3);
+      }
+      &:active {
+        transform: translateY(10px);
+      }
+      .GelleryPhotosPaginationLink {
+        @apply flex justify-center items-center cursor-pointer;
+        width: 50px;
+        height: 50px;
+      }
+    }
+
+    .activePag {
+      background-color: #c5a47e;
+      color: white;
+      border-color: #a68b6b;
+      &:hover {
+        background-color: rgba($color: #c5a47e, $alpha: 1);
+      }
     }
   }
 }
 
-@media (max-width: 1400px) {
+@media (max-width: 1600px) {
+  .GelleryPhotos {
+    .GalleryModal {
+      .GalleryModalBody {
+        width: 1200px;
+        height: 900px;
+        .ModalImage {
+          width: 1200px;
+          height: 800px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 1300px) {
   .GelleryPhotos {
     .GelleryPhotosBody {
-      @apply grid grid-cols-3;
+      @apply grid grid-cols-2;
+    }
+    .GalleryModal {
+      .GalleryModalBody {
+        width: 1000px;
+        height: 800px;
+        .ModalImage {
+          width: 1000px;
+          height: 700px;
+        }
+      }
     }
   }
 }
 
 @media (max-width: 1240px) {
-  .HomeGallery {
-    .HomeGalleryTitle {
+  .GelleryPhotos {
+    .GelleryPhotosTitle {
       font-size: 65px;
     }
   }
@@ -38,6 +197,30 @@
   .GelleryPhotos {
     .GelleryPhotosBody {
       @apply grid grid-cols-2;
+    }
+    .GalleryModal {
+      .GalleryModalBody {
+        width: 800px;
+        height: 700px;
+        .ModalImage {
+          width: 800px;
+          height: 600px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 850px) {
+  .GelleryPhotos {
+    .GalleryModal {
+      .GalleryModalBody {
+        width: 600px;
+        height: 600px;
+        .ModalImage {
+          width: 600px;
+          height: 500px;
+        }
+      }
     }
   }
 }
@@ -49,12 +232,22 @@
   }
 }
 @media (max-width: 600px) {
-  .HomeGallery {
-    .HomeGalleryTitle {
+  .GelleryPhotos {
+    .GelleryPhotosTitle {
       font-size: 45px;
     }
     .HomeGalleryButton {
       margin: 40px 0px;
+    }
+    .GalleryModal {
+      .GalleryModalBody {
+        width: 400px;
+        height: 500px;
+        .ModalImage {
+          width: 400px;
+          height: 400px;
+        }
+      }
     }
   }
 }
@@ -66,6 +259,49 @@
         width: 100%;
         height: 100%;
         object-fit: cover;
+      }
+    }
+  }
+  .GelleryPhotos {
+    .GalleryModal {
+      .GalleryModalBody {
+        padding: 10px;
+        width: 400px;
+        height: 450px;
+        .ModalImage {
+          margin-top: 5px;
+          width: 400px;
+          height: 380px;
+        }
+      }
+    }
+    .GelleryPhotosPagination {
+      gap: 10px;
+      font-size: 20px;
+
+      .GelleryPhotosPaginationButton {
+        width: 40px;
+        height: 40px;
+        .GelleryPhotosPaginationLink {
+          width: 40px;
+          height: 40px;
+        }
+      }
+    }
+  }
+}
+@media (max-width: 400px) {
+  .GelleryPhotos {
+    .GalleryModal {
+      .GalleryModalBody {
+        padding: 10px;
+        width: 350px;
+        height: 400px;
+        .ModalImage {
+          margin-top: 5px;
+          width: 350px;
+          height: 340px;
+        }
       }
     }
   }

@@ -11,10 +11,10 @@ const HomeGallery = () => {
     <div className="HomeGallery">
       <h1 className="HomeGalleryTitle">Галерея</h1>
       <div className="Gallery">
-        <img src={process.env.PUBLIC_URL + "/gal1.jpg"} alt="" />
-        <img src={process.env.PUBLIC_URL + "/gal2.jpg"} alt="" />
-        <img src={process.env.PUBLIC_URL + "/gal3.jpg"} alt="" />
-        <img src={process.env.PUBLIC_URL + "/gal4.jpg"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/Gallery/gal1.webp"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/Gallery/gal2.webp"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/Gallery/gal3.webp"} alt="" />
+        <img src={process.env.PUBLIC_URL + "/Gallery/gal4.webp"} alt="" />
       </div>
       <Link to="/buddesign/gallery">
         <button className="HomeGalleryButton" onClick={scrollToTop}>

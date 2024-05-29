@@ -11,7 +11,6 @@ const BtnUp = () => {
     };
 
     window.addEventListener("scroll", handleScroll);
-    console.log(scrollHeight);
     if (scrollHeight >= 1400) {
       setIsShow(true);
     } else if (scrollHeight < 1400) {

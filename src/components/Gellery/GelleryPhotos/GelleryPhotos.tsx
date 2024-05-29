@@ -10,6 +10,7 @@ const GelleryPhotos = () => {
   const [itemOffset, setItemOffset] = useState(0);
   const [currentImage, setCurrentImage] = useState("");
   const [isGalModal, setIsGalModal] = useState(false);
+  const [showBtn, setShowBtn] = useState(false);
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
@@ -30,12 +31,15 @@ const GelleryPhotos = () => {
     const handleResize = () => {
       if (window.innerWidth >= 1300) {
         setItemsPerPage(8);
+        setShowBtn(false);
       }
       if (window.innerWidth <= 1300 && window.innerWidth >= 650) {
         setItemsPerPage(6);
+        setShowBtn(false);
       }
       if (window.innerWidth <= 650) {
         setItemsPerPage(4);
+        setShowBtn(true);
       }
     };
     window.addEventListener("resize", handleResize);
@@ -48,12 +52,15 @@ const GelleryPhotos = () => {
     let width = window.innerWidth;
     if (width >= 1300) {
       setItemsPerPage(8);
+      setShowBtn(false);
     }
     if (width <= 1300 && width >= 650) {
       setItemsPerPage(6);
+      setShowBtn(false);
     }
     if (width <= 650) {
       setItemsPerPage(4);
+      setShowBtn(true);
     }
   }, []);
 
@@ -81,8 +88,10 @@ const GelleryPhotos = () => {
             <div
               className="GelleryPhotosItem"
               onClick={() => {
-                setCurrentImage(item.src);
-                setIsGalModal(true);
+                if (!showBtn) {
+                  setCurrentImage(item.src);
+                  setIsGalModal(true);
+                }
               }}
             >
               <img src={process.env.PUBLIC_URL + item.src} alt="" />
@@ -90,6 +99,19 @@ const GelleryPhotos = () => {
                 <h1>Наш проект</h1>
                 <h2>{item.subtitle}</h2>
                 <p>{item.description}</p>
+                {showBtn ? (
+                  <button
+                    className="GelleryPhotosItemBtn"
+                    onClick={() => {
+                      setCurrentImage(item.src);
+                      setIsGalModal(true);
+                    }}
+                  >
+                    Дивитися
+                  </button>
+                ) : (
+                  <></>
+                )}
               </div>
             </div>
           ))}

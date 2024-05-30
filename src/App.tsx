@@ -16,10 +16,54 @@ import Gellery from "./components/Gellery";
 import Reasons from "./components/Reasons/Reasons";
 import CurrTechnic from "./components/CurrTechnic";
 import BtnUp from "./components/BtnUp";
+import { useEffect, useState } from "react";
 function App() {
+  const [isLoad, setIsLoad] = useState(true);
+
+  useEffect(() => {
+    setTimeout(() => {
+      setIsLoad(false);
+    }, 3400);
+  }, []);
+
   return (
     <div className="App">
       <Router>
+        {isLoad === true ? (
+          <div className="Preloader">
+            <div
+              className="PreloaderPattern"
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}
+            ></div>
+            <section className="loader">
+              <div>
+                <div>
+                  <span className="one h6"></span>
+                  <span className="two h3"></span>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <span className="one h1"></span>
+                </div>
+              </div>
+
+              <div>
+                <div>
+                  <span className="two h2"></span>
+                </div>
+              </div>
+              <div>
+                <div>
+                  <span className="one h4"></span>
+                </div>
+              </div>
+            </section>
+          </div>
+        ) : (
+          <></>
+        )}
         <Header></Header>
         <Phone></Phone>
         <BtnUp></BtnUp>

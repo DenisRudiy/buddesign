@@ -93,18 +93,30 @@ const Header = () => {
             <Link to="#" onClick={scrollToBottom} className="HeaderRouteItem">
               Контакти
             </Link>
-            <button className="HeaderLanguage">
-              <ArrowDown />
-              <span>UA</span>
-            </button>
+            <div className="HeaderLanguage">
+              <div className="LangDropdown">
+                <ArrowDown />
+                <span>UA</span>
+                <div className="HeaderDropdownServices">
+                  <button className="HeaderRouteItem">UA</button>
+                  <button className="HeaderRouteItem">ENG</button>
+                </div>
+              </div>
+            </div>
           </div>
         )}
         {isMobile ? (
           <div className="headerMobile">
-            <button className="HeaderLanguage">
-              <ArrowDown />
-              <span>UA</span>
-            </button>
+            <div className="HeaderLanguage">
+              <div className="LangDropdown">
+                <ArrowDown />
+                <span>UA</span>
+                <div className="HeaderDropdownServices">
+                  <button className="HeaderRouteItem">UA</button>
+                  <button className="HeaderRouteItem">ENG</button>
+                </div>
+              </div>
+            </div>
             <button className="MenuButton" onClick={showModal}>
               <BurgerIcon></BurgerIcon>
             </button>

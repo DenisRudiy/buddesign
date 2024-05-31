@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "../Info/Info.scss";
 
 const Info = () => {
+  const { t } = useTranslation();
   return (
     <div className="InfoMainAbout">
       <div className="InfoMainAboutContainer">
@@ -12,15 +14,12 @@ const Info = () => {
             >
               30
             </h2>
-            <p className="InfoMainImageText">Років досвіду</p>
+            <p className="InfoMainImageText">{t("mainImageText")}</p>
           </div>
         </div>
-        <h5 className="InfoAboutUs">Про нас</h5>
-        <h1 className="InfoAboutCompany">Про нашу компанію</h1>
-        <p className="InfoAboutCompanyDescription">
-          Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та сучасною
-          технікою.
-        </p>
+        <h5 className="InfoAboutUs">{t("InfoAboutUs")}</h5>
+        <h1 className="InfoAboutCompany">{t("InfoAboutCompany")}</h1>
+        <p className="InfoAboutCompanyDescription">{t("InfoAboutCompanyDescription")}</p>
       </div>
       <div className="InfoPhoto">
         <img src={process.env.PUBLIC_URL + "/s2.jpg"} alt="" />

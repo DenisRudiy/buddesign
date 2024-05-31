@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import "./HomeAbout.scss";
+import { useTranslation } from "react-i18next";
 
 const HomeAbout = () => {
+  const { t } = useTranslation();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -18,16 +20,13 @@ const HomeAbout = () => {
             >
               30
             </h2>
-            <p className="MainImageText">Років досвіду</p>
+            <p className="MainImageText">{t("mainImageText")}</p>
           </div>
         </div>
-        <h1 className="AboutCompany">Про нашу компанію</h1>
-        <p className="AboutCompanyDescription">
-          Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та сучасною
-          технікою.
-        </p>
+        <h1 className="AboutCompany">{t("aboutCompany")}</h1>
+        <p className="AboutCompanyDescription">{t("aboutCompanyDescription")}</p>
         <Link to="/buddesign/about" onClick={scrollToTop}>
-          <button className="MainAboutButton">Про нас</button>
+          <button className="MainAboutButton">{t("mainAboutButton")}</button>
         </Link>
       </div>
       <div className="Photo">

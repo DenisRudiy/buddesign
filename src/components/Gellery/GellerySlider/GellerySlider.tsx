@@ -6,13 +6,16 @@ import { useRef } from "react";
 import ArrowRight from "../../../icons/ArrowRight";
 import ArrowLeft from "../../../icons/ArrowLeft";
 import "../GellerySlider/GellerySlider.scss";
+import { useTranslation } from "react-i18next";
+
 const GellerySlider = () => {
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
+  const { t } = useTranslation();
 
   return (
     <div className="HomeProjects" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
-      <h1 className="GalleryProjectsTitle">відео</h1>
+      <h1 className="GalleryProjectsTitle">{t("Video")}</h1>
       <Swiper
         modules={[Navigation]}
         speed={400}
@@ -34,10 +37,9 @@ const GellerySlider = () => {
               className="HomeProjectSlide"
             ></div>
             <div className="HomeProjectSlideData">
-              <h1 className="HomeProjectSmallTitle">Наші проекти</h1>
+              <h1 className="HomeProjectSmallTitle">{t("HomeProjectSmallTitle")}</h1>
               <h1 className="HomeProjectTitle">{item.name}</h1>
               <p className="HomeProjectDescription">{item.description}</p>
-              <button className="HomeProjectButton">Дивитися більше</button>
             </div>
           </SwiperSlide>
         ))}

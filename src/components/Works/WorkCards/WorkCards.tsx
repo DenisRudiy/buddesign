@@ -1,29 +1,25 @@
-import React from "react";
 import "../WorkCards/WorkCards.scss";
-import { TypeWork } from "../../../services/dataService";
+import { useTranslation } from "react-i18next";
 
-interface WorksCardsProps {
-  works: TypeWork[];
-}
+const WorkCards = (works: any) => {
+  const { i18n } = useTranslation();
 
-const WorkCards: React.FC<WorksCardsProps> = ({ works }) => {
   return (
     <div className="WorkCards">
       <div className="WorkCardsBody">
-        {works.map((item) => (
-          <div className="WorkImg">
+        {works.works.map((item: any) => (
+          <div className="WorkImg" key={item.id}>
             <div
               className="WorkImgBackground"
               style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
             />
-
-            {item.title.length < 17 ? (
+            {item.titleUkr.length < 17 ? (
               <div className="WorkImgText">
-                <h1 className="WorkImgTitle">{item.title}</h1>
+                <h1 className="WorkImgTitle">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
               </div>
             ) : (
               <div className="WorkImgTextBig">
-                <h1 className="WorkImgTitleBig">{item.title}</h1>
+                <h1 className="WorkImgTitleBig">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
               </div>
             )}
           </div>

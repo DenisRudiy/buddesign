@@ -5,14 +5,16 @@ import "./HomeProjects.scss";
 import { useRef } from "react";
 import ArrowRight from "../../../icons/ArrowRight";
 import ArrowLeft from "../../../icons/ArrowLeft";
+import { useTranslation } from "react-i18next";
 
 const HomeProjects = () => {
+  const { t } = useTranslation();
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
 
   return (
     <div className="HomeProjects" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
-      <h1 className="HomeProjectsTitle">Наші проєкти</h1>
+      <h1 className="HomeProjectsTitle">{t("HomeProjectsTitle")}</h1>
       <Swiper
         modules={[Navigation]}
         speed={400}
@@ -34,10 +36,10 @@ const HomeProjects = () => {
               className="HomeProjectSlide"
             ></div>
             <div className="HomeProjectSlideData">
-              <h1 className="HomeProjectSmallTitle">Наш проєкт</h1>
+              <h1 className="HomeProjectSmallTitle">{t("HomeProjectSmallTitle")}</h1>
               <h1 className="HomeProjectTitle">{item.name}</h1>
               <p className="HomeProjectDescription">{item.description}</p>
-              <button className="HomeProjectButton">Дивитися більше</button>
+              <button className="HomeProjectButton">{t("lookMore")}</button>
             </div>
           </SwiperSlide>
         ))}

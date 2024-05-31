@@ -4,8 +4,10 @@ import "swiper/css";
 import "swiper/css/pagination";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { useTranslation } from "react-i18next";
 
 const ProjectsSlider: React.FC = () => {
+  const { t } = useTranslation();
   const pagination = {
     clickable: true,
     renderBullet: function (className: any) {
@@ -15,7 +17,7 @@ const ProjectsSlider: React.FC = () => {
   return (
     <div className="ProjectsSlider">
       <div className="ProjectsSliderText">
-        <h1 className="ProjectsSliderTitle">Чиста гармонія між простором і функцією</h1>
+        <h1 className="ProjectsSliderTitle">{t("ProjectsOurContentTitle2")}</h1>
         <p className="ProjectsSliderDescription">
           Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore
           magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo

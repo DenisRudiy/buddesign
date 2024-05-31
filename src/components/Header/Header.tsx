@@ -3,12 +3,14 @@ import { Link } from "react-router-dom";
 import "./Header.scss";
 import BurgerIcon from "../../icons/BurgerIcon";
 import CrossIcon from "../../icons/CrossIcon";
-import ArrowDown from "../../icons/ArrowDown";
+import LanguageSelector from "../LanguageSelector";
+import { useTranslation } from "react-i18next";
 
 const Header = () => {
   const [modal, setModal] = useState(false);
   const [windowWidth, setWindowWidth] = useState(window.innerWidth);
   const isMobile = windowWidth <= 1200;
+  const { t, i18n } = useTranslation();
 
   const scrollToBottom = () => {
     window.scrollTo({
@@ -58,42 +60,42 @@ const Header = () => {
         ) : (
           <div className="HeaderRoutes">
             <div className="Dropdown">
-              Наші послуги
+              {t("headerNav1")}
               <div className="HeaderDropdownServices">
                 <Link to="/buddesign/technique" className="HeaderServicesRouteItem">
-                  Техніка
+                  {t("headerNav2")}
                 </Link>
                 <Link to="/buddesign/works" className="HeaderServicesRouteItem">
-                  Роботи
+                  {t("headerNav3")}
                 </Link>
                 <Link to="/buddesign/products" className="HeaderServicesRouteItem">
-                  Товари
+                  {t("headerNav4")}
                 </Link>
                 <Link to="/buddesign/outsourcing" className="HeaderServicesRouteItem">
-                  Аутсорсинг
+                  {t("headerNav5")}
                 </Link>
                 <Link to="/buddesign/houses" className="HeaderServicesRouteItem">
-                  Будинки
+                  {t("headerNav6")}
                 </Link>
                 <Link to="/buddesign/recyclables" className="HeaderServicesRouteItem">
-                  Вторсировина
+                  {t("headerNav7")}
                 </Link>
               </div>
             </div>
 
             <Link to="/buddesign/about" className="HeaderRouteItem">
-              Про нас
+              {t("headerNav8")}
             </Link>
             <Link to="/buddesign/projects" className="HeaderRouteItem">
-              Проекти
+              {t("headerNav9")}
             </Link>
             <Link to="/buddesign/gallery" className="HeaderRouteItem">
-              Галерея
+              {t("headerNav10")}
             </Link>
             <Link to="#" onClick={scrollToBottom} className="HeaderRouteItem">
-              Контакти
+              {t("headerNav11")}
             </Link>
-            <div className="HeaderLanguage">
+            {/* <div className="HeaderLanguage">
               <div className="LangDropdown">
                 <ArrowDown />
                 <span>UA</span>
@@ -102,21 +104,13 @@ const Header = () => {
                   <button className="HeaderRouteItem">ENG</button>
                 </div>
               </div>
-            </div>
+            </div> */}
+            <LanguageSelector i18n={i18n}></LanguageSelector>
           </div>
         )}
         {isMobile ? (
           <div className="headerMobile">
-            <div className="HeaderLanguage">
-              <div className="LangDropdown">
-                <ArrowDown />
-                <span>UA</span>
-                <div className="HeaderDropdownServices">
-                  <button className="HeaderRouteItem">UA</button>
-                  <button className="HeaderRouteItem">ENG</button>
-                </div>
-              </div>
-            </div>
+            <LanguageSelector i18n={i18n}></LanguageSelector>
             <button className="MenuButton" onClick={showModal}>
               <BurgerIcon></BurgerIcon>
             </button>

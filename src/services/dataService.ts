@@ -90,7 +90,8 @@ export async function fetchTechnic(): Promise<TypeTechnic[]> {
 
 export type TypeTechnic = {
   id: string;
-  title: string;
+  titleUkr: string;
+  titleEng: string;
   img: string;
   loadCapacity: string;
   volume: string;

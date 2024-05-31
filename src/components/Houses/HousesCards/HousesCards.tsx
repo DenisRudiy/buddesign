@@ -1,24 +1,21 @@
-import React from "react";
-
 import "../HousesCards/HousesCards.scss";
-import { TypeHouses } from "../../../services/dataService";
-interface HousesCardsProps {
-  houses: TypeHouses[];
-}
-const HousesCards: React.FC<HousesCardsProps> = ({ houses }) => {
+import { useTranslation } from "react-i18next";
+
+const HousesCards = ({ houses }: any) => {
+  const { i18n } = useTranslation();
   return (
     <div className="HousesCards">
       <div className="HousesCardsBody">
-        {houses.map((item) => (
+        {houses.map((item: any) => (
           <div className="HousesImg" key={item.id}>
             <div
               className="HousesImgBackground"
               style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/houses2.png"})` }}
             />
             <div className="HousesImgText ">
-              <h2 className="HousesImgTitle"> {item.title}</h2>
+              <h2 className="HousesImgTitle"> {i18n.language === "en" ? item.titleEng : item.titleUkr}</h2>
               <h4 className="HousesImgPrice">
-                $ {item.price} <span>|м²</span>
+                $ {item.price} <span>|{i18n.language === "en" ? "m²" : "м²"}</span>
               </h4>
             </div>
           </div>

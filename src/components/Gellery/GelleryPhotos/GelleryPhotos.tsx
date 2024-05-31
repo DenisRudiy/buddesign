@@ -2,8 +2,10 @@ import { useEffect, useState } from "react";
 import "../GelleryPhotos/GelleryPhotos.scss";
 import ReactPaginate from "react-paginate";
 import CrossIcon from "../../../icons/CrossIcon";
+import { useTranslation } from "react-i18next";
 
 const GelleryPhotos = () => {
+  const { t, i18n } = useTranslation();
   const [itemsPerPage, setItemsPerPage] = useState(8);
   const [currentItems, setCurrentItems] = useState<any>([]);
   const [pageCount, setPageCount] = useState(0);
@@ -66,7 +68,7 @@ const GelleryPhotos = () => {
 
   return (
     <div className="GelleryPhotos">
-      <h1 className="GelleryPhotosTitle">Фото</h1>
+      <h1 className="GelleryPhotosTitle">{t("Photo")}</h1>
       {isGalModal ? (
         <div className="GalleryModal">
           <div className="GalleryModalOverlay" onClick={() => setIsGalModal(false)}></div>
@@ -96,7 +98,7 @@ const GelleryPhotos = () => {
             >
               <img src={process.env.PUBLIC_URL + item.src} alt="" />
               <div className="GalleryPhotosItemText">
-                <h1>Наш проект</h1>
+                <h1>{t("HomeProjectSmallTitle")}</h1>
                 <h2>{item.subtitle}</h2>
                 <p>{item.description}</p>
                 {showBtn ? (
@@ -107,7 +109,7 @@ const GelleryPhotos = () => {
                       setIsGalModal(true);
                     }}
                   >
-                    Дивитися
+                    {i18n.language === "en" ? "View" : "Дивитися"}
                   </button>
                 ) : (
                   <></>

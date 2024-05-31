@@ -2,7 +2,8 @@
   "technic1": [
     {
       "id": 0,
-      "title": "DAF CF 85.360 самоскид (30т)",
+      "titleUkr": "DAF CF 85.360 самоскид (30т)",
+      "titleEng": "DAF CF 85.360 dump truck (30 tons)",
       "img": "/ForHome/HomeCar2.webp",
       "loadCapacity": "",
       "volume": "",
@@ -13,7 +14,8 @@
     },
     {
       "id": 1,
-      "title": "DAF CF 85.410 самоскид (30т)",
+      "titleUkr": "DAF CF 85.410 самоскид (30т)",
+      "titleEng": "DAF CF 85.410 dump truck (30 tons)",
       "img": "/ForHome/HomeCar2.webp",
       "loadCapacity": "",
       "volume": "",
@@ -24,7 +26,8 @@
     },
     {
       "id": 2,
-      "title": "DAF CF 85.460 самоскид (30т)",
+      "titleUkr": "DAF CF 85.460 самоскид (30т)",
+      "titleEng": "DAF CF 85.460 dump truck (30 tons)",
       "img": "/ForHome/HomeCar2.webp",
       "loadCapacity": "",
       "volume": "",
@@ -35,7 +38,8 @@
     },
     {
       "id": 3,
-      "title": "DAF CF 105.430 самоскид (40т)",
+      "titleUkr": "DAF CF 105.430 самоскид (40т)",
+      "titleEng": "DAF CF 105.430 dump truck (40 tons)",
       "img": "/ForHome/HomeCar2.webp",
       "loadCapacity": "",
       "volume": "",
@@ -46,7 +50,8 @@
     },
     {
       "id": 4,
-      "title": "DAF XF105.410 самоскид (40т)",
+      "titleUkr": "DAF XF105.410 самоскид (40т)",
+      "titleEng": "DAF XF105.410 dump truck (30 tons)",
       "img": "/ForHome/HomeCar2.webp",
       "loadCapacity": "",
       "volume": "",
@@ -57,7 +62,8 @@
     },
     {
       "id": 5,
-      "title": "DAF XF105.410 трал",
+      "titleUkr": "DAF XF105.410 трал",
+      "titleEng": "DAF XF105.410 dump truck",
       "img": "/ForHome/HomeCar2.webp",
       "loadCapacity": "",
       "volume": "",
@@ -70,7 +76,8 @@
   "technic2": [
     {
       "id": 0,
-      "title": "Гусеничний екскаватор DOOSAN 260",
+      "titleUkr": "Гусеничний екскаватор DOOSAN 260",
+      "titleEng": "Crawler excavator DOOSAN 260",
       "img": "/ForHome/HomeCar1.webp",
       "loadCapacity": "",
       "volume": "",
@@ -81,7 +88,8 @@
     },
     {
       "id": 1,
-      "title": "Екскаватор JCB 3 СХ",
+      "titleUkr": "Екскаватор JCB 3 СХ",
+      "titleEng": "Excavator JCB 3 СХ",
       "img": "/ForHome/HomeCar1.webp",
       "loadCapacity": "",
       "volume": "",
@@ -92,7 +100,8 @@
     },
     {
       "id": 2,
-      "title": "Екскаватор JCB 4 СХ",
+      "titleUkr": "Екскаватор JCB 4 СХ",
+      "titleEng": "Excavator JCB 4 СХ",
       "img": "/ForHome/HomeCar1.webp",
       "loadCapacity": "",
       "volume": "",
@@ -105,7 +114,8 @@
   "technic3": [
     {
       "id": 0,
-      "title": "Бульдозер Caterpillar D6R",
+      "titleUkr": "Бульдозер Caterpillar D6R",
+      "titleEng": "Caterpillar D6R bulldozer",
       "img": "/ForHome/HomeCar4.webp",
       "loadCapacity": "",
       "volume": "",
@@ -116,7 +126,8 @@
     },
     {
       "id": 0,
-      "title": "Бульдозер ДТ 75",
+      "titleUkr": "Бульдозер ДТ 75",
+      "titleEng": "Bulldozer DT 75",
       "img": "/ForHome/HomeCar4.webp",
       "loadCapacity": "",
       "volume": "",
@@ -129,7 +140,8 @@
   "technic4": [
     {
       "id": 0,
-      "title": "Дорожній каток SEM 518 (20т)",
+      "titleUkr": "Дорожній каток SEM 518 (20т)",
+      "titleEng": "Road roller SEM 518 (20 tons)",
       "img": "/ForHome/HomeCar3.webp",
       "loadCapacity": "",
       "volume": "",
@@ -140,7 +152,8 @@
     },
     {
       "id": 1,
-      "title": "Автокран КС-55727-С-12 (г/п 25 т)",
+      "titleUkr": "Автокран КС-55727-С-12 (г/п 25 т)",
+      "titleEng": "Crane KS-55727-S-12 (l/c 25 tons)",
       "img": "/ForHome/HomeCar3.webp",
       "loadCapacity": "",
       "volume": "",
@@ -151,7 +164,8 @@
     },
     {
       "id": 2,
-      "title": "Гідравлічні ножиці на базі Doosan 260",
+      "titleUkr": "Гідравлічні ножиці на базі Doosan 260",
+      "titleEng": "Hydraulic shears based on the Doosan 260",
       "img": "/ForHome/HomeCar3.webp",
       "loadCapacity": "",
       "volume": "",
@@ -162,7 +176,8 @@
     },
     {
       "id": 3,
-      "title": "Гідромолот на базі Doosan 260 ",
+      "titleUkr": "Гідромолот на базі Doosan 260 ",
+      "titleEng": "Hydraulic hammer based on the Doosan 260",
       "img": "/ForHome/HomeCar3.webp",
       "loadCapacity": "",
       "volume": "",
@@ -175,67 +190,78 @@
   "jobs": [
     {
       "id": 0,
-      "title": "Демонтаж (будь-якої складності, гідромолот, гідроножиці)",
+      "titleUkr": "Демонтаж (будь-якої складності, гідромолот, гідроножиці)",
+      "titleEng": "Dismantling (any complexity, hydraulic hammer, hydraulic shears)",
       "img": "/Works/Works1.webp",
       "price": 400
     },
     {
       "id": 1,
-      "title": "Розробка котлованів",
+      "titleUkr": "Розробка котлованів",
+      "titleEng": "Development of pits",
       "img": "/Works/Works2.webp",
       "price": 300
     },
     {
       "id": 2,
-      "title": "Вивіз сміття",
+      "titleUkr": "Вивіз сміття",
+      "titleEng": "Garbage collection",
       "img": "/Works/Works3.webp",
       "price": 500
     },
     {
       "id": 3,
-      "title": "Перевезення вантажів",
+      "titleUkr": "Перевезення вантажів",
+      "titleEng": "Cargo transportation",
       "img": "/Works/Works4.webp",
       "price": 600
     },
     {
       "id": 4,
-      "title": "Монолітні роботи",
+      "titleUkr": "Монолітні роботи",
+      "titleEng": "Monolithic works",
       "img": "/Works/Works5.webp",
       "price": 300
     },
     {
       "id": 5,
-      "title": "Благоустрій території",
+      "titleUkr": "Благоустрій території",
+      "titleEng": "Territory improvement",
       "img": "/Works/Works6.webp",
       "price": 100
     },
     {
       "id": 6,
-      "title": "Асфальтування",
+      "titleUkr": "Асфальтування",
+      "titleEng": "Asphalting",
       "img": "/Works/Works7.webp",
       "price": 500
     },
     {
       "id": 7,
-      "title": "Берегоукріплення / розчистка / розборка / поглиблення водойм",
+      "titleUkr": "Берегоукріплення / розчистка / розборка / поглиблення водойм",
+      "titleEng": "Shore protection / clearing / disassembly / deepening of water bodies",
       "img": "/Works/Works8.webp",
       "price": 400
     },
     {
       "id": 8,
-      "title": "Підняття рівня ділянки/ засипка яру",
+      "titleUkr": "Підняття рівня ділянки/ засипка яру",
+      "titleEng": "Raising the level of the site / filling the ravine",
       "img": "/Works/Works9.webp",
       "price": 600
     },
     {
       "id": 9,
-      "title": "Зрізання дерев",
+      "titleUkr": "Зрізання дерев",
+      "titleEng": "Cutting down trees",
       "img": "/Works/Works10.webp",
       "price": 300
     },
     {
       "id": 10,
-      "title": "Підготовка майданчику до початку будівельних робіт",
+      "titleUkr": "Підготовка майданчику до початку будівельних робіт",
+      "titleEng": "Preparing the site for the start of construction work",
       "img": "/Works/Works11.webp",
       "price": 500
     }
@@ -243,151 +269,176 @@
   "products": [
     {
       "id": 0,
-      "title": "Щебінь ф 2-5мм",
+      "titleUkr": "Щебінь ф 2-5мм",
+      "titleEng": "Crushed stone f 2-5 mm",
       "img": "/Products/Products1.webp",
       "price": 170
     },
     {
       "id": 1,
-      "title": "Щебінь ф 5-8мм",
+      "titleUkr": "Щебінь ф 5-8мм",
+      "titleEng": "Crushed stone f 5-8 mm",
       "img": "/Products/Products1.webp",
       "price": 200
     },
     {
       "id": 2,
-      "title": "Щебінь ф 5-10мм",
+      "titleUkr": "Щебінь ф 5-10мм",
+      "titleEng": "Crushed stone f 5-10 mm",
       "img": "/Products/Products1.webp",
       "price": 280
     },
     {
       "id": 3,
-      "title": "Щебінь ф 5-20мм",
+      "titleUkr": "Щебінь ф 5-20мм",
+      "titleEng": "Crushed stone f 5-20 mm",
       "img": "/Products/Products1.webp",
       "price": 270
     },
     {
       "id": 4,
-      "title": "Щебінь ф 10-20мм",
+      "titleUkr": "Щебінь ф 10-20мм",
+      "titleEng": "Crushed stone f 10-20 mm",
       "img": "/Products/Products1.webp",
       "price": 270
     },
     {
       "id": 5,
-      "title": "Щебінь ф 20-40мм",
+      "titleUkr": "Щебінь ф 20-40мм",
+      "titleEng": "Crushed stone f 20-40 mm",
       "img": "/Products/Products1.webp",
       "price": 220
     },
     {
       "id": 6,
-      "title": "Щебінь ф 40-70мм",
+      "titleUkr": "Щебінь ф 40-70мм",
+      "titleEng": "Crushed stone f 40-70 mm",
       "img": "/Products/Products1.webp",
       "price": 220
     },
     {
       "id": 7,
-      "title": "Щебінь ф 0,05-40 мм(суміш)",
+      "titleUkr": "Щебінь ф 0,05-40 мм(суміш)",
+      "titleEng": "Crushed stone f 0.05-40 mm (mixture)",
       "img": "/Products/Products1.webp",
       "price": 215
     },
     {
       "id": 8,
-      "title": "Щебінь ф 0,05-70 мм(суміш)",
+      "titleUkr": "Щебінь ф 0,05-70 мм(суміш)",
+      "titleEng": "Crushed stone f 0.05-70 mm (mixture)",
       "img": "/Products/Products1.webp",
       "price": 215
     },
     {
       "id": 9,
-      "title": "Щебінь ф 0,05-5 мм(відсів)",
+      "titleUkr": "Щебінь ф 0,05-5 мм(відсів)",
+      "titleEng": "Crushed stone f 0.05-5 mm (screening)",
       "img": "/Products/Products1.webp",
       "price": 215
     },
     {
       "id": 10,
-      "title": "Щебінь ф 300-500 мм(бут)",
+      "titleUkr": "Щебінь ф 300-500 мм(бут)",
+      "titleEng": "Crushed stone f 300-500 mm (rubble)",
       "img": "/Products/Products1.webp",
       "price": 650
     },
     {
       "id": 11,
-      "title": "Щебінь ф 150-300 мм(бут)",
+      "titleUkr": "Щебінь ф 150-300 мм(бут)",
+      "titleEng": "Crushed stone f 150-300 mm (rubble)",
       "img": "/Products/Products1.webp",
       "price": 650
     },
     {
       "id": 12,
-      "title": "Щебінь ф 70-120 мм(бут)",
+      "titleUkr": "Щебінь ф 70-120 мм(бут)",
+      "titleEng": "Crushed stone f 70-120 mm (rubble)",
       "img": "/Products/Products1.webp",
       "price": 400
     },
     {
       "id": 13,
-      "title": "Річний пісок",
+      "titleUkr": "Річний пісок",
+      "titleEng": "Summer sand",
       "img": "/Products/Products2.webp",
       "price": 250
     },
     {
       "id": 14,
-      "title": "Овражний пісок",
+      "titleUkr": "Овражний пісок",
+      "titleEng": "Alluvial sand",
       "img": "/Products/Products3.webp",
       "price": 115
     },
     {
       "id": 15,
-      "title": "Суглинні грунти",
+      "titleUkr": "Суглинні грунти",
+      "titleEng": "Loamy soils",
       "img": "/Products/Products4.webp",
       "price": 50
     },
     {
       "id": 16,
-      "title": "Торф`яно-болотні грунти",
+      "titleUkr": "Торф`яно-болотні грунти",
+      "titleEng": "Peat and bog soils",
       "img": "/Products/Products5.webp",
       "price": 200
     },
     {
       "id": 17,
-      "title": "Чорнозем",
+      "titleUkr": "Чорнозем",
+      "titleEng": "Chernozem",
       "img": "/Products/Products6.webp",
       "price": 300
     },
     {
       "id": 18,
-      "title": "Глина",
+      "titleUkr": "Глина",
+      "titleEng": "Clay",
       "img": "/Products/Products7.webp",
       "price": 40
     },
     {
       "id": 19,
-      "title": "Супіщані грунти",
+      "titleUkr": "Супіщані грунти",
+      "titleEng": "Sandy loam soils",
       "img": "/Products/Products8.webp",
       "price": 50
     },
     {
       "id": 20,
-      "title": "Гравій",
+      "titleUkr": "Гравій",
+      "titleEng": "Gravel",
       "img": "/Products/Products9.webp",
       "price": 250
     },
     {
       "id": 21,
-      "title": "Керамзит",
+      "titleUkr": "Керамзит",
+      "titleEng": "Expanded clay",
       "img": "/Products/Products10.webp",
       "price": 2650
     },
     {
       "id": 22,
-      "title": "Пісок для піскоструя",
+      "titleUkr": "Пісок для піскоструя",
+      "titleEng": "Sand for sandblasting",
       "img": "/Products/Products11.webp",
       "price": 2400
     },
     {
       "id": 23,
-      "title": "Перегній",
+      "titleUkr": "Перегній",
+      "titleEng": "Humus",
       "img": "/Products/Products12.webp",
       "price": 60
     },
     {
       "id": 24,
-      "title": "Грунт на підсипку",
+      "titleUkr": "Грунт на підсипку",
+      "titleEng": "Soil for bedding",
       "img": "/Products/Products13.webp",
       "price": 20
     }
@@ -503,31 +554,36 @@
   "Rematerial": [
     {
       "id": 0,
-      "title": "Пляшки будь-яких видів",
+      "titleUkr": "Пляшки будь-яких видів",
+      "titleEng": "Bottles of any kind",
       "img": "/Recyclables/Recyclables1.webp",
       "price": 500
     },
     {
       "id": 1,
-      "title": "Макулатура",
+      "titleUkr": "Макулатура",
+      "titleEng": "Waste paper",
       "img": "/Recyclables/Recyclables2.webp",
       "price": 4000
     },
     {
       "id": 2,
-      "title": "Брухт алюмінієвих банок",
+      "titleUkr": "Брухт алюмінієвих банок",
+      "titleEng": "Scrap aluminum cans",
       "img": "/Recyclables/Recyclables3.webp",
       "price": 2000
     },
     {
       "id": 3,
-      "title": "Склобій",
+      "titleUkr": "Склобій",
+      "titleEng": "Glass",
       "img": "/Recyclables/Recyclables4.webp",
       "price": 5000
     },
     {
       "id": 4,
-      "title": "Плівка будь-яких видів",
+      "titleUkr": "Плівка будь-яких видів",
+      "titleEng": "Film of any type",
       "img": "/Recyclables/Recyclables5.webp",
       "price": 6000
     }

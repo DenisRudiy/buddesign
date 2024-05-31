@@ -1,31 +1,32 @@
 import { useEffect, useState } from "react";
-import { fetchTechnic, TypeTechnic } from "../services/dataService";
 import TechnicAbout from "./Technic/TechnicAbout/TechnicAbout";
 import TechnicMain from "./Technic/TechnicMain/TechnicMain";
+import { useTranslation } from "react-i18next";
+import db from "../data/db.json";
 
 const CurrTechnic = ({ type }: any) => {
-  const [currTechnic, setCurrTechnics] = useState<TypeTechnic[]>([]);
+  const [currTechnic, setCurrTechnics] = useState<any>([]);
+  const { t, i18n } = useTranslation();
 
   useEffect(() => {
     const loadTechnics = async () => {
       try {
-        let data: any;
         switch (type) {
           case "tipper":
-            data = await fetchTechnic();
-            setCurrTechnics(data.technic1);
+            // data = await fetchTechnic();
+            setCurrTechnics(db.technic1);
             break;
           case "excavator":
-            data = await fetchTechnic();
-            setCurrTechnics(data.technic2);
+            // data = await fetchTechnic();
+            setCurrTechnics(db.technic1);
             break;
           case "bulldozer":
-            data = await fetchTechnic();
-            setCurrTechnics(data.technic3);
+            // data = await fetchTechnic();
+            setCurrTechnics(db.technic1);
             break;
           case "other":
-            data = await fetchTechnic();
-            setCurrTechnics(data.technic4);
+            // data = await fetchTechnic();
+            setCurrTechnics(db.technic1);
             break;
           default:
             console.log("Тип техники: default");
@@ -43,24 +44,26 @@ const CurrTechnic = ({ type }: any) => {
       <TechnicAbout />
       <div className="TechnicCards">
         {type === "tipper" ? (
-          <h2 className="TechnicCardsTitle">Самоскиди</h2>
+          <h2 className="TechnicCardsTitle">{t("TechnicCardsTitleType1")}</h2>
         ) : type === "excavator" ? (
-          <h2 className="TechnicCardsTitle">Екскаватори</h2>
+          <h2 className="TechnicCardsTitle">{t("TechnicCardsTitleType2")}</h2>
         ) : type === "bulldozer" ? (
-          <h2 className="TechnicCardsTitle">Бульдозери</h2>
+          <h2 className="TechnicCardsTitle">{t("TechnicCardsTitleType3")}</h2>
         ) : (
-          <h2 className="TechnicCardsTitle">Інше</h2>
+          <h2 className="TechnicCardsTitle">{t("TechnicCardsTitleType4")}</h2>
         )}
         <div className="TechnicCardsBody">
-          {currTechnic.map((item) => (
+          {currTechnic.map((item: any) => (
             <div className="TechniqueImg">
               <div
                 className="TechniqueImgBackground"
                 style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
               />
               <div className="TechniqueImgText">
-                <h1 className="TechniqueImgTitle">{item.title}</h1>
-                <h4 className="TechniqueImgDescription ">{item.price} грн</h4>
+                <h1 className="TechniqueImgTitle">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
+                <h4 className="TechniqueImgDescription ">
+                  {item.price} {i18n.language === "en" ? "uah" : "грн"}
+                </h4>
               </div>
             </div>
           ))}

@@ -1,11 +1,12 @@
-import React from "react";
 import { Link } from "react-router-dom";
+import { useTranslation } from "react-i18next";
 import "../TechnicCardsTypes/TechnicCardsTypes.scss";
 
 const TechnicCardsTypes = () => {
+  const { t, i18n } = useTranslation();
   return (
     <div className="TechnicCards">
-      <h2 className="TechnicCardsTitle">Типи Техніки</h2>
+      <h2 className="TechnicCardsTitle">{t("TechnicCardsTitle")}</h2>
       <div className="TechnicCardsBody">
         {technics.map((item) => (
           <Link to={item.type}>
@@ -15,8 +16,8 @@ const TechnicCardsTypes = () => {
                 style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
               />
               <div className="TechniqueImgText">
-                <h1 className="TechniqueImgTitle">{item.title}</h1>
-                <h4 className="TechniqueImgDescription ">Техніка</h4>
+                <h1 className="TechniqueImgTitle">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
+                <h4 className="TechniqueImgDescription ">{t("Technique")}</h4>
               </div>
             </div>
           </Link>
@@ -28,7 +29,8 @@ const TechnicCardsTypes = () => {
 const technics = [
   {
     id: 0,
-    title: "Самоскиди",
+    titleUkr: "Самоскиди",
+    titleEng: "Dump trucks",
     type: "tipper",
     img: "/ForHome/HomeCar2.webp",
     price: 500,
@@ -38,7 +40,8 @@ const technics = [
   },
   {
     id: 1,
-    title: "Екскаватори",
+    titleUkr: "Екскаватори",
+    titleEng: "Excavators",
     type: "excavator",
     img: "/ForHome/HomeCar1.webp",
     price: 4000,
@@ -48,7 +51,8 @@ const technics = [
   },
   {
     id: 2,
-    title: "Бульдозери",
+    titleUkr: "Бульдозери",
+    titleEng: "Bulldozers",
     type: "bulldozer",
     img: "/ForHome/HomeCar4.webp",
     price: 2000,
@@ -58,7 +62,8 @@ const technics = [
   },
   {
     id: 3,
-    title: "Інше",
+    titleUkr: "Інше",
+    titleEng: "Other",
     type: "other",
     img: "/ForHome/HomeCar3.webp",
     price: 5000,

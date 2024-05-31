@@ -1,5 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "../AboutUsYears/AboutUsYears.scss";
+
 const AboutUsYears = () => {
+  const { t } = useTranslation();
   return (
     <div className="AboutUsYears">
       <div className="AboutUsYearsBody">
@@ -11,11 +14,8 @@ const AboutUsYears = () => {
           <div className="AboutUsYearsItemData">
             <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
-              <p className="AboutUsYearsItemDescription">
-                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
-                сучасною технікою.
-              </p>
-              <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
+              <p className="AboutUsYearsItemDescription">{t("AboutUsYearsItemDescription")}</p>
+              <h3 className="AboutUsYearsItemTitle">{t("AboutUsYearsItemTitle")}</h3>
             </div>
           </div>
         </div>
@@ -27,11 +27,8 @@ const AboutUsYears = () => {
           <div className="AboutUsYearsItemData">
             <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
-              <p className="AboutUsYearsItemDescription">
-                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
-                сучасною технікою.
-              </p>
-              <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
+              <p className="AboutUsYearsItemDescription">{t("AboutUsYearsItemDescription")}</p>
+              <h3 className="AboutUsYearsItemTitle">{t("AboutUsYearsItemTitle")}</h3>
             </div>
           </div>
         </div>
@@ -43,11 +40,8 @@ const AboutUsYears = () => {
           <div className="AboutUsYearsItemData">
             <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
-              <p className="AboutUsYearsItemDescription">
-                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
-                сучасною технікою.
-              </p>
-              <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
+              <p className="AboutUsYearsItemDescription">{t("AboutUsYearsItemDescription")}</p>
+              <h3 className="AboutUsYearsItemTitle">{t("AboutUsYearsItemTitle")}</h3>
             </div>
           </div>
         </div>
@@ -59,11 +53,8 @@ const AboutUsYears = () => {
           <div className="AboutUsYearsItemData">
             <h1 className="AboutUsYearsItemNumber">30+</h1>
             <div className="AboutUsYearsItemText">
-              <p className="AboutUsYearsItemDescription">
-                Buddesign-компанія з багаторічним досвідом, якісно виконаними проєктами, командою професіоналів та
-                сучасною технікою.
-              </p>
-              <h3 className="AboutUsYearsItemTitle">Років на ринку будівельних послуг</h3>
+              <p className="AboutUsYearsItemDescription">{t("AboutUsYearsItemDescription")}</p>
+              <h3 className="AboutUsYearsItemTitle">{t("AboutUsYearsItemTitle")}</h3>
             </div>
           </div>
         </div>

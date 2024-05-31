@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "../OutsourcingMain/OutsourcingMain.scss";
 
 const OutsourcingMain = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="OutsourcingMain">
@@ -9,7 +11,7 @@ const OutsourcingMain = () => {
           style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/ForMain/OutsorcingMain.webp"})` }}
         ></div>
         <div className="OutsourcingMainData">
-          <h1 className="OutsourcingMainTitle"> Аутсорсинг</h1>
+          <h1 className="OutsourcingMainTitle"> {t("Outsourcing")}</h1>
         </div>
       </div>
     </>

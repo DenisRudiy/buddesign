@@ -2,17 +2,19 @@ import { useState, useEffect } from "react";
 import WorkMain from "./Works/WorkMain/WorkMain";
 import WorksAbout from "./Works/WorksAbout/WorksAbout";
 import WorkCards from "./Works/WorkCards/WorkCards";
-import { TypeWork, fetchWork } from "../services/dataService";
+import db from "../data/db.json";
+
 const Work = () => {
-  const [works, setWorks] = useState<TypeWork[]>([]);
+  const [works, setWorks] = useState<any>([]);
   const [isLoad, setIsLoad] = useState(true);
 
   useEffect(() => {
     const loadProducts = async () => {
       try {
-        let data: any;
-        data = await fetchWork();
-        setWorks(data.jobs);
+        // let data: any;
+        // data = await fetchWork();
+        setWorks(db.jobs);
+        console.log(db.jobs);
       } catch (error) {
         console.error("Помилка при завантаженні продуктів:", error);
       }

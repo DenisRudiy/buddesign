@@ -7,39 +7,48 @@ let outsourcing: any;
 outsourcing = [
   {
     id: 0,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 1,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 2,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 3,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 4,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 5,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 6,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 7,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
   {
     id: 8,
-    title: "ВАНТАЖНІ РОБОТИ",
+    titleUkr: "ВАНТАЖНІ РОБОТИ",
+    titleEng: "LOADING OPERATIONS",
   },
 ];
 

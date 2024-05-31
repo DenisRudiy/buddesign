@@ -1,6 +1,8 @@
+import { useTranslation } from "react-i18next";
 import "../GelleryMain/GelleryMain.scss";
 
 const GelleryMain = () => {
+  const { t } = useTranslation();
   return (
     <>
       <div className="GelleryMain">
@@ -14,7 +16,7 @@ const GelleryMain = () => {
           }}
         ></div>
         <div className="GelleryMainData">
-          <h1 className="GelleryMainTitle">Галерея</h1>
+          <h1 className="GelleryMainTitle">{t("Gallery")}</h1>
         </div>
       </div>
     </>

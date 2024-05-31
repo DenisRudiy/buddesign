@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import "./HomeGallery.scss";
+import { useTranslation } from "react-i18next";
 
 const HomeGallery = () => {
+  const { t } = useTranslation();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -9,7 +11,7 @@ const HomeGallery = () => {
   };
   return (
     <div className="HomeGallery">
-      <h1 className="HomeGalleryTitle">Галерея</h1>
+      <h1 className="HomeGalleryTitle">{t("Gallery")}</h1>
       <div className="Gallery">
         <img src={process.env.PUBLIC_URL + "/Gallery/gal1.webp"} alt="" />
         <img src={process.env.PUBLIC_URL + "/Gallery/gal2.webp"} alt="" />
@@ -18,7 +20,7 @@ const HomeGallery = () => {
       </div>
       <Link to="/buddesign/gallery">
         <button className="HomeGalleryButton" onClick={scrollToTop}>
-          Дивитися більше
+          {t("lookMore")}
         </button>
       </Link>
     </div>

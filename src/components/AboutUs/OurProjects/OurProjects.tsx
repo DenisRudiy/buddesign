@@ -1,7 +1,9 @@
 import { Link } from "react-router-dom";
 import "../OurProjects/OurProjects.scss";
+import { useTranslation } from "react-i18next";
 
 const OurProjects = () => {
+  const { t } = useTranslation();
   const scrollToTop = () => {
     window.scrollTo({
       top: 0,
@@ -9,7 +11,7 @@ const OurProjects = () => {
   };
   return (
     <div className="OurProjects">
-      <div className="OurProjectsTitle">НАШІ ПРОЄКТИ</div>
+      <div className="OurProjectsTitle">{t("OurProjectsTitle")}</div>
       <div className="OurProjectsContainer">
         <div className="OurProjectsItem">
           <div className="OurProjectsItemImg">
@@ -33,7 +35,7 @@ const OurProjects = () => {
       <div className="OurProjectsButtonContainer">
         <Link to="/buddesign/projects">
           <button className="OurProjectsButton" onClick={scrollToTop}>
-            <p className="OurProjectsButtonText">Дивитися більше</p>
+            <p className="OurProjectsButtonText">{t("lookMore")}</p>
           </button>
         </Link>
       </div>

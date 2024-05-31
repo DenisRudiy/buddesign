@@ -1,8 +1,10 @@
 import React, { useState } from "react";
 import PhoneIcon from "../icons/PhoneIcon";
 import "../styles/App.scss";
+import { useTranslation } from "react-i18next";
 
 const Phone = () => {
+  const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState<boolean>(false);
   const [name, setName] = useState<string>("");
   const [email, setEmail] = useState<string>("");
@@ -37,12 +39,12 @@ const Phone = () => {
         <div className="modal-wrapper">
           <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
-              <h2>Замовити дзвінок</h2>
+              <h2>{i18n.language === "en" ? "Request a call" : "Замовити дзвінок"}</h2>
               <form>
-                <input placeholder="Ім’я" />
-                <input placeholder="Телефон" />
+                <input placeholder={t("footerPlaceholer1")} />
+                <input placeholder={t("footerPlaceholer2")} />
                 <button className="modal-btn" type="submit">
-                  Відправити
+                  {t("footerSend")}
                 </button>
               </form>
             </div>

@@ -18,15 +18,15 @@ const CurrTechnic = ({ type }: any) => {
             break;
           case "excavator":
             // data = await fetchTechnic();
-            setCurrTechnics(db.technic1);
+            setCurrTechnics(db.technic2);
             break;
           case "bulldozer":
             // data = await fetchTechnic();
-            setCurrTechnics(db.technic1);
+            setCurrTechnics(db.technic3);
             break;
           case "other":
             // data = await fetchTechnic();
-            setCurrTechnics(db.technic1);
+            setCurrTechnics(db.technic4);
             break;
           default:
             console.log("Тип техники: default");
@@ -62,7 +62,58 @@ const CurrTechnic = ({ type }: any) => {
               <div className="TechniqueImgText">
                 <h1 className="TechniqueImgTitle">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
                 <h4 className="TechniqueImgDescription ">
-                  {item.price} {i18n.language === "en" ? "uah" : "грн"}
+                  {item.price === "договірна" ? (
+                    <>{i18n.language === "en" ? "contractual" : "договірна"}</>
+                  ) : (
+                    <>
+                      {item.price} {i18n.language === "en" ? "uah" : "грн"}
+                    </>
+                  )}
+                  {item.loadCapacityUkr !== "-" ? (
+                    <h3 className="Details">
+                      {i18n.language === "en"
+                        ? `Load capacity - ${item.loadCapacityEng} ton.`
+                        : `Вантажопідємність - ${item.loadCapacityUkr} т.`}
+                    </h3>
+                  ) : (
+                    <></>
+                  )}
+                  {item.volumeUkr !== "-" ? (
+                    <h3 className="Details">
+                      {i18n.language === "en"
+                        ? `Volume of the body, bucket - ${item.volumeEng} m³`
+                        : `Об'єм кузова, ковша - ${item.volumeUkr} м³`}
+                    </h3>
+                  ) : (
+                    <></>
+                  )}
+                  {item.sizeUkr !== "-" ? (
+                    <h3 className="Details">
+                      {i18n.language === "en"
+                        ? `Site dimensions - ${item.sizeEng} mm`
+                        : `Розміри площадки - ${item.sizeUkr} мм`}
+                    </h3>
+                  ) : (
+                    <></>
+                  )}
+                  {item.deepUkr !== "-" ? (
+                    <h3 className="Details">
+                      {i18n.language === "en"
+                        ? `Digging depth - ${item.deepEng} m`
+                        : `Глубина копання - ${item.deepUkr} м`}
+                    </h3>
+                  ) : (
+                    <></>
+                  )}
+                  {item.heighUkr !== "-" ? (
+                    <h3 className="Details">
+                      {i18n.language === "en"
+                        ? `Load height - ${item.heighEng} m`
+                        : `Висота навантаження - ${item.heighUkr} м`}
+                    </h3>
+                  ) : (
+                    <></>
+                  )}
                 </h4>
               </div>
             </div>

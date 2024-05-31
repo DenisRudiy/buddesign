@@ -22,6 +22,16 @@
         scale: 1.01;
       }
 
+      &:hover .TechniqueImgText {
+        width: 100%;
+        z-index: 1000;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+
+      &:hover .TechniqueImgText .TechniqueImgDescription .Details {
+        display: block;
+      }
+
       .TechniqueImgBackground {
         width: 100%;
         height: 100%;
@@ -31,10 +41,12 @@
       .TechniqueImgText {
         position: absolute;
         width: 200px;
+        min-height: 80px;
         bottom: 0;
         left: 0;
         background-color: rgb(255, 255, 255);
         padding: 10px;
+        // transition: 0.5s all;
 
         .TechniqueImgTitle {
           font-family: "Open Sans";
@@ -52,6 +64,12 @@
           text-transform: uppercase;
           font-size: 16px;
           color: #c5a47e;
+
+          .Details {
+            text-transform: none;
+            color: black;
+            display: none;
+          }
         }
       }
     }
@@ -159,7 +177,7 @@
           padding: 8px;
 
           .TechniqueImgTitle {
-            font-size: 25px;
+            font-size: 17px;
           }
 
           .TechniqueImgDescription {

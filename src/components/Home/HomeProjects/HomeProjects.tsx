@@ -6,11 +6,17 @@ import { useRef } from "react";
 import ArrowRight from "../../../icons/ArrowRight";
 import ArrowLeft from "../../../icons/ArrowLeft";
 import { useTranslation } from "react-i18next";
+import { Link } from "react-router-dom";
 
 const HomeProjects = () => {
   const { t } = useTranslation();
   const navigationPrevRef = useRef(null);
   const navigationNextRef = useRef(null);
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 0,
+    });
+  };
 
   return (
     <div className="HomeProjects" style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/patrn1.png"})` }}>
@@ -39,7 +45,11 @@ const HomeProjects = () => {
               <h1 className="HomeProjectSmallTitle">{t("HomeProjectSmallTitle")}</h1>
               <h1 className="HomeProjectTitle">{item.name}</h1>
               <p className="HomeProjectDescription">{item.description}</p>
-              <button className="HomeProjectButton">{t("lookMore")}</button>
+              <Link to="/buddesign/gallery">
+                <button className="HomeProjectButton" onClick={scrollToTop}>
+                  {t("lookMore")}
+                </button>
+              </Link>
             </div>
           </SwiperSlide>
         ))}

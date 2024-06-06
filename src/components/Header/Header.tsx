@@ -129,7 +129,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Техніка
+                  {t("headerNav2")}
                 </Link>
                 <Link
                   to="/buddesign/works"
@@ -139,7 +139,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Роботи
+                  {t("headerNav3")}
                 </Link>
                 <Link
                   to="/buddesign/products"
@@ -149,7 +149,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Товари
+                  {t("headerNav4")}
                 </Link>
                 <Link
                   to="/buddesign/outsourcing"
@@ -159,7 +159,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Аутсорсинг
+                  {t("headerNav5")}
                 </Link>
                 <Link
                   to="/buddesign/houses"
@@ -169,7 +169,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Будинки
+                  {t("headerNav6")}
                 </Link>
                 <Link
                   to="/buddesign/recyclables"
@@ -179,7 +179,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Вторсировина
+                  {t("headerNav7")}
                 </Link>
 
                 <Link
@@ -190,7 +190,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Про нас
+                  {t("headerNav8")}
                 </Link>
                 <Link
                   to="/buddesign/projects"
@@ -200,7 +200,7 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Проекти
+                  {t("headerNav9")}
                 </Link>
                 <Link
                   to="/buddesign/gallery"
@@ -210,10 +210,10 @@ const Header = () => {
                     showModal();
                   }}
                 >
-                  Галерея
+                  {t("headerNav10")}
                 </Link>
                 <Link to="#" onClick={scrollToBottom} className="modalNavItem">
-                  Контакти
+                  {t("headerNav11")}
                 </Link>
               </div>
             </div>

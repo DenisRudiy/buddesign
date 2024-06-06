@@ -6,7 +6,7 @@ import { useTranslation } from "react-i18next";
 const TechnicData = ["/ForHome/HomeCar1.webp", "/ForHome/HomeCar2.webp", "/ForHome/HomeCar3.webp"];
 const WorksData = ["/ForHome/HomeWorks1.webp", "/ForHome/HomeWorks2.webp", "/ForHome/HomeWorks3.webp"];
 const TechnicText = ["Екскаватори", "Бульдозери", "Крани"];
-const WorksText = ["Монтажні роботи", "Асфальтування", "Перевезення вантажів"];
+const WorksText = ["Монолітні роботи", "Асфальтування", "Перевезення вантажів"];
 const TechnicTextEng = ["Excavators", "Bulldozers", "Cranes"];
 const WorksTextEng = ["Installation works", "Asphalting", "Cargo transportation"];
 

@@ -46,6 +46,9 @@ const Phone = () => {
                 <button className="modal-btn" type="submit">
                   {t("footerSend")}
                 </button>
+                <button className="modal-btn">
+                  <a href="tel:+380673594797">067 359 47 97</a>
+                </button>
               </form>
             </div>
           </div>

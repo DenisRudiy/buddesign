@@ -4,12 +4,17 @@ import "../TechnicCardsTypes/TechnicCardsTypes.scss";
 
 const TechnicCardsTypes = () => {
   const { t, i18n } = useTranslation();
+  const scrollToTop = () => {
+    window.scrollTo({
+      top: 1400,
+    });
+  };
   return (
     <div className="TechnicCards">
       <h2 className="TechnicCardsTitle">{t("TechnicCardsTitle")}</h2>
       <div className="TechnicCardsBody">
         {technics.map((item) => (
-          <Link to={item.type}>
+          <Link to={item.type} onClick={scrollToTop}>
             <div className="TechniqueImg">
               <div
                 className="TechniqueImgBackground"

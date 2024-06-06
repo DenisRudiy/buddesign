@@ -70,13 +70,23 @@ const Footer = () => {
             </Link>
           </button>
           <button className="FooterSocialButton">
-            <TelegramIcon></TelegramIcon>
+            <Link to="https://t.me/buddesign21" target="_blank" rel="noopener noreferrer">
+              <TelegramIcon></TelegramIcon>
+            </Link>
           </button>
           <button className="FooterSocialButton">
-            <ViberIcon></ViberIcon>
+            <Link to="viber://chat?number=%2B3800673594797" target="_blank" rel="noopener noreferrer">
+              <ViberIcon></ViberIcon>
+            </Link>
           </button>
           <button className="FooterSocialButton">
-            <TikTokIcon></TikTokIcon>
+            <Link
+              to="https://www.tiktok.com/@buddesign.21?_t=8mtApRkpZ3N&_r=1"
+              target="_blank"
+              rel="noopener noreferrer"
+            >
+              <TikTokIcon></TikTokIcon>
+            </Link>
           </button>
         </div>
       </div>

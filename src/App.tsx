@@ -17,6 +17,7 @@ import Reasons from "./components/Reasons/Reasons";
 import CurrTechnic from "./components/CurrTechnic";
 import BtnUp from "./components/BtnUp";
 import { useEffect, useState } from "react";
+import CurrHouse from "./components/CurrHouse";
 function App() {
   const [isLoad, setIsLoad] = useState(true);
 
@@ -82,11 +83,13 @@ function App() {
             path="/buddesign/technique/bulldozer"
             Component={() => <CurrTechnic type={"bulldozer"}></CurrTechnic>}
           ></Route>
+
           <Route path="/buddesign/technique/other" Component={() => <CurrTechnic type={"other"}></CurrTechnic>}></Route>
           <Route path="/buddesign/works" Component={Work}></Route>
           <Route path="/buddesign/products" Component={Products}></Route>
           <Route path="/buddesign/outsourcing" Component={Outsourcing}></Route>
           <Route path="/buddesign/houses" Component={Houses}></Route>
+          <Route path="/buddesign/houses/:id" Component={() => <CurrHouse data={"bulldozer"}></CurrHouse>}></Route>
           <Route path="/buddesign/recyclables" Component={Recyclables}></Route>
           <Route path="/buddesign/about" Component={AboutUs}></Route>
           <Route path="/buddesign/projects" Component={Projects}></Route>

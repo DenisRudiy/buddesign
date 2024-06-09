@@ -7,57 +7,28 @@ let houses: any;
 houses = [
   {
     id: 0,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 500,
+    titleUkr: "ЖК “озерна панорама” №18,20",
+    titleEng: "Residential complex “lake panorama” №18,20",
   },
   {
     id: 1,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 4000,
+    titleUkr: "ЖК “озерна панорама” №10,12",
+    titleEng: "Residential complex “lake panorama” №10,12",
   },
   {
     id: 2,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 2000,
+    titleUkr: "ЖК “озерна панорама” №2,4",
+    titleEng: "Residential complex “lake panorama” №2,4",
   },
   {
     id: 3,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 5000,
+    titleUkr: "ЖК “озерна панорама” №14,`16",
+    titleEng: "Residential complex “lake panorama” №14,`16",
   },
   {
     id: 4,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 6000,
-  },
-  {
-    id: 5,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 1000,
-  },
-  {
-    id: 6,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 4000,
-  },
-  {
-    id: 7,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 5000,
-  },
-  {
-    id: 8,
-    titleUkr: "Будинок",
-    titleEng: "House",
-    price: 5000,
+    titleUkr: "ЖК “озерна панорама” №6,8",
+    titleEng: "Residential complex “lake panorama” №6,8",
   },
 ];
 

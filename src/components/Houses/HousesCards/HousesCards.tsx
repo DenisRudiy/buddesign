@@ -16,9 +16,6 @@ const HousesCards = ({ houses }: any) => {
               />
               <div className="HousesImgText ">
                 <h2 className="HousesImgTitle"> {i18n.language === "en" ? item.titleEng : item.titleUkr}</h2>
-                <h4 className="HousesImgPrice">
-                  $ {item.price} <span>|{i18n.language === "en" ? "m²" : "м²"}</span>
-                </h4>
               </div>
             </div>
           </Link>

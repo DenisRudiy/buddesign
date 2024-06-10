@@ -7,13 +7,13 @@ let houses: any;
 houses = [
   {
     id: 0,
-    titleUkr: "ЖК “озерна панорама” №18,20",
-    titleEng: "Residential complex “lake panorama” №18,20",
+    titleUkr: "ЖК “озерна панорама” №10,12",
+    titleEng: "Residential complex “lake panorama” №10,12",
   },
   {
     id: 1,
-    titleUkr: "ЖК “озерна панорама” №10,12",
-    titleEng: "Residential complex “lake panorama” №10,12",
+    titleUkr: "ЖК “озерна панорама” №18,20",
+    titleEng: "Residential complex “lake panorama” №18,20",
   },
   {
     id: 2,

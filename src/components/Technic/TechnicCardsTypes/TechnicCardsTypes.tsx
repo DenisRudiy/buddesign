@@ -1,14 +1,42 @@
 import { Link } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import "../TechnicCardsTypes/TechnicCardsTypes.scss";
+import { useEffect, useState } from "react";
 
 const TechnicCardsTypes = () => {
   const { t, i18n } = useTranslation();
+  const [scrollConst, setScrollConst] = useState(1400);
+
   const scrollToTop = () => {
     window.scrollTo({
-      top: 1400,
+      top: scrollConst,
     });
   };
+
+  useEffect(() => {
+    const handleResize = () => {
+      if (window.innerWidth > 1440) {
+        setScrollConst(1400);
+      }
+      if (window.innerWidth <= 1440) {
+        setScrollConst(1300);
+      }
+    };
+    window.addEventListener("resize", handleResize);
+    return () => {
+      window.removeEventListener("resize", handleResize);
+    };
+  }, []);
+
+  useEffect(() => {
+    let width = window.innerWidth;
+    if (width > 1440) {
+      setScrollConst(1400);
+    }
+    if (width <= 1440) {
+      setScrollConst(1300);
+    }
+  }, []);
   return (
     <div className="TechnicCards">
       <h2 className="TechnicCardsTitle">{t("TechnicCardsTitle")}</h2>

@@ -33,6 +33,10 @@ const HomeProjects = () => {
           swiper.params.navigation.nextEl = navigationNextRef.current;
         }}
         resistanceRatio={0}
+        mousewheel={{
+          enabled: true,
+          forceToAxis: true,
+        }}
         className="HomeProjectSlider"
       >
         {sliderData.map((item, index) => (

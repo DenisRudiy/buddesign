@@ -13,15 +13,9 @@ const WorkCards = (works: any) => {
               className="WorkImgBackground"
               style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
             />
-            {item.titleUkr.length < 17 ? (
-              <div className="WorkImgText">
-                <h1 className="WorkImgTitle">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
-              </div>
-            ) : (
-              <div className="WorkImgTextBig">
-                <h1 className="WorkImgTitleBig">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
-              </div>
-            )}
+            <div className="WorkImgTextBig">
+              <h1 className="WorkImgTitleBig">{i18n.language === "en" ? item.titleEng : item.titleUkr}</h1>
+            </div>
           </div>
         ))}
       </div>

@@ -17,7 +17,7 @@ const ProductsCards = ({ products }: any) => {
               <h2 className="ProductsImgTitle">{i18n.language === "en" ? product.titleEng : product.titleUkr}</h2>
               <h4 className="ProductsImgPrice">
                 {i18n.language === "en" ? "uah" : "грн"} {product.price}{" "}
-                <span>|{i18n.language === "en" ? "kg." : "кг."}</span>
+                <span>|{i18n.language === "en" ? "t." : "т."}</span>
               </h4>
             </div>
           </div>

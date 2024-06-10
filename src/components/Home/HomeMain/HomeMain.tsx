@@ -1,6 +1,7 @@
 import { useTranslation } from "react-i18next";
 import "./HomeMain.scss";
 import { useState } from "react";
+import CrossIcon from "../../../icons/CrossIcon";
 
 const HomeMain = () => {
   const { t, i18n } = useTranslation();
@@ -42,6 +43,11 @@ const HomeMain = () => {
         <div className="modal-wrapper">
           <div className="modal-overlay" onClick={closeModal}>
             <div className="modal-content" onClick={(e) => e.stopPropagation()}>
+              <div className="modal-header">
+                <button onClick={closeModal}>
+                  <CrossIcon></CrossIcon>
+                </button>
+              </div>
               <h2>{i18n.language === "en" ? "Request a call" : "Замовити дзвінок"}</h2>
               <form>
                 <input placeholder={t("footerPlaceholer1")} />

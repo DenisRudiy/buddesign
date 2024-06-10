@@ -8,7 +8,7 @@ import { useTranslation } from "react-i18next";
 const CurrHouse = (data: any) => {
   const { id } = useParams();
   const [currHouse, setCurrHouse] = useState<any>([]);
-  const { t, i18n } = useTranslation();
+  const { i18n } = useTranslation();
 
   useEffect(() => {
     if (id) {

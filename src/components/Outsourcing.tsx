@@ -2,77 +2,39 @@ import "./Technic/TechnicMain/TechnicMain.scss";
 import OutsourcingMain from "./Outsourcing/OutsourcingMain/OutsourcingMain";
 import OutsourcingCards from "./Outsourcing/OutsourcingCards/OutsourcingCards";
 import OutsourcingAbout from "./Outsourcing/OutsourcingAbout/OutsourcingAbout";
-
-let outsourcing: any;
-outsourcing = [
-  {
-    id: 0,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 1,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 2,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 3,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 4,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 5,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 6,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 7,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-  {
-    id: 8,
-    titleUkr: "ВАНТАЖНІ РОБОТИ",
-    titleEng: "LOADING OPERATIONS",
-  },
-];
+import db from "../data/db.json";
+import { useEffect, useState } from "react";
 
 const Outsourcing = () => {
-  // const [outsourcing, setOutsourcing] = useState<TypeOutsourcing[]>([]);
+  const [outsourcing, setOtsourcing] = useState<any>([]);
+  const [isLoad, setIsLoad] = useState(true);
 
-  // useEffect(() => {
-  //   const loadOutsourcing = async () => {
-  //     try {
-  //       const data = await fetchOutsourcing();
-  //       setOutsourcing(data);
-  //     } catch (error) {
-  //       console.error("Помилка при завантаженні продуктів:", error);
-  //     }
-  //   };
+  useEffect(() => {
+    const loadProducts = async () => {
+      try {
+        // let data: any;
+        // data = await fetchProducts();
+        setOtsourcing(db.outsorcing);
+      } catch (error) {
+        console.error("Помилка при завантаженні продуктів:", error);
+      }
+    };
 
-  //   loadOutsourcing();
-  // }, []);
+    loadProducts();
+  }, []);
+
+  useEffect(() => {
+    if (outsourcing.length !== 0) {
+      setIsLoad(false);
+    }
+  }, [outsourcing]);
+
   return (
     <>
       <div className="Main">
         <OutsourcingMain />
         <OutsourcingAbout />
-        <OutsourcingCards outsourcing={outsourcing} />
+        {isLoad ? <>Loading...</> : <OutsourcingCards outsourcing={outsourcing} />}
       </div>
     </>
   );

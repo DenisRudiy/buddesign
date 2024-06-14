@@ -10,10 +10,13 @@ const OutsourcingCards = ({ outsourcing }: any) => {
           <div className="OutsourcingImg" key={item.id}>
             <div
               className="OutsourcingImgBackground"
-              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/outsourcing2.png"})` }}
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
             />
             <div className="OutsourcingImgText" key={item.id}>
               <h2 className="OutsourcingImgTitle"> {i18n.language === "en" ? item.titleEng : item.titleUkr}</h2>
+              <p className="OutsorcingDescription">
+                {i18n.language === "en" ? item.descriptionEng : item.descriptionUkr}
+              </p>
             </div>
           </div>
         ))}

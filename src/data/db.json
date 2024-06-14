@@ -518,50 +518,54 @@
       "price": 20
     }
   ],
-  "Business": [
+  "outsorcing": [
     {
       "id": 0,
-      "title": "ВАНТАЖНІ РОБОТИ"
+      "titleUkr": "Вантажник",
+      "titleEng": "Blacksmith",
+      "img": "/Outsorcing/outs1.webp",
+      "descriptionUkr": "Вантажник — це професія, що не вимагає високої кваліфікації. Однак працівник повинен володіти не тільки фізичною силою, але й вмінням працювати з сучасним обладнанням, бути відповідальним, розуміти як відбувається завантаження/вивантаження продукції.",
+      "descriptionEng": "A loader is a profession that does not require high qualifications. However, an employee must have not only physical strength but also the ability to work with modern equipment, be responsible, and understand how products are loaded/unloaded."
     },
     {
       "id": 1,
-      "title": "ВАНТАЖНІ РОБОТИ"
+      "titleUkr": "Комплектувальник",
+      "titleEng": "Completionist",
+      "img": "/Outsorcing/outs2.webp",
+      "descriptionUkr": "Робота комплектувальником вимагає уважності та швидкого темпу, виконується за встановленими правилами та інструкціями, поєднує ручну й фізичну працю, забезпечуючи підбір товарів за замовленням клієнта.",
+      "descriptionEng": "The job of a picker requires attentiveness and a fast pace, is performed according to established rules and instructions, combines manual and physical labor, ensuring the selection of goods according to the customer's order."
     },
     {
       "id": 2,
-      "title": "ВАНТАЖНІ РОБОТИ"
+      "titleUkr": "Водій навантажувача (погрузчика)",
+      "titleEng": "Forklift (forklift) driver",
+      "img": "/Outsorcing/outs3.webp",
+      "descriptionUkr": "Водій навантажувача (погрузчика) – це спеціаліст, який володіє навичками управління спеціальною технікою та пристроями під час навантаження, відвантаження, переміщення та укладання в штабелі різних вантажів.",
+      "descriptionEng": "A forklift (loader) driver is a specialist who has the skills to operate special equipment and devices during loading, shipping, moving, and stacking of various cargoes."
     },
     {
       "id": 3,
-      "title": "ВАНТАЖНІ РОБОТИ"
+      "titleUkr": "Оператор виробництва",
+      "titleEng": "Production operator",
+      "img": "/Outsorcing/outs4.webp",
+      "descriptionUkr": "Оператор лінії у виробництві харчової продукції веде технологічний процес із обслуговуванням різних потоково-механізованих ліній миття, розфасовки, оформлення, комплектування, зберігання, приймання і упакування різних видів готової продукції.",
+      "descriptionEng": "A line operator in the food production industry manages the technological process with the maintenance of various in-line mechanical lines for washing, packing, decorating, picking, storing, accepting and packaging various types of finished products."
     },
     {
       "id": 4,
-      "title": "ВАНТАЖНІ РОБОТИ"
+      "titleUkr": "Оператор ПК",
+      "titleEng": "PC operator",
+      "img": "/Outsorcing/outs5.webp",
+      "descriptionUkr": "Оператор ПК (персонального комп'ютера) - спеціаліст, який займається виконанням різних завдань на комп'ютері, включаючи введення даних, обробку інформації, роботу з програмами та програмами, а також вирішення простих технічних питань, пов'язаних з використанням комп'ютерної техніки.",
+      "descriptionEng": "A PC (personal computer) operator is a specialist who performs various tasks on a computer, including data entry, information processing, working with programs and applications, as well as solving simple technical issues related to the use of computer equipment."
     },
     {
       "id": 5,
-      "title": "ВАНТАЖНІ РОБОТИ"
-    },
-    {
-      "id": 6,
-      "title": "ВАНТАЖНІ РОБОТИ"
-    },
-    {
-      "id": 7,
-      "title": "ВАНТАЖНІ РОБОТИ"
-    },
-    {
-      "id": 8,
-      "title": "ВАНТАЖНІ РОБОТИ"
-    },
-    {
-      "id": 9,
-      "title": "ВАНТАЖНІ РОБОТИ"
-    },
-    {
-      "id": 10,
-      "title": "ВАНТАЖНІ РОБОТИ"
+      "titleUkr": "Комірник",
+      "titleEng": "Storekeeper",
+      "img": "/Outsorcing/outs6.webp",
+      "descriptionUkr": "Комірник — працівник складу, який займається зберіганням, урахуванням і розміщенням товарно-матеріальних цінностей, а також веде прийом і видачу товарів.",
+      "descriptionEng": "A warehouseman is a warehouse employee who is responsible for the storage, accounting, and placement of inventory, as well as receiving and issuing goods."
     }
   ],
   "Houses": [

@@ -51,7 +51,7 @@ const HousesCards = ({ houses }: any) => {
             <div className="HousesImg" key={item.id}>
               <div
                 className="HousesImgBackground"
-                style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/houses2.png"})` }}
+                style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
               />
               <div className="HousesImgText ">
                 <h2 className="HousesImgTitle"> {i18n.language === "en" ? item.titleEng : item.titleUkr}</h2>

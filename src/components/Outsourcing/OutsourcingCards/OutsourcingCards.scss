@@ -13,6 +13,13 @@
 
       &:hover {
         scale: 1.01;
+        box-shadow: rgba(0, 0, 0, 0.1) 0px 4px 12px;
+      }
+      &:hover .OutsourcingImgText {
+        width: 100%;
+      }
+      &:hover .OutsourcingImgText .OutsorcingDescription {
+        display: block;
       }
 
       .OutsourcingImgBackground {
@@ -23,7 +30,7 @@
       }
       .OutsourcingImgText {
         position: absolute;
-        width: 100%;
+        width: 300px;
         bottom: 0;
         left: 0;
         background-color: rgb(255, 255, 255);
@@ -31,7 +38,7 @@
 
         .OutsourcingImgTitle {
           font-family: "Open Sans";
-          letter-spacing: -1.5px;
+          letter-spacing: -0.5px;
           text-transform: uppercase;
           font-size: 18px;
           margin: 0;
@@ -39,6 +46,7 @@
 
         .OutsorcingDescription {
           font-size: 14px;
+          display: none;
         }
       }
     }

@@ -7,26 +7,31 @@ let houses: any;
 houses = [
   {
     id: 0,
+    img: "/Houses/orange1.webp",
     titleUkr: "ЖК “озерна панорама” №10,12",
     titleEng: "Residential complex “lake panorama” №10,12",
   },
   {
     id: 1,
+    img: "/Houses/beige1.webp",
     titleUkr: "ЖК “озерна панорама” №18,20",
     titleEng: "Residential complex “lake panorama” №18,20",
   },
   {
     id: 2,
+    img: "/Houses/yellow1.webp",
     titleUkr: "ЖК “озерна панорама” №2,4",
     titleEng: "Residential complex “lake panorama” №2,4",
   },
   {
     id: 3,
-    titleUkr: "ЖК “озерна панорама” №14,`16",
+    img: "/Houses/milky1.webp",
+    titleUkr: "ЖК “озерна панорама” №14,16",
     titleEng: "Residential complex “lake panorama” №14,`16",
   },
   {
     id: 4,
+    img: "/Houses/pink1.webp",
     titleUkr: "ЖК “озерна панорама” №6,8",
     titleEng: "Residential complex “lake panorama” №6,8",
   },

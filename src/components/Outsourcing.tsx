@@ -1,9 +1,8 @@
-import "./Technic/TechnicMain/TechnicMain.scss";
+import { useEffect, useState } from "react";
 import OutsourcingMain from "./Outsourcing/OutsourcingMain/OutsourcingMain";
 import OutsourcingCards from "./Outsourcing/OutsourcingCards/OutsourcingCards";
 import OutsourcingAbout from "./Outsourcing/OutsourcingAbout/OutsourcingAbout";
 import db from "../data/db.json";
-import { useEffect, useState } from "react";
 
 const Outsourcing = () => {
   const [outsourcing, setOtsourcing] = useState<any>([]);
@@ -22,7 +21,6 @@ const Outsourcing = () => {
 
     loadProducts();
   }, []);
-
   useEffect(() => {
     if (outsourcing.length !== 0) {
       setIsLoad(false);

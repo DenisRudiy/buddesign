@@ -571,6 +571,7 @@
   "Houses": [
     {
       "id": 0,
+      "imgOutside": ["/Houses/orange1.webp", "/Houses/orange2.webp", "/Houses/orange3.webp", "/Houses/orange4.webp"],
       "titleUkr": "ЖК “озерна панорама” №10,12",
       "titleEng": "Residential complex “lake panorama” №10,12",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
@@ -597,6 +598,7 @@
     },
     {
       "id": 1,
+      "imgOutside": ["/Houses/beige1.webp", "/Houses/beige2.webp"],
       "titleUkr": "ЖК “озерна панорама” №18,20",
       "titleEng": "Residential complex “lake panorama” №18,20",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
@@ -623,6 +625,7 @@
     },
     {
       "id": 2,
+      "imgOutside": ["/Houses/yellow1.webp", "/Houses/yellow2.webp"],
       "titleUkr": "ЖК “озерна панорама” №2,4",
       "titleEng": "Residential complex “lake panorama” №2,4",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
@@ -649,12 +652,13 @@
     },
     {
       "id": 3,
-      "titleUkr": "ЖК “озерна панорама” №14,`16",
-      "titleEng": "Residential complex “lake panorama” №14,`16",
+      "imgOutside": ["/Houses/milky1.webp", "/Houses/milky2.webp", "/Houses/milky3.webp", "/Houses/milky4.webp"],
+      "titleUkr": "ЖК “озерна панорама” №14,16",
+      "titleEng": "Residential complex “lake panorama” №14,16",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
       "nameEng": "Houses of the residential complex “Lake Panorama” in Khodosivka village",
-      "numberUkr": "№14,`16 (молочний)",
-      "numberEng": "№14,`16 (milky)",
+      "numberUkr": "№14,16 (молочний)",
+      "numberEng": "№14,16 (milky)",
       "typeUkr": "дуплекс 2 квартири",
       "typeEng": "duplex 2 apartments",
       "sizeUkr": "кв. 14-загальна площа 110м², кв.16-загальна площа 110м²",
@@ -675,6 +679,13 @@
     },
     {
       "id": 4,
+      "imgOutside": [
+        "/Houses/pink1.webp",
+        "/Houses/pink2.webp",
+        "/Houses/pink3.webp",
+        "/Houses/pink4.webp",
+        "/Houses/pink5.webp"
+      ],
       "titleUkr": "ЖК “озерна панорама” №6,8",
       "titleEng": "Residential complex “lake panorama” №6,8",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",

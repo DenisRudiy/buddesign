@@ -12,7 +12,7 @@ const HousesAbout = () => {
           <p className="HousesText">{t("HousesText")}</p>
         </div>
         <div className="HousesDecoration">
-          <img src={`${process.env.PUBLIC_URL + "/houses1.png"}`} alt="decor" />
+          <img src={`${process.env.PUBLIC_URL + "/housesAbout.webp"}`} alt="decor" className="HousesAboutImage" />
         </div>
       </div>
     </div>

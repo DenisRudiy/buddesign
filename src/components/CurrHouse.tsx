@@ -4,6 +4,20 @@ import "../styles/CurrentHouse.scss";
 import db from "../data/db.json";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
+import { Swiper, SwiperSlide } from "swiper/react";
+
+function CurrHouseSwiper({ imgOutside = [] }: any) {
+  console.log(imgOutside);
+  return (
+    <Swiper speed={400} resistanceRatio={0} className="CurrHouseSlider" grabCursor={true}>
+      {imgOutside.map((item: any, index: any) => (
+        <SwiperSlide key={index}>
+          <img src={`${process.env.PUBLIC_URL + item}`} alt="" className="CurrHouseImage" />
+        </SwiperSlide>
+      ))}
+    </Swiper>
+  );
+}
 
 const CurrHouse = (data: any) => {
   const { id } = useParams();
@@ -22,7 +36,7 @@ const CurrHouse = (data: any) => {
       <div className="CurrHouse">
         <h2 className="CurrHouseTitle">{i18n.language === "eng" ? currHouse.titleEng : currHouse.titleUkr}</h2>
         <div className="CurrHouseData">
-          <img src={`${process.env.PUBLIC_URL + "/houses2.png"}`} alt="" className="CurrHouseImage" />
+          <CurrHouseSwiper imgOutside={currHouse.imgOutside} />
           <div className="CurrHousesDataText">
             <p>{i18n.language === "eng" ? currHouse.nameEng : currHouse.nameUkr}</p>
             <p>{i18n.language === "eng" ? currHouse.numberEng : currHouse.numberUkr}</p>

@@ -12,8 +12,10 @@
   .CurrHouseData {
     @apply flex justify-between;
     gap: 25px;
+    width: 1200px;
     .CurrHouseSlider {
-      width: 700px;
+      border-radius: 2px;
+      width: 800px;
       height: 430px;
       .CurrHouseImage {
         border-radius: 2px;
@@ -26,7 +28,7 @@
     }
 
     .CurrHousesDataText {
-      // width: 350px;
+      width: 400px;
       p {
         font-family: "Alumni Sans", sans-serif;
         font-size: 24px;
@@ -36,15 +38,84 @@
   }
   .HousesDescription {
     width: 1200px;
+    .CurrHouseInsideSlider {
+      margin: 25px 0px;
+      border-radius: 2px;
+      width: 1200px;
+      height: 700px;
+      .swiper-slide {
+        height: 700px !important;
+        width: auto !important;
+      }
+      .CurrHouseInsideImage {
+        height: 700px;
+        width: auto;
+        border-radius: 2px;
+      }
+    }
+    .HousesDocuments {
+      @apply flex flex-wrap;
+      gap: 40px;
+      .HousesDocumentsImage {
+        width: 580px;
+        height: auto;
+      }
+    }
     p {
       padding-top: 20px;
     }
   }
 }
 
+.swiper-lazy-preloader {
+  border-color: #c5a47e !important;
+}
+.swiper-pagination-bullet-active {
+  background: #c5a47e !important;
+}
+
 @media (max-width: 1440px) {
-  .CurrHouseData {
-    width: 1000px;
+  .CurrHouse {
+    .CurrHouseTitle {
+      font-size: 75px;
+    }
+    .CurrHouseData {
+      width: 1000px;
+      .CurrHouseSlider {
+        width: 650px;
+        height: 430px;
+      }
+
+      .CurrHousesDataText {
+        width: 350px;
+        p {
+          font-size: 24px;
+          padding-bottom: 10px;
+        }
+      }
+    }
+    .HousesDescription {
+      width: 1000px;
+      .CurrHouseInsideSlider {
+        margin: 25px 0px;
+        width: 1000px;
+        height: 600px;
+        .swiper-slide {
+          height: 600px !important;
+        }
+        .CurrHouseInsideImage {
+          height: 600px;
+        }
+      }
+      .HousesDocuments {
+        @apply flex flex-wrap;
+        gap: 40px;
+        .HousesDocumentsImage {
+          width: 480px;
+          height: auto;
+        }
+      }
+    }
   }
 }
 @media (max-width: 1200px) {
@@ -54,15 +125,39 @@
     }
     .CurrHouseData {
       width: 800px;
-      .CurrHouseImage {
-        width: 500px;
-        height: auto;
+      .CurrHouseSlider {
+        width: 550px;
+        height: 330px;
+      }
+
+      .CurrHousesDataText {
+        width: 250px;
+        p {
+          font-size: 22px;
+          padding-bottom: 10px;
+        }
       }
     }
     .HousesDescription {
       width: 800px;
-      p {
-        padding-top: 20px;
+      .CurrHouseInsideSlider {
+        margin-top: 25px;
+        width: 800px;
+        height: 500px;
+        .swiper-slide {
+          height: 500px !important;
+        }
+        .CurrHouseInsideImage {
+          height: 500px;
+        }
+      }
+      .HousesDocuments {
+        @apply flex flex-wrap;
+        gap: 20px;
+        .HousesDocumentsImage {
+          width: 390px;
+          height: auto;
+        }
       }
     }
   }
@@ -73,30 +168,42 @@
       font-size: 60px;
     }
     .CurrHouseData {
+      @apply flex-col items-center;
       width: 700px;
-      .CurrHouseImage {
-        width: 400px;
+      .CurrHouseSlider {
+        width: 700px;
+        height: 430px;
+      }
+
+      .CurrHousesDataText {
+        width: 700px;
+        p {
+          font-size: 22px;
+          padding-bottom: 10px;
+        }
       }
     }
     .HousesDescription {
       width: 700px;
-    }
-  }
-}
-@media (max-width: 940px) {
-  .CurrHouse {
-    .CurrHouseTitle {
-      text-align: center;
-      font-size: 60px;
-    }
-    .CurrHouseData {
-      width: 700px;
-      .CurrHouseImage {
-        width: 400px;
+      .CurrHouseInsideSlider {
+        margin-top: 25px;
+        width: 700px;
+        height: 500px;
+        .swiper-slide {
+          height: 500px !important;
+        }
+        .CurrHouseInsideImage {
+          height: 500px;
+        }
       }
-    }
-    .HousesDescription {
-      width: 700px;
+      .HousesDocuments {
+        @apply flex flex-wrap;
+        gap: 20px;
+        .HousesDocumentsImage {
+          width: 340px;
+          height: auto;
+        }
+      }
     }
   }
 }
@@ -106,30 +213,91 @@
       font-size: 50px;
     }
     .CurrHouseData {
+      @apply flex-col items-center;
       width: 600px;
-      .CurrHouseImage {
-        width: 350px;
+      .CurrHouseSlider {
+        width: 600px;
+        height: 400px;
+      }
+
+      .CurrHousesDataText {
+        width: 600px;
+        p {
+          font-size: 22px;
+          padding-bottom: 10px;
+        }
       }
     }
     .HousesDescription {
       width: 600px;
+      .CurrHouseInsideSlider {
+        margin-top: 25px;
+        width: 600px;
+        height: 400px;
+        .swiper-slide {
+          height: 400px !important;
+        }
+        .CurrHouseInsideImage {
+          height: 400px;
+        }
+      }
+      .HousesDocuments {
+        @apply flex flex-wrap;
+        gap: 20px;
+        .HousesDocumentsImage {
+          width: 600px;
+          height: auto;
+        }
+      }
     }
   }
 }
 @media (max-width: 660px) {
   .CurrHouse {
     .CurrHouseTitle {
+      text-align: center;
       font-size: 40px;
     }
     .CurrHouseData {
-      @apply flex flex-col items-center;
+      @apply flex-col items-center;
       width: 350px;
-      .CurrHouseImage {
+      .CurrHouseSlider {
         width: 350px;
+        height: 210px;
+      }
+
+      .CurrHousesDataText {
+        width: 350px;
+        p {
+          font-size: 22px;
+          padding-bottom: 10px;
+        }
       }
     }
     .HousesDescription {
       width: 350px;
+      p {
+        font-size: 14px;
+      }
+      .CurrHouseInsideSlider {
+        margin-top: 25px;
+        width: 350px;
+        height: 210px;
+        .swiper-slide {
+          height: 210px !important;
+        }
+        .CurrHouseInsideImage {
+          height: 210px;
+        }
+      }
+      .HousesDocuments {
+        @apply flex flex-wrap;
+        gap: 20px;
+        .HousesDocumentsImage {
+          width: 350px;
+          height: auto;
+        }
+      }
     }
   }
 }

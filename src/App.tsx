@@ -89,7 +89,7 @@ function App() {
           <Route path="/buddesign/products" Component={Products}></Route>
           <Route path="/buddesign/outsourcing" Component={Outsourcing}></Route>
           <Route path="/buddesign/houses" Component={Houses}></Route>
-          <Route path="/buddesign/houses/:id" Component={() => <CurrHouse data={"bulldozer"}></CurrHouse>}></Route>
+          <Route path="/buddesign/houses/:id" Component={() => <CurrHouse></CurrHouse>}></Route>
           <Route path="/buddesign/recyclables" Component={Recyclables}></Route>
           <Route path="/buddesign/about" Component={AboutUs}></Route>
           <Route path="/buddesign/projects" Component={Projects}></Route>

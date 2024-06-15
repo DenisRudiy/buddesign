@@ -571,7 +571,41 @@
   "Houses": [
     {
       "id": 0,
-      "imgOutside": ["/Houses/orange1.webp", "/Houses/orange2.webp", "/Houses/orange3.webp", "/Houses/orange4.webp"],
+      "imgOutside": [
+        "/Houses/orange1.webp",
+        "/Houses/orange2.webp",
+        "/Houses/orange3.webp",
+        "/Houses/orange4.webp",
+        "/Houses/dopPh1.webp",
+        "/Houses/dopPh2.webp",
+        "/Houses/dopPh3.webp",
+        "/Houses/dopPh4.webp",
+        "/Houses/dopPh5.webp"
+      ],
+      "imgInside": [
+        "https://i.postimg.cc/TPXDj9KN/orangeI1.webp",
+        "https://i.postimg.cc/sXjGqg9p/orangeI2.webp",
+        "https://i.postimg.cc/SK7zgM8S/orangeI3.webp",
+        "https://i.postimg.cc/52zzFG2F/orangeI4.webp",
+        "https://i.postimg.cc/8P9WcDNS/orangeI5.webp",
+        "https://i.postimg.cc/CLzkwdy7/orangeI6.webp",
+        "https://i.postimg.cc/h4JZ5DyF/orangeI7.webp",
+        "https://i.postimg.cc/SjFMZ7ZK/orangeI8.webp",
+        "https://i.postimg.cc/XJPF50dd/orangeI9.webp",
+        "https://i.postimg.cc/0jJSdH03/orange-I10.webp",
+        "https://i.postimg.cc/k4GKD567/orange-I11.webp",
+        "https://i.postimg.cc/jjZysfj8/orange-I12.webp",
+        "https://i.postimg.cc/3x9ZwVSC/orange-I13.webp",
+        "https://i.postimg.cc/LsX3gDGd/orange-I14.webp",
+        "https://i.postimg.cc/NjQ4BB4j/orange-I15.webp",
+        "https://i.postimg.cc/Dyrg981N/orange-I16.webp"
+      ],
+      "docs": [
+        "/Houses/docOrange1.webp",
+        "/Houses/docOrange2.webp",
+        "/Houses/docOrange3.webp",
+        "/Houses/docOrange4.webp"
+      ],
       "titleUkr": "ЖК “озерна панорама” №10,12",
       "titleEng": "Residential complex “lake panorama” №10,12",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
@@ -598,7 +632,35 @@
     },
     {
       "id": 1,
-      "imgOutside": ["/Houses/beige1.webp", "/Houses/beige2.webp"],
+      "imgOutside": [
+        "/Houses/beige1.webp",
+        "/Houses/beige2.webp",
+        "/Houses/dopPh1.webp",
+        "/Houses/dopPh2.webp",
+        "/Houses/dopPh3.webp",
+        "/Houses/dopPh4.webp",
+        "/Houses/dopPh5.webp"
+      ],
+      "imgInside": [
+        "https://i.postimg.cc/021gGK8X/beigeI1.webp",
+        "https://i.postimg.cc/KvP60cjG/beigeI2.webp",
+        "https://i.postimg.cc/ZYdtyxhy/beigeI3.webp",
+        "https://i.postimg.cc/8cW2QNbb/beigeI4.webp",
+        "https://i.postimg.cc/KzC6HRtz/beigeI5.webp",
+        "https://i.postimg.cc/26qpG4bM/beigeI6.webp",
+        "https://i.postimg.cc/tRPwgRh3/beigeI7.webp",
+        "https://i.postimg.cc/6qdmbz9j/beigeI8.webp",
+        "https://i.postimg.cc/hjQwTcNq/beigeI9.webp",
+        "https://i.postimg.cc/XvzmrpH8/beigeI10.webp",
+        "https://i.postimg.cc/g0J1cvDj/beigeI11.webp",
+        "https://i.postimg.cc/L5dWVGMg/beigeI12.webp",
+        "https://i.postimg.cc/sgn0LMrr/beigeI13.webp",
+        "https://i.postimg.cc/W4CY2xzY/beigeI14.webp",
+        "https://i.postimg.cc/cJr5Gdx8/beigeI15.webp",
+        "https://i.postimg.cc/d1CHDnTs/beigeI16.webp",
+        "https://i.postimg.cc/Xq025Fww/beigeI17.webp"
+      ],
+      "docs": ["/Houses/docBeige1.webp", "/Houses/docBeige2.webp", "/Houses/docBeige3.webp", "/Houses/docBeige4.webp"],
       "titleUkr": "ЖК “озерна панорама” №18,20",
       "titleEng": "Residential complex “lake panorama” №18,20",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
@@ -625,7 +687,16 @@
     },
     {
       "id": 2,
-      "imgOutside": ["/Houses/yellow1.webp", "/Houses/yellow2.webp"],
+      "imgOutside": [
+        "/Houses/yellow1.webp",
+        "/Houses/yellow2.webp",
+        "/Houses/dopPh1.webp",
+        "/Houses/dopPh2.webp",
+        "/Houses/dopPh3.webp",
+        "/Houses/dopPh4.webp",
+        "/Houses/dopPh5.webp"
+      ],
+      "imgInside": ["-"],
       "titleUkr": "ЖК “озерна панорама” №2,4",
       "titleEng": "Residential complex “lake panorama” №2,4",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
@@ -652,7 +723,28 @@
     },
     {
       "id": 3,
-      "imgOutside": ["/Houses/milky1.webp", "/Houses/milky2.webp", "/Houses/milky3.webp", "/Houses/milky4.webp"],
+      "imgOutside": [
+        "/Houses/milky1.webp",
+        "/Houses/milky2.webp",
+        "/Houses/milky3.webp",
+        "/Houses/milky4.webp",
+        "/Houses/dopPh1.webp",
+        "/Houses/dopPh2.webp",
+        "/Houses/dopPh3.webp",
+        "/Houses/dopPh4.webp",
+        "/Houses/dopPh5.webp"
+      ],
+      "imgInside": [
+        "https://i.postimg.cc/9QNJpsdX/milkyI1.webp",
+        "https://i.postimg.cc/TPLQHQ0V/milkyI2.webp",
+        "https://i.postimg.cc/Kztfmzd4/milkyI3.webp",
+        "https://i.postimg.cc/LscvdfQr/milkyI4.webp",
+        "https://i.postimg.cc/3N7BNhT1/milkyI5.webp",
+        "https://i.postimg.cc/6q0hGP6X/milkyI6.webp",
+        "https://i.postimg.cc/05dn3zYB/milkyI7.webp"
+      ],
+      "docs": ["/Houses/docMilky1.webp", "/Houses/docMilky2.webp", "/Houses/docMilky4.webp"],
+      "horizontalDocs": ["/Houses/docMilky3.webp"],
       "titleUkr": "ЖК “озерна панорама” №14,16",
       "titleEng": "Residential complex “lake panorama” №14,16",
       "nameUkr": "Будинки ЖК “озерна панорама” с.Ходосівка",
@@ -684,7 +776,24 @@
         "/Houses/pink2.webp",
         "/Houses/pink3.webp",
         "/Houses/pink4.webp",
-        "/Houses/pink5.webp"
+        "/Houses/pink5.webp",
+        "/Houses/dopPh1.webp",
+        "/Houses/dopPh2.webp",
+        "/Houses/dopPh3.webp",
+        "/Houses/dopPh4.webp",
+        "/Houses/dopPh5.webp"
+      ],
+      "imgInside": [
+        "https://i.postimg.cc/8CQrNHDB/pinkI1.webp",
+        "https://i.postimg.cc/jjHn57SV/pinkI2.webp",
+        "https://i.postimg.cc/7YR2Q4WR/pinkI3.webp",
+        "https://i.postimg.cc/PrJD4J2Z/pinkI4.webp",
+        "https://i.postimg.cc/wjssCPKj/pinkI5.webp",
+        "https://i.postimg.cc/3NSvhQJd/pinkI6.webp",
+        "https://i.postimg.cc/bJRn6270/pinkI7.webp",
+        "https://i.postimg.cc/kGXbLgC0/pinkI8.webp",
+        "https://i.postimg.cc/zD0WKKS8/pinkI9.webp",
+        "https://i.postimg.cc/RFmfQTDV/pinkI10.webp"
       ],
       "titleUkr": "ЖК “озерна панорама” №6,8",
       "titleEng": "Residential complex “lake panorama” №6,8",

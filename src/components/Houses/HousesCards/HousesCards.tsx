@@ -49,10 +49,7 @@ const HousesCards = ({ houses }: any) => {
         {houses.map((item: any) => (
           <Link to={`${item.id}`} onClick={scrollToTop}>
             <div className="HousesImg" key={item.id}>
-              <div
-                className="HousesImgBackground"
-                style={{ backgroundImage: `url(${process.env.PUBLIC_URL + item.img})` }}
-              />
+              <div className="HousesImgBackground" style={{ backgroundImage: `url(${item.img})` }} />
               <div className="HousesImgText ">
                 <h2 className="HousesImgTitle"> {i18n.language === "en" ? item.titleEng : item.titleUkr}</h2>
               </div>

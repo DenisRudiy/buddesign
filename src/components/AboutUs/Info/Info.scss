@@ -77,6 +77,13 @@
       }
     }
   }
+  .AboutInfoPhoto {
+    img {
+      height: 720px;
+      width: auto;
+      border-radius: 2px;
+    }
+  }
 }
 @media only screen and (min-width: 320px) and (max-width: 1740px) {
   .InfoMainAbout {
@@ -259,9 +266,10 @@
         font-weight: 500;
       }
     }
-    .InfoPhoto {
+    .AboutInfoPhoto {
       img {
         width: 380px;
+        height: auto;
       }
     }
   }

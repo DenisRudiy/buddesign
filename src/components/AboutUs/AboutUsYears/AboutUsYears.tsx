@@ -38,7 +38,7 @@ const AboutUsYears = () => {
           <div className="AboutUsYearsItem" key={index}>
             <div
               className="AboutUsYearsItemImgBackground"
-              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/aboutus2.png"})` }}
+              style={{ backgroundImage: `url(${process.env.PUBLIC_URL + "/aboutUsYears.webp"})` }}
             ></div>
             <div className="AboutUsYearsItemData">
               <h1 className="AboutUsYearsItemNumber">30+</h1>

@@ -21,8 +21,8 @@ const Info = () => {
         <h1 className="InfoAboutCompany">{t("InfoAboutCompany")}</h1>
         <p className="InfoAboutCompanyDescription">{t("InfoAboutCompanyDescription")}</p>
       </div>
-      <div className="InfoPhoto">
-        <img src={process.env.PUBLIC_URL + "/s2.jpg"} alt="" />
+      <div className="AboutInfoPhoto">
+        <img src={process.env.PUBLIC_URL + "/aboutUsInfo.webp"} alt="" />
       </div>
     </div>
   );

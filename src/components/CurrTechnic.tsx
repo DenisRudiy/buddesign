@@ -2,7 +2,8 @@ import { useEffect, useState } from "react";
 import TechnicAbout from "./Technic/TechnicAbout/TechnicAbout";
 import TechnicMain from "./Technic/TechnicMain/TechnicMain";
 import { useTranslation } from "react-i18next";
-import db from "../data/db.json";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../firebase";
 
 const CurrTechnic = ({ type }: any) => {
   const [currTechnic, setCurrTechnics] = useState<any>([]);
@@ -10,23 +11,20 @@ const CurrTechnic = ({ type }: any) => {
 
   useEffect(() => {
     const loadTechnics = async () => {
+      let typeTech = "tipper";
       try {
         switch (type) {
           case "tipper":
-            // data = await fetchTechnic();
-            setCurrTechnics(db.technic1);
+            typeTech = "technic_tippers";
             break;
           case "excavator":
-            // data = await fetchTechnic();
-            setCurrTechnics(db.technic2);
+            typeTech = "technic_excavator";
             break;
           case "bulldozer":
-            // data = await fetchTechnic();
-            setCurrTechnics(db.technic3);
+            typeTech = "technic_bulldozer";
             break;
           case "other":
-            // data = await fetchTechnic();
-            setCurrTechnics(db.technic4);
+            typeTech = "technic_other";
             break;
           default:
             console.log("Тип техники: default");
@@ -35,6 +33,18 @@ const CurrTechnic = ({ type }: any) => {
       } catch (error) {
         console.error("Error when loading:", error);
       }
+      const colRef = collection(db, typeTech);
+      getDocs(colRef)
+        .then((snapshot) => {
+          let tech_type: any = [];
+          snapshot.docs.forEach((doc) => {
+            tech_type.push({ ...doc.data(), id: doc.id });
+          });
+          setCurrTechnics(tech_type);
+        })
+        .catch((err) => {
+          console.log(err.message);
+        });
     };
     loadTechnics();
   }, [type]);
@@ -69,7 +79,7 @@ const CurrTechnic = ({ type }: any) => {
                       {item.price} {i18n.language === "en" ? "uah" : "грн"}
                     </>
                   )}
-                  {item.loadCapacityUkr !== "-" ? (
+                  {item.loadCapacityUkr && item.loadCapacityUkr !== "-" ? (
                     <h3 className="Details">
                       {i18n.language === "en"
                         ? `Load capacity - ${item.loadCapacityEng} ton.`
@@ -78,7 +88,7 @@ const CurrTechnic = ({ type }: any) => {
                   ) : (
                     <></>
                   )}
-                  {item.volumeUkr !== "-" ? (
+                  {item.volumeUkr && item.volumeUkr !== "-" ? (
                     <h3 className="Details">
                       {i18n.language === "en"
                         ? `Volume of the body, bucket - ${item.volumeEng} m³`
@@ -87,7 +97,7 @@ const CurrTechnic = ({ type }: any) => {
                   ) : (
                     <></>
                   )}
-                  {item.sizeUkr !== "-" ? (
+                  {item.sizeUkr && item.sizeUkr !== "-" ? (
                     <h3 className="Details">
                       {i18n.language === "en"
                         ? `Site dimensions - ${item.sizeEng} mm`
@@ -96,7 +106,7 @@ const CurrTechnic = ({ type }: any) => {
                   ) : (
                     <></>
                   )}
-                  {item.deepUkr !== "-" ? (
+                  {item.deepUkr && item.deepUkr !== "-" ? (
                     <h3 className="Details">
                       {i18n.language === "en"
                         ? `Digging depth - ${item.deepEng} m`
@@ -105,7 +115,7 @@ const CurrTechnic = ({ type }: any) => {
                   ) : (
                     <></>
                   )}
-                  {item.heighUkr !== "-" ? (
+                  {item.heighUkr && item.heighUkr !== "-" ? (
                     <h3 className="Details">
                       {i18n.language === "en"
                         ? `Load height - ${item.heighEng} m`

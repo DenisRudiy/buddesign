@@ -2,30 +2,35 @@ import RecyclablesMain from "./Recyclables/RecyclablesMain/RecyclablesMain";
 import RecyclablesAbout from "./Recyclables/RecyclablesAbout/RecyclablesAbout";
 import RecyclablesCards from "./Recyclables/RecyclablesCards/RecyclablesCards";
 import { useEffect, useState } from "react";
-import db from "../data/db.json";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../firebase";
 
 const Recyclables = () => {
   const [recyclables, setRecyclables] = useState<any>([]);
   const [isLoad, setIsLoad] = useState(true);
 
   useEffect(() => {
-    const loadRecyclables = async () => {
-      try {
-        // let data: any;
-        // data = await fetchrRecyclables();
-        setRecyclables(db.Rematerial);
-      } catch (error) {
-        console.error("Помилка при завантаженні продуктів:", error);
-      }
-    };
-
-    loadRecyclables();
-  }, []);
-  useEffect(() => {
     if (recyclables.length !== 0) {
       setIsLoad(false);
     }
   }, [recyclables]);
+
+  useEffect(() => {
+    const colRef = collection(db, "rematerial");
+    getDocs(colRef)
+      .then((snapshot) => {
+        let recyclables: any = [];
+        snapshot.docs.forEach((doc) => {
+          recyclables.push({ ...doc.data(), id: doc.id });
+        });
+        recyclables = recyclables.sort((a: any, b: any) => a.id - b.id);
+        setRecyclables(recyclables);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <>
       <div className="Main">

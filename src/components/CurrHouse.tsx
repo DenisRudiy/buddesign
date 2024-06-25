@@ -2,11 +2,12 @@ import { useEffect, useState } from "react";
 import HousesMain from "./Houses/HousesMain/HousesMain";
 import "../styles/CurrentHouse.scss";
 import "swiper/css";
-import db from "../data/db.json";
 import { useParams } from "react-router-dom";
 import { useTranslation } from "react-i18next";
 import { Swiper, SwiperSlide } from "swiper/react";
 import { Pagination } from "swiper/modules";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../firebase";
 
 function CurrHouseSwiper({ imgOutside = [] }: any) {
   return (
@@ -61,9 +62,18 @@ const CurrHouse = () => {
   const { i18n } = useTranslation();
 
   useEffect(() => {
-    if (id) {
-      setCurrHouse(db.Houses[parseInt(id)]);
-    }
+    const colRef = collection(db, "houses_details");
+    getDocs(colRef)
+      .then((snapshot) => {
+        snapshot.docs.forEach((doc) => {
+          if (doc.id === id) {
+            setCurrHouse(doc.data());
+          }
+        });
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
   }, [id]);
 
   return (

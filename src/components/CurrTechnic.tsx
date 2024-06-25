@@ -15,7 +15,7 @@ const CurrTechnic = ({ type }: any) => {
       try {
         switch (type) {
           case "tipper":
-            typeTech = "technic_tippers";
+            typeTech = "technic_tipers";
             break;
           case "excavator":
             typeTech = "technic_excavator";

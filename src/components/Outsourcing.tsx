@@ -2,30 +2,34 @@ import { useEffect, useState } from "react";
 import OutsourcingMain from "./Outsourcing/OutsourcingMain/OutsourcingMain";
 import OutsourcingCards from "./Outsourcing/OutsourcingCards/OutsourcingCards";
 import OutsourcingAbout from "./Outsourcing/OutsourcingAbout/OutsourcingAbout";
-import db from "../data/db.json";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../firebase";
 
 const Outsourcing = () => {
   const [outsourcing, setOtsourcing] = useState<any>([]);
   const [isLoad, setIsLoad] = useState(true);
 
   useEffect(() => {
-    const loadProducts = async () => {
-      try {
-        // let data: any;
-        // data = await fetchProducts();
-        setOtsourcing(db.outsorcing);
-      } catch (error) {
-        console.error("Помилка при завантаженні продуктів:", error);
-      }
-    };
-
-    loadProducts();
-  }, []);
-  useEffect(() => {
     if (outsourcing.length !== 0) {
       setIsLoad(false);
     }
   }, [outsourcing]);
+
+  useEffect(() => {
+    const colRef = collection(db, "outsorcing");
+    getDocs(colRef)
+      .then((snapshot) => {
+        let outsorcing: any = [];
+        snapshot.docs.forEach((doc) => {
+          outsorcing.push({ ...doc.data(), id: doc.id });
+        });
+        outsorcing = outsorcing.sort((a: any, b: any) => a.id - b.id);
+        setOtsourcing(outsorcing);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
 
   return (
     <>

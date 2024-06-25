@@ -128,6 +128,11 @@ i18n
 
           HomeProjectsTitle: "Our Projects",
           HomeProjectSmallTitle: "our project",
+
+          toastSuccessTitle: "Success!",
+          toastSuccessDescription: "Your message was sent successfully!",
+          toastErrorTitle: "Error!",
+          toastErrorDescription: "Fill in all fields!",
         },
       },
       uk: {
@@ -244,6 +249,11 @@ i18n
 
           HomeProjectsTitle: "Наші проєкти",
           HomeProjectSmallTitle: "Наш проєкт",
+
+          toastSuccessTitle: "Вітаємо!",
+          toastSuccessDescription: "Ваша заявка успішно надіслана!",
+          toastErrorTitle: "Увага!",
+          toastErrorDescription: "Заповніть усі поля!",
         },
       },
     },

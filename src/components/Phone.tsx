@@ -1,15 +1,35 @@
-import React, { useState } from "react";
-import PhoneIcon from "../icons/PhoneIcon";
 import "../styles/App.scss";
-import { useTranslation } from "react-i18next";
+import PhoneIcon from "../icons/PhoneIcon";
 import CrossIcon from "../icons/CrossIcon";
+import { useRef, useState } from "react";
+import { useTranslation } from "react-i18next";
 import { useMask } from "@react-input/mask";
 import { sendMessage } from "../services/telegram";
+import { Toast } from "primereact/toast";
 
 const Phone = () => {
   const { t, i18n } = useTranslation();
   const [isOpen, setIsOpen] = useState(false);
   const inputRef = useMask({ mask: "+38(___)___-__-__", replacement: { _: /\d/ } });
+  const toast = useRef<Toast>(null);
+
+  const showSuccess = () => {
+    toast.current?.show({
+      severity: "success",
+      summary: t("toastSuccessTitle"),
+      detail: t("toastSuccessDescription"),
+      life: 3000,
+    });
+  };
+
+  const showError = () => {
+    toast.current?.show({
+      severity: "error",
+      summary: t("toastErrorTitle"),
+      detail: t("toastErrorDescription"),
+      life: 3000,
+    });
+  };
 
   const openModal = () => {
     setIsOpen(true);
@@ -39,15 +59,19 @@ const Phone = () => {
       if (formValues.name && formValues.phone) {
         const message = `Нове повідомлення: %0A- Ім'я: ${formValues.name} %0A- Tel: ${formValues.phone}`;
 
-        await sendMessage(message);
-        // messageSuccess();
+        if (formValues.phone.length === 17) {
+          await sendMessage(message);
+          showSuccess();
+          closeModal();
+        } else {
+          showError();
+        }
       } else {
-        // messageError();
+        showError();
       }
     } catch (e) {
       console.log("Error");
     } finally {
-      closeModal();
       setFormValues({
         name: "",
         phone: "",
@@ -61,6 +85,7 @@ const Phone = () => {
   return (
     <>
       <div className="Phone" onClick={openModal}>
+        <Toast ref={toast} />
         <button className="PhoneButton">
           <PhoneIcon size={35}></PhoneIcon>
         </button>
@@ -88,7 +113,6 @@ const Phone = () => {
                 />
                 <input
                   placeholder={t("footerPlaceholer2")}
-                  // placeholder="098-000-00-00"
                   ref={inputRef}
                   id="phone"
                   type="tel"

@@ -2,31 +2,35 @@ import { useState, useEffect } from "react";
 import WorkMain from "./Works/WorkMain/WorkMain";
 import WorksAbout from "./Works/WorksAbout/WorksAbout";
 import WorkCards from "./Works/WorkCards/WorkCards";
-import db from "../data/db.json";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../firebase";
 
 const Work = () => {
   const [works, setWorks] = useState<any>([]);
   const [isLoad, setIsLoad] = useState(true);
 
   useEffect(() => {
-    const loadProducts = async () => {
-      try {
-        // let data: any;
-        // data = await fetchWork();
-        setWorks(db.jobs);
-        console.log(db.jobs);
-      } catch (error) {
-        console.error("Помилка при завантаженні продуктів:", error);
-      }
-    };
-
-    loadProducts();
-  }, []);
-  useEffect(() => {
     if (works.length !== 0) {
       setIsLoad(false);
     }
   }, [works]);
+
+  useEffect(() => {
+    const colRef = collection(db, "works");
+    getDocs(colRef)
+      .then((snapshot) => {
+        let works: any = [];
+        snapshot.docs.forEach((doc) => {
+          works.push({ ...doc.data(), id: doc.id });
+        });
+        works = works.sort((a: any, b: any) => a.id - b.id);
+        setWorks(works);
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
+
   return (
     <>
       <div className="Main">

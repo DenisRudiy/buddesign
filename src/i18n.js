@@ -133,6 +133,7 @@ i18n
           toastSuccessDescription: "Your message was sent successfully!",
           toastErrorTitle: "Error!",
           toastErrorDescription: "Fill in all fields!",
+          footerFile: "Your resume",
         },
       },
       uk: {
@@ -254,6 +255,7 @@ i18n
           toastSuccessDescription: "Ваша заявка успішно надіслана!",
           toastErrorTitle: "Увага!",
           toastErrorDescription: "Заповніть усі поля!",
+          footerFile: "Ваше резюме",
         },
       },
     },

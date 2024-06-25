@@ -38,6 +38,7 @@ const Phone = () => {
   const closeModal = () => {
     setIsOpen(false);
   };
+
   const handleChange = (e: any) => {
     const { name, value, files } = e.target;
     if (name === "file" && files.length > 0) {
@@ -84,8 +85,8 @@ const Phone = () => {
   });
   return (
     <>
+      <Toast ref={toast} />
       <div className="Phone" onClick={openModal}>
-        <Toast ref={toast} />
         <button className="PhoneButton">
           <PhoneIcon size={35}></PhoneIcon>
         </button>

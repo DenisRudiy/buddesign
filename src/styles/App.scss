@@ -405,15 +405,9 @@
   }
 
   button {
-    padding: 8px 16px;
     border: none;
-    background-color: #007bff;
     color: #fff;
     cursor: pointer;
-
-    &:hover {
-      background-color: #0056b3;
-    }
 
     &:focus {
       outline: none;
@@ -433,6 +427,21 @@
     color: #000 !important;
     text-transform: uppercase !important;
   }
+}
+
+.footer__attach {
+  @apply flex items-center justify-start;
+  gap: 10px;
+}
+
+.footer__attach-btn {
+  @apply flex items-center justify-center;
+  border-radius: 50%;
+  background-color: white !important;
+  box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+  width: 45px;
+  height: 45px;
+  padding: 0px;
 }
 
 .technics__toptitle {

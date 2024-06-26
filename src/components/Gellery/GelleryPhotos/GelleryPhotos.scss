@@ -176,6 +176,9 @@
 
 @media (max-width: 1600px) {
   .GelleryPhotos {
+    .GelleryPhotosBody {
+      @apply grid grid-cols-3;
+    }
     .GalleryModal {
       .GalleryModalBody {
         width: 1200px;

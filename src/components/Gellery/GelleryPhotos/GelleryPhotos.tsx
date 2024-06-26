@@ -3,6 +3,8 @@ import "../GelleryPhotos/GelleryPhotos.scss";
 import ReactPaginate from "react-paginate";
 import CrossIcon from "../../../icons/CrossIcon";
 import { useTranslation } from "react-i18next";
+import { collection, getDocs } from "firebase/firestore";
+import db from "../../../firebase";
 
 const GelleryPhotos = () => {
   const { t, i18n } = useTranslation();
@@ -13,6 +15,27 @@ const GelleryPhotos = () => {
   const [currentImage, setCurrentImage] = useState("");
   const [isGalModal, setIsGalModal] = useState(false);
   const [showBtn, setShowBtn] = useState(false);
+  const [galleryImages, setGalleryImages] = useState<any>([]);
+
+  useEffect(() => {
+    const colRef = collection(db, "gallery_photos");
+    getDocs(colRef)
+      .then((snapshot) => {
+        let gallery: any = [];
+        snapshot.docs.forEach((doc) => {
+          gallery.push({ ...doc.data(), id: doc.id });
+        });
+        gallery = gallery.sort((a: any, b: any) => a.id - b.id);
+        console.log(gallery);
+        setGalleryImages(gallery);
+        const endOffset = itemOffset + itemsPerPage;
+        setCurrentItems(gallery.slice(itemOffset, endOffset));
+        setPageCount(Math.ceil(gallery.length / itemsPerPage));
+      })
+      .catch((err) => {
+        console.log(err.message);
+      });
+  }, []);
 
   useEffect(() => {
     const endOffset = itemOffset + itemsPerPage;
@@ -35,7 +58,7 @@ const GelleryPhotos = () => {
         setItemsPerPage(8);
         setShowBtn(false);
       }
-      if (window.innerWidth <= 1300 && window.innerWidth >= 650) {
+      if (window.innerWidth <= 1600 && window.innerWidth >= 650) {
         setItemsPerPage(6);
         setShowBtn(false);
       }
@@ -91,12 +114,12 @@ const GelleryPhotos = () => {
               className="GelleryPhotosItem"
               onClick={() => {
                 if (!showBtn) {
-                  setCurrentImage(item.src);
+                  setCurrentImage(item.img);
                   setIsGalModal(true);
                 }
               }}
             >
-              <img src={process.env.PUBLIC_URL + item.src} alt="" />
+              <img src={process.env.PUBLIC_URL + item.img} alt="" loading="lazy" />
               <div className="GalleryPhotosItemText">
                 <h1>{t("HomeProjectSmallTitle")}</h1>
                 <h2>{item.subtitle}</h2>
@@ -105,7 +128,7 @@ const GelleryPhotos = () => {
                   <button
                     className="GelleryPhotosItemBtn"
                     onClick={() => {
-                      setCurrentImage(item.src);
+                      setCurrentImage(item.img);
                       setIsGalModal(true);
                     }}
                   >
@@ -139,150 +162,3 @@ const GelleryPhotos = () => {
 };
 
 export default GelleryPhotos;
-
-const galleryImages = [
-  {
-    src: "/Gallery/gal5.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal2.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal3.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal4.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal1.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal6.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal7.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal8.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal2.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal3.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal4.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal5.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal6.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal7.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal8.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal1.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal3.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal4.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal5.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal6.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal7.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal8.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal1.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-  {
-    src: "/Gallery/gal2.webp",
-    subtitle: "LOREM HOUSE",
-    description:
-      "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation.",
-  },
-];

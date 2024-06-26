@@ -3,7 +3,6 @@ import { useRef, useState } from "react";
 import { useTranslation } from "react-i18next";
 import { sendFile, sendMessage } from "../services/telegram";
 import { useMask } from "@react-input/mask";
-import { Toast } from "primereact/toast";
 import PaperClipIcon from "../icons/PaperClipIcon";
 
 const VacanciesModal = ({ closeModal, showSuccess, showError }: any) => {
